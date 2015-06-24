@@ -1,0 +1,85 @@
+RewriteEngine on
+#suPHP_ConfigPath /home/dancin3/public_html
+AddHandler application/x-httpd-php53 .php .php5
+
+<FilesMatch "\.(ttf|otf|eot|woff)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+ </IfModule>
+</FilesMatch>
+
+RewriteCond %{HTTP_HOST} ^mousepawgames\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.mousepawgames\.com$
+RewriteRule ^facebook$ "https\:\/\/www\.facebook\.com\/mousepawgames" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^mousepawgames\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.mousepawgames\.com$
+RewriteRule ^twitter$ "https\:\/\/twitter\.com\/mousepawgames" [R=301,L]
+
+ErrorDocument 404 /404.shtml
+
+RewriteRule ^company\/?$ "company.php" [NC,L]
+RewriteRule ^company/team\/?$ "team.php" [NC,L]
+RewriteRule ^company/philosophy\/?$ "philosophy.php" [NC,L]
+RewriteRule ^company/technologies\/?$ "technologies.php" [NC,L]
+RewriteRule ^company/contact\/?$ "contact.php" [NC,L]
+
+Redirect 301 /team /company/team
+Redirect 301 /philosophy /company/philosophy
+Redirect 301 /technologies /company/technologies
+Redirect 301 /contact /company/contact
+
+RewriteRule ^projects\/?$ "projects.php" [NC,L]
+RewriteRule ^projects/osr\/?$ "operationspyrat.php" [NC,L]
+RewriteRule ^projects/anari\/?$ "anari.php" [NC,L]
+RewriteRule ^projects/lightrift\/?$ "lightrift.php" [NC,L]
+RewriteRule ^projects/ratscript\/?$ "ratscript.php" [NC,L]
+RewriteRule ^projects/simplexpress\/?$ "simplexpress.php" [NC,L]
+RewriteRule ^projects/trailcrest\/?$ "trailcrest.php" [NC,L]
+
+Redirect 301 /osr /projects/osr
+Redirect 301 /anari /projects/anari
+Redirect 301 /lightrift /projects/lightrift
+Redirect 301 /operationspyrat /projects/osr
+Redirect 301 /ratscript /projects/ratscript
+Redirect 301 /simplexpress /projects/simplexpress
+Redirect 301 /trailcrest /projects/trailcrest
+
+RewriteRule ^news\/?$ "news.php" [NC,L]
+RewriteRule ^news/faq\/?$ "faq.php" [NC,L]
+RewriteRule ^news/follow\/?$ "follow.php" [NC,L]
+
+Redirect 301 /faq /projects/faq
+Redirect 301 /follow /projects/follow
+
+RewriteRule ^news/articles/(\w*)\/?$ "article-$1.php" [NC,L]
+
+RewriteRule ^getinvolved$ "getinvolved.php" [NC,L]
+RewriteRule ^getinvolved/alpha\/?$ "alpha.php" [NC,L]
+RewriteRule ^getinvolved/beta\/?$ "beta.php" [NC,L]
+RewriteRule ^getinvolved/creativeauxiliary\/?$ "creativeauxiliary.php" [NC,L]
+RewriteRule ^getinvolved/internships\/?$ "internships.php" [NC,L]
+RewriteRule ^getinvolved/opensource\/?$ "opensource.php" [NC,L]
+
+Redirect 301 /alpha /getinvolved/alpha
+Redirect 301 /beta /getinvolved/beta
+Redirect 301 /creativeauxiliary /getinvolved/creativeauxiliary
+Redirect 301 /internships /getinvolved/internships
+Redirect 301 /opensource /getinvolved/opensource
+
+RewriteRule ^labs\/?$ "labs.php" [NC,L]
+RewriteRule ^labs/software\/?$ "software.php" [NC,L]
+RewriteRule ^labs/yellowsheets\/?$ "yellowsheets.php" [NC,L]
+
+Redirect 301 /software /labs/software
+Redirect 301 /yellowsheets /labs/yellowsheets
+
+RewriteRule ^termsofuse\/?$ "termsofuse.php" [NC,L]
+RewriteRule ^privacy\/?$ "privacy.php" [NC,L]
+RewriteRule ^legal\/?$ "legal.php" [NC,L]
+RewriteRule ^termsofdevelopment\/?$ "termsofdevelopment.php" [NC,L]
+
+RewriteCond %{HTTP_HOST} ^mousepawgames\.net$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.mousepawgames\.net$
+RewriteRule ^/?$ "http\:\/\/www\.mousepawgames\.com\/" [R=301,L]
+

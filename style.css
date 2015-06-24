@@ -1,0 +1,489 @@
+@font-face {
+    font-family: 'daysregular';
+    src: url('http://www.mousepawgames.com/fonts/days-webfont.eot');
+    src: url('http://www.mousepawgames.com/fonts/days-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.mousepawgames.com/fonts/days-webfont.woff') format('woff'),
+         url('http://www.mousepawgames.com/fonts/days-webfont.ttf') format('truetype'),
+         url('http://www.mousepawgames.com/fonts/days-webfont.svg#daysregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background: #0128FF;
+	background-image:url(http://www.mousepawgames.com/img/webback.jpg);
+	background-attachment: fixed;
+	background-size: 100%;
+	margin:0;
+	padding:0;
+}
+
+.page{
+    width:100%;
+    position:absolute;
+    left:0;
+}
+
+
+/*BANNER CSS*/
+
+.pagebanner{
+	background:rgba(255, 255, 255, 0.8);
+	top:0;
+	width:100%;
+	position:fixed;
+	z-index:1;
+	font-family:'daysregular', sans-serif;
+	white-space: nowrap;
+	-moz-box-shadow:3px 3px 10px 0px #000000;
+	-webkit-box-shadow:3px 3px 10px 0px #000000;
+	box-shadow:3px 3px 10px 0px #000000;
+	text-align: center;
+	overflow-x:auto;
+}
+
+.bannertable{
+	margin-left: auto;
+	margin-right: auto;
+	width:1024px;
+}
+
+.bannercol_small{
+	width:300px;
+}
+
+.bannercol_large{
+	padding:10px;
+	width:424px;
+}
+
+.bannerdiv{
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.bannerbuttons{
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.bannersubbuttons{
+	padding-top:20px;
+	padding-bottom:10px;
+	display: none;
+}
+
+.bannersubbuttons:hover{
+	display: block;
+}
+
+.bannersubbuttons:focus{
+	display: block;
+}
+
+.bannerspan{
+	margin-left:10px;
+	margin-right:10px;
+	font-size:x-large;
+	color:#FFCC06;
+	
+	text-shadow: 
+	black 2px 2px 4px,
+	-1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+	
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.bannerspan:hover{
+	color:white;
+}
+
+#btnCompany:hover ~ #barCompany{
+	display: block;
+}
+
+#btnCompany:focus ~ #barCompany{
+	display: block;
+}
+
+#btnProjects:hover ~ #barProjects{
+	display: block;
+}
+
+#btnProjects:focus ~ #barProjects{
+	display: block;
+}
+
+#barProjects:focus{
+	display: block;
+}
+
+#btnNews:hover ~ #barNews{
+	display: block;
+}
+
+#btnNews:focus ~ #barNews{
+	display: block;
+}
+
+#btnInvolved:hover ~ #barInvolved{
+	display: block;
+}
+
+#btnInvolved:focus ~ #barInvolved{
+	display: block;
+}
+
+#btnLabs:hover ~ #barLabs{
+	display: block;
+}
+
+#btnLabs:focus ~ #barLabs{
+	display: block;
+}
+
+/*HIDE/SHOW CONTENT CSS*/
+
+/*<div class="expander">
+	<p>Always-visible content here.</p>
+	<div class="hiddenDiv">
+		<p>Hidden content here.</p>
+	</div>
+</div>
+*/
+
+.hiddenDiv{
+	display: none;
+}
+
+.demoDiv{
+	display: none;
+}
+
+.expander:hover{
+	background:rgba(255, 255, 200, 0.8);
+}
+
+.expander:focus{
+	background:rgba(255, 255, 200, 0.8);
+}
+
+.expander:hover .hiddenDiv{
+	display: block;
+}
+
+.expander:focus .hiddenDiv{
+	display: block;
+}
+
+/*MAIN PAGE CSS*/
+
+.spacer{
+	top:0;
+	width:100%;
+	height:150px;
+	position:relative;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.pagemain{
+	position:relative;
+	width:80%;
+	margin-top:100px;
+	margin-left:10%;
+    margin-right:10%;
+    padding:10px;
+    vertical-align:top;
+    background:rgba(255, 255, 255, 0.8);
+    font-family:'daysregular', sans-serif;
+}
+
+.tablemain{
+	margin-left: auto;
+	margin-right: auto;
+	width:100%;
+}
+
+.colNarrow{
+	width:30%;
+	vertical-align:top;
+}
+
+.colCenter{
+	text-align:center;
+}
+
+.colHalf{
+	width:50%;
+	vertical-align:top;
+}
+
+.colQuarter{
+	width:25%;
+	vertical-align:top;
+}
+
+.colWide{
+	width:70%;
+	vertical-align:top;
+}
+
+.colTriMenu{
+	vertical-align:middle;
+	text-align:center;
+	width:33%;
+}
+
+.colFloatLeft
+{
+	width:25%;
+	vertical-align:top;
+	float:left;
+	margin:10px;
+}
+
+.colFloatRight
+{
+	width:25%;
+	vertical-align:top;
+	float:right;
+	margin:10px;
+}
+
+.yellow
+{
+	background:rgba(255, 255, 200, 0.8);
+	border:2px solid black;
+}
+
+/*FOOTER CSS*/
+
+.footer{
+	background:rgba(255, 255, 255, 0.8);
+	font-family:'daysregular', sans-serif;
+	-moz-box-shadow:3px 3px 10px 0px #000000;
+	-webkit-box-shadow:3px 3px 10px 0px #000000;
+	box-shadow:3px 3px 10px 0px #000000;
+	margin-top:50px;
+	margin-bottom:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	position:relative;
+	width:100%;
+	text-align: center;
+}
+
+.footertable{
+	margin-left: auto;
+	margin-right: auto;
+	width:1024px;
+}
+
+.footercolumn_left{
+	border-left:1px solid black;
+	border-right:1px solid black;
+	width:20%;
+	vertical-align: top;
+}
+
+.footercolumn{
+	border-right:1px solid black;
+	width:20%;
+	vertical-align: top;
+}
+
+.footercolumn_right{
+	border-right:1px solid black;
+	width:20%;
+	vertical-align: top;
+}
+
+/*TEXT FORMATTING CSS*/
+
+.txtHead1{
+	font-size:large;
+	font-weight:bold;
+	text-align:center;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+.txtHead2{
+	font-size:medium;
+	font-weight:bold;
+	text-align:center;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+.txtHead3{
+	font-size:medium;
+	text-align:center;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+.txtHead4{
+	font-size:medium;
+	text-align:left;
+	font-weight:bold;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+.txtReg{
+	font-size:medium;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+.txtSig{
+	font-size:medium;
+	font-weight:bold;
+	font-style:oblique;
+	text-align:right;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+.txtFooter{
+	font-size:small;
+	text-align:center;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+.txtFooterH{
+	font-size:medium;
+	font-weight:bold;
+	text-align:center;
+}
+
+.txtSmall{
+	font-size:small;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+.txtRegS{
+	font-size:medium;
+	margin-left:7px;
+	margin-right:7px;
+}
+
+.txtSigS{
+	font-size:medium;
+	font-weight:bold;
+	font-style:oblique;
+	text-align:right;
+	margin-left:7px;
+	margin-right:7px;
+}
+
+/*Various*/
+
+.list {
+	margin-left: 80px;
+	padding-left: 0;
+}
+
+.quietLink{
+	color:inherit;
+	text-decoration: none;
+}
+
+.floatLeft{
+	float:left;
+}
+
+.floatRight{
+	float:right;
+}
+
+.figureLeft{
+	margin-left:50px;
+	margin-bottom:10px;
+	margin-right:10px;
+	float:left;
+}
+
+.figureRight{
+	margin-left:10px;
+	margin-bottom:10px;
+	margin-right:50px;
+	float:right;
+}
+
+.staffphotoLeft{
+	border: 1px solid black;
+	margin-left:50px;
+	margin-bottom:10px;
+	margin-right:10px;
+	float:left;
+}
+
+.staffphotoRight{
+	border: 1px solid black;
+	margin-left:10px;
+	margin-bottom:10px;
+	margin-right:50px;
+	float:right;
+}
+
+.characterLeft{
+	margin-left:50px;
+	margin-bottom:10px;
+	margin-right:10px;
+	float:left;
+}
+
+.characterRight{
+	margin-left:10px;
+	margin-bottom:10px;
+	margin-right:50px;
+	float:right;
+}
+
+.photoCenter{
+	margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+.subTable{
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse:collapse;
+}
+
+.subTable,.subTable td,.subTable tr
+{
+	padding:10px;
+    border:1px solid black;
+}
+
+.highlight
+{
+	background-color:yellow;
+}
+
+.video-wrapper{
+	display:block;
+	width:480px;
+	margin-left:auto;
+	margin-right:auto;
+}
