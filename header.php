@@ -34,6 +34,7 @@
 						
 						<a href="http://www.twitter.com/mousepawgames" target=_blank><img height=30px src="http://www.mousepawgames.com/img/twitter.gif"/></a>
 						<a href="http://www.linkedin.com/company/mousepaw-games-llc" target=_blank><img height=30px src="http://www.mousepawgames.com/img/linkedin.gif"/></a>
+						<a href="https://github.com/mousepawgames" target=_blank><img height=30px src="http://www.mousepawgames.com/img/github_mark.png"/></a>
 						<a href="https://plus.google.com/+Mousepawgames" target=_blank><img height=30px src="http://www.mousepawgames.com/img/google+.png"/></a>
 						<a href="http://www.youtube.com/mousepawgames" target=_blank><img height=30px src="http://www.mousepawgames.com/img/youtube.png"/></a>
 					</td>

@@ -10,6 +10,7 @@
 		<p class="txtHead2">Subscribe to PawNews!</p></a>
 		<hr/>
 		<p class="txtHead2">Read More...</p>
+		<a href="http://www.mousepawgames.com/news/articles/opensource"><p class="txtHead3">Going Open Source</p></a>
 		<a href="http://www.mousepawgames.com/news/articles/carlson_graduation"><p class="txtHead3">First Intern Graduates</p></a>
 		<a href="http://www.mousepawgames.com/news/articles/joined_synfig"><p class="txtHead3">Joining Synfig Studio</p></a>
 		<a href="http://www.mousepawgames.com/news/articles/redstring_released"><p class="txtHead3">Redstring 2.0 Released</p></a>

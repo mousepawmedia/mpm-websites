@@ -26,6 +26,11 @@
 								<li>Ideal for game development!</li>
 							</ul>
 							<hr/>
+							<a href="https://github.com/mousepawgames/anari" target=_blank>
+								<img class="photoCenter" src="http://www.mousepawgames.com/img/github_mark.png" width=100px alt="Github"/>
+								<p class="txtHead2">Find Anari on Github</p>
+							</a>
+							<hr/>
 							<p class="txtHead3"><a href="http://www.synfig.org" target=_blank>Please also support our friends, the Synfig Studio project.</a></p>
 						</td>
 						<td class="colWide">

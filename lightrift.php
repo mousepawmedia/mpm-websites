@@ -49,6 +49,11 @@
 								<li>Open source via GPLv3!</li>
 							</ul>
 							<hr/>
+							<a href="https://github.com/mousepawgames/lightrift" target=_blank>
+								<img class="photoCenter" src="http://www.mousepawgames.com/img/github_mark.png" width=100px alt="Github"/>
+								<p class="txtHead2">Find Lightrift on Github</p>
+							</a>
+							<hr/>
 							<p class="txtHead3"><a href="http://www.synfig.org" target=_blank>Please also support our friends, the Synfig Studio project.</a></p>
 						</td>
 					</tr>

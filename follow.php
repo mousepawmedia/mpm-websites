@@ -26,9 +26,9 @@
 							<p class="txtReg">Get the latest delivered to your phone.</p>
 						</td>
 						<td class="colQuarter colCenter">
-							<img src="http://www.mousepawgames.com/img/facebook.gif" width=100px/>
-							<p class="txtHead2">Facebook [Page Closed]</p>
-							<p class="txtReg">We recently <a href="http://www.mousepawgames.com/news/articles/leaving_facebook">closed our Facebook page.</a></p>
+							<a href="https://github.com/mousepawgames" target=_blank><img src="http://www.mousepawgames.com/img/github_mark.png" width=100px/>
+							<p class="txtHead2">Follow on Github</p></a>
+							<p class="txtReg">Browse our code and contribute your own!</p>
 						</td>
 					</tr>
 					<tr>

@@ -91,15 +91,12 @@
 					top secret, but because the graphics and content
 					are worth protecting!
 				</p>
-				<p class="txtHead2">I don't see [INSERT PROJECT] on Github!</p>
+				<p class="txtHead2">I don't see the code for [INSERT PROJECT] on Github!</p>
 				<p class="txtReg">
 					We're in the process of getting our core projects
 					ready for open sourcing. Stay tuned, we promise
-					they're coming. Subscribe to 
-					<a href="http://www.mousepawgames.com/enews/">
-						PawNews
-					</a>
-					to get notified when we do!
+					they're coming. Subscribe to the project in question
+					on Github to get alerted when we start mirroring.
 				</p>
 				<p class="txtHead2">What's with the Terms of Development?</p>
 				<p class="txtReg">
@@ -125,9 +122,7 @@
 					<ol>
 						<li>
 							Obtain a copy of the project code from
-							<a href="https://github.com/mousepawgames" target=_blank>
-								Github
-							</a>.
+							<a href="https://github.com/mousepawgames" target=_blank><img src="http://www.mousepawgames.com/img/github_logo.png" alt="Github" height=30px/></a>.
 						</li>
 						<li>
 							Make your changes to the code. Keep a single 
@@ -151,8 +146,7 @@
 							Email your patch file to us. By submitting
 							code, you are agreeing to the 
 							<a href="http://www.mousepawgames.com/termsofdevelopment"
-							target=_blank>
-							Terms of Development</a>.
+							target=_blank>Terms of Development</a>.
 						</li>
 						<li>
 							We will review your contribution. If we
@@ -161,6 +155,9 @@
 						</li>
 					</ol>
 				</p>
+				<hr/>
+				<a href="https://github.com/mousepawgames" target=_blank><img class="photoCenter" width=100 src="http://www.mousepawgames.com/img/github_mark.png"/></a>
+				<p class="txtHead3">Find our projects on Github!</p>
 				<hr/>
 				<a href="http://opensource.org/" target=_blank><img class="photoCenter" width=100 src="http://www.mousepawgames.com/img/opensource-logos/osi_standard_logo.png"/></a>
 				<p class="txtHead3">We are proud supporters of the Open Source Initiative! <a href="http://www.mousepawgames.com/company/technologies">Learn more.</a></p>

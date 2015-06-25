@@ -30,16 +30,21 @@
 							<hr/>
 							<p class="txtHead3"><a href="http://mousepawgames.com/enews/mail.cgi/list/rsrelease/" target=_blank>Get notified when Ratscript drops!</a></p>
 							<hr/>
+							<a href="https://github.com/mousepawgames/ratscript" target=_blank>
+								<img class="photoCenter" src="http://www.mousepawgames.com/img/github_mark.png" width=100px alt="Github"/>
+								<p class="txtHead2">Find Ratscript on Github</p>
+							</a>
+							<hr/>
 							<p class="txtHead2">Sample Syntax</p>
-							<p class="txtReg">MAKE msg AS string = "Squeak!"</p>
+							<p class="txtReg">make msg as string = "Squeak!"</p>
 							<p class="txtReg">print(@msg)</p>
 							<p class="txtReg">>>Squeak!</p>
 							<p class="txtReg">&nbsp;</p>
-							<p class="txtReg">IF(@msg == "Sqeak!")</p>
-							<p class="txtReg">:PRINT("I'm a rat.")</p>
-							<p class="txtReg">ELSE</p>
-							<p class="txtReg">:PRINT("Hello!")</p>
-							<p class="txtReg">END IF</p>
+							<p class="txtReg">if(@msg == "Sqeak!")</p>
+							<p class="txtReg">:print("I'm a rat.")</p>
+							<p class="txtReg">else</p>
+							<p class="txtReg">:print("Hello!")</p>
+							<p class="txtReg">end if</p>
 							<p class="txtReg">>>I'm a rat.</p>
 						</td>
 						<td class="colWide">

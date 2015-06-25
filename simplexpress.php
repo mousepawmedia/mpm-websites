@@ -50,7 +50,10 @@
 								<li>Free and Open Source via LGPL!</li>
 							</ul>
 							<hr/>
-							<p class="txtHead3"><a href="http://www.synfig.org" target=_blank>Please also support our friends, the Synfig Studio project.</a></p>
+							<a href="https://github.com/mousepawgames/simplexpress" target=_blank>
+								<img class="photoCenter" src="http://www.mousepawgames.com/img/github_mark.png" width=100px alt="Github"/>
+								<p class="txtHead2">Find SIMPLEXpress on Github</p>
+							</a>
 						</td>
 					</tr>
 				</table>

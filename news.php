@@ -18,6 +18,10 @@
 							<img class="photoCenter" src="http://www.mousepawgames.com/img/rnn.png" width=200px/>
 							<p class="txtHead1">Rodent News Network</p>
 							<p class="txtHead2">&nbsp;</p>
+							<a href="http://www.mousepawgames.com/news/articles/opensource"><p class="txtHead4">MousePaw Games Goes Open Source</p></a>
+							<p class="txtSmall">06/24/2015</p>
+							<p class="txtReg">After much consideration and planning, MousePaw Games is making its platform open-source.</p>
+							<p class="txtHead2">&nbsp;</p>
 							<a href="http://www.mousepawgames.com/news/articles/carlson_graduation"><p class="txtHead4">Stacy Carlson Completes Internship</p></a>
 							<p class="txtSmall">04/30/2015</p>
 							<p class="txtReg">Carlson becomes MousePaw Games' first internship program graduate.</p>

@@ -71,7 +71,9 @@
 							<p class="txtReg">No computer is perfect, and none can read minds. With this in mind, Trailcrest gives educators the ultimate control over the game. Levels can be adjusted freely. Level adjustment parameters, auto help features, word lists...all of it is in the teacher's grasp. Changes can be applied to specific students, and teacher controls password protected to prevent tampering.</p>
 							<hr/>
 							<p class="txtHead2">Is Trailcrest open source?</p>
-							<p class="txtReg">At the moment, no. However, we are carefully considering the best course of action regarding Trailcrest's licenses. Some components may be open sourced later.</p>
+							<p class="txtReg">Yes! After much consideration, we have decided to make this project available under the GPLv3.</p>
+							<p class="txtHead2">Is Trailcrest free?</p>
+							<p class="txtReg">Yes and no. You can use it for free as long as your project is open-source as well. However, if you want to use it in a project and keep your code secret, you'll have to pay us. (Price TBD)</p>
 							<hr/>
 							<p class="txtFooter">*Features and details subject to change.</p>
 						</td>
@@ -85,6 +87,11 @@
 								<li>Game profiles work in all Operation SpyRat games.</li>
 								<li>Educators have complete control.</li>
 							</ul>
+							<hr/>
+							<a href="https://github.com/mousepawgames/trailcrest" target=_blank>
+								<img class="photoCenter" src="http://www.mousepawgames.com/img/github_mark.png" width=100px alt="Github"/>
+								<p class="txtHead2">Find Trailcrest on Github</p>
+							</a>
 						</td>
 					</tr>
 				</table>
