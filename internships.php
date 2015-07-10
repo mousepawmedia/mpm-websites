@@ -120,11 +120,15 @@
 				
 				<div class="colFloatRight yellow">
 					<p class="txtRegS">
-						"A great opportunity with an excellent 
-						environment. The best internship I have so far.” 
+						"MousePaw Games has been very helpful in my 
+						development as a software developer and has 
+						helped me grow personally and professionally. 
+						It is a great internship that is flexible, 
+						supportive, and a great environment to learn 
+						from and to contribute to an amazing project."
 					</p>
 					<p class="txtSigS">
-						-Long Nguyen, Graphics Designer
+						-Jared Hutton, Programmer
 					</p>
 				</div>
 				
@@ -145,20 +149,6 @@
 					academic demands (such as finals), vacation time,
 					and illness.
 				</p>
-				
-				<div class="colFloatRight yellow">
-					<p class="txtRegS">
-						"MousePaw Games has been very helpful in my 
-						development as a software developer and has 
-						helped me grow personally and professionally. 
-						It is a great internship that is flexible, 
-						supportive, and a great environment to learn 
-						from and to contribute to an amazing project."
-					</p>
-					<p class="txtSigS">
-						-Jared Hutton, Programmer
-					</p>
-				</div>
 				
 				<p class="txtReg">
 					During the internship, you will also be in contact 
@@ -382,7 +372,7 @@
 					</b></p>
 					<div class="hiddenDiv">
 						<p class="txtReg">
-							Yes. We have a full Subversion repository
+							Yes. We have a full Git repository
 							system, with pre- and post-commit code
 							review tools and linters via a platform
 							called Phabricator.
@@ -409,11 +399,11 @@
 					</b></p>
 					<div class="hiddenDiv">
 						<p class="txtReg">
-							We currently do not have the framework for
-							daily builds, however we do have a system
-							of strict pre-commit review that prevents
-							most of the issues that a daily build would
-							detect.
+							We have plans to implement this in the near
+							future. In the meantime, however, we also
+							have a system of strict pre-commit review 
+							that prevents most of the issues that a 
+							daily build would detect.
 						</p>
 					</div>
 				</div>
@@ -617,12 +607,13 @@
 					</b></p>
 					<div class="hiddenDiv">
 						<p class="txtReg">
-							Yes, and for a plethora of reasons, we 
-							aren't using that for our game or animation 
-							at this time. We are using 3D (Blender) 
-							for some game environments, but the work
-							relating to that won't take a year, so we
-							don't want to hire 3D-art-only individuals.
+							Yes, we have. We use 3D (Blender) to create
+							background images for our game locations. 
+							However,for a plethora of reasons, we 
+							aren't using 3D for our animation or game
+							design. We are absolutely interested in 3D
+							designers, but you should also be able to
+							work in 2D as well.
 						</p>
 					</div>
 				</div>
@@ -775,8 +766,9 @@
 				<a name="apply"/>
 				<p class="txtHead2">Available Positions</p>
 				<p class="txtReg"><ul class="list">
-					<li>Programmer (0)</li>
-					<li>Graphics Design (4)</li>
+					<li>Programmer (4-6)</li>
+					<li>Graphics Design, 2D (4)</li>
+					<li>Graphics Design, 3D (1-2)</li>
 					<li>UI Design (2)</li>
 					<li>Content Developer (3)</li>
 				</ul></p>
