@@ -1,70 +1,185 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
- "http://www.w3.org/TR/html4/strict.dtd">
+"http://www.w3.org/TR/html4/strict.dtd">
 <html>
-    <head>
-        <title>Labs: Software — MousePaw Games</title>
-        <meta name="Labs: Software" content="Check out these free software applications from MousePaw Games." />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link type="text/css" rel=stylesheet href="http://www.mousepawgames.com/style.css">
-    </head>
-    <body>
-		<div class="page">
-			<?php include('header.php'); ?>
-			<div class="spacer"><p>&nbsp;</p></div>
-			<div class="pagemain">
-				<p class="txtHead1">Free Software</p>
-				<p class="txtHead3">A successful company is a creative company!</p>
-				<p class="txtReg">Experimentation come with the territory when you're creating top-notch games. That's why we created MousePaw Labs! Our development team is continually trying new things out in an effort to improve our software...and we get some pretty neat stuff as a result. Instead of hiding it away, we offer these little side projects to you absolutely free of charge!</p>
-				<table class="tablemain">
-					<tr>
-						<td class="colHalf colCenter">
-							<img src="http://www.mousepawgames.com/img/labs/diamondquest.png" height=100px/>
-							<p class="txtHead2">DiamondQuest</p></a>
-							<p class="txtReg">DiamondQuest is built in the tradition of command-line games like Nethack. In this, you answer math problems to dig down, and you find various buried treasures. Can you beat your high score? This game was built by Jason McDonald for a very special friend, but you can enjoy it too! [Win/Linux, Mac coming soon]</p>
-							<a href="https://sourceforge.net/projects/diamondquest/" target=_blank><p class="txtHead2">Download from Sourceforge</p></a>
-							<p class="txtHead2"><a href="https://github.com/mousepawgames/diamondquest" target=_blank>Source on Github</a></p>
-							
-							<p class="txtFooter">LINUX: Navigate to folder where DiamondQuest is saved and run it in the Terminal via ./DiamondQuest.exe</p>
-						</td>
-						<td class="colHalf colCenter">
-							<img src="http://www.mousepawgames.com/img/labs/redstring.png" height=100px/>
-							<p class="txtHead2">Redstring 2.0</p></a>
-							<p class="txtReg">Creating a game requires a lot of repetitive typing, whether it be code or activity content. To save time, Lead Developer Jason C. McDonald created Redstring, short for "redundant text string generator." Redstring generates all possible combinations of text entered into a maximum of eight columns, using custom substitution models. [Win/Mac/Linux]</p>
-							<a href="https://sourceforge.net/projects/redstring/" target=_blank><p class="txtHead2">Download from Sourceforge</p></a>
-							<p class="txtHead2"><a href="https://github.com/mousepawgames/redstring" target=_blank>Source on Github</a></p>
-						</td>
-					</tr>
-					
-					<tr>
-						<td class="colHalf colCenter">
-							<img src="http://www.mousepawgames.com/img/labs/slannan.png" height=100px/>
-							<p class="txtHead2">Slannan</p></a>
-							<p class="txtReg">Slannan was created out of a company need - a local-based bug tracker. After reading <a href="http://www.dreamingincode.com/" target=_blank>Dreaming In Code by Scott Rosenberg</a>, Lead Developer Jason C. McDonald realized that a major problem with most bug trackers was that they effectively distinguish between minor and severe bugs, thus resulting in unfocused work by programmers. He designed a severity scale, the Heston Score, to distinguish bug severity. Slannan 1.0 is the first bug tracker to use this.</p>
-							<p class="txtReg">While it is a rough version and no longer used by MousePaw Games, this open-source project is very useful for small-scale programming projects. [Win/Mac/Linux]</p>
-							<p class="txtHead2"><a href="https://github.com/mousepawgames/slannan" target=_blank>Source on Github</a></p>
-							<hr/>
-						</td>
-						<td class="colHalf colCenter">
-							<img src="http://www.mousepawgames.com/img/labs/timecard.gif" height=100px/>
-							<p class="txtHead2">TimeCard 1.0</p></a>
-							<p class="txtReg">Early in game production, while the team was still putting prospective platforms through their paces, Lead Developer Jason C. McDonald decided to cut his teeth on the Visual Basic .NET platform by creating a time tracking application. TimeCard has been used by the company since. While this first version has a few rough edges, this being the first application built by MousePaw Games on the .NET platform, it is quite useful for keeping track of time. [Windows]</p>
-							<p class="txtFooter">(Win/Mac Version 2.0 coming soon.)</p>
-							<a href="http://www.microsoft.com/en-us/download/details.aspx?id=17851" target=_blank><p class="txtHead2">Requires Microsoft .NET 4</p></a>
-							<a href="http://www.mousepawgames.com/downloads/timecardsetup.exe" target=_blank><p class="txtHead2">Download from MousePaw Labs</p></a>
-						</td>
-					</tr>
-					<tr>
-						<td class="colHalf colCenter">
-							<img src="http://www.mousepawgames.com/img/labs/pocketwatch.gif" height=100px/>
-							<p class="txtHead2">PocketWatch Plugin</p></a>
-							<p class="txtReg">Originally, MousePaw Games considered a game platform called <a href="http://www.adventuremaker.com/" target_blank>AdventureMaker</a>. This platform was dropped shortly into the project, but not before Jason C. McDonald had created a VBScript plugin for the platform, to solve a need he had. This was actually his first piece of working software. PocketWatch allows for the execution of a timer of any length, at the end of which, one or more events occur. This offers an advantage over the built-in timer, which only supports up to 60 seconds. The GearSets feature allows for the use of up to five independent timers. It is free to use, even in commercial projects.</p>
-							<a href="http://www.mousepawgames.com/downloads/pocketwatchsetup.exe" target=_blank><p class="txtHead2">Download from MousePaw Labs</p>
-						</td>
-					</tr>
-				</table>
-				<hr/>
+<head>
+	<title>Software — MousePaw Games</title>
+	<meta name="Software" content="Discover what's in the works at MousePaw Games." />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link type="text/css" rel=stylesheet href="/style.css">
+</head>
+<body>
+	<div class="page">
+		<?php include('header.php'); ?>
+		<div class="spacer"><p>&nbsp;</p></div>
+		<div class="pagemain">
+			<p class="txtHead1">Discover MousePaw Games</p>
+			<p class="txtHead3">
+				We imagine a world where educational software
+				empowers learners of all ages and abilties to
+				achieve their top potential, and to push the
+				limits of human knowledge. Our flagship game,
+				<i>Operation SpyRat</i>, aims to accomplish
+				that goal and change how people look at
+				educational software.
+			</p>
+			<p class="txtHead3">
+				Everything we do at MousePaw Games is centered
+				around that goal, but we have a lot of work ahead
+				of us - so why not have some fun with it? We make
+				tools to speed up our work, and other games to
+				test out the techniques needed for
+				our big project (and just for fun!)
+			</p>
+			<p class="txtHead3">Click below to explore our software.</p>
+			<hr/>
+			<table class="tablemain">
+				<tr>
+					<td class="colTriMenu">
+						<a class="quietLink" href="/software/osr">
+							<img class="imgIconSuggest" src="/img/project_logos/osr_icon.png"/>
+							<p class="txtHead2">Operation SpyRat</p>
+							<p class="txtHead3">An unforgettable mission in learning.</p>
+						</a>
+						<p class="txtHead3">
+							<img class="imgIconSmall_VW" src="/img/icons/gears_icon.png" alt="In Development" title="In Development"/>
+						</p>
+					</td>
+					<td class="colTriMenu">
+						<a class="quietLink" href="/software/infiltrator">
+							<img class="imgIconSuggest" src="/img/project_logos/infiltrator_icon.png" alt="Infiltrator logo"/>
+							<p class="txtHead2">Infiltrator</p>
+							<p class="txtHead3">One of your guests is not like the other.</p>
+						</a>
+						<p class="txtHead3">
+							<img class="imgIconSmall_VW" src="/img/icons/gears_icon.png" alt="In Development" title="In Development"/>
+							<img class="imgIconSmall_VW" src="/img/foss_logos/osi_icon.png" alt="Open Source License" title="Open Source License"/>
+						</p>
+					</td>
+					<td class="colTriMenu">
+						<a class="quietLink" href="/software/diamondquest">
+							<img class="imgIconSuggest" src="/img/project_logos/diamondquest_icon.png" alt="DiamondQuest logo"/>
+							<p class="txtHead2">DiamondQuest</p>
+							<p class="txtHead3">Mining. Math. Dig it?</p>
+						</a>
+						<p class="txtHead3">
+							<img class="imgIconSmall_VW" src="/img/foss_logos/osi_icon.png" alt="Open Source License" title="Open Source License"/>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="colTriMenu">
+						<a class="quietLink" href="/software/lightrift">
+							<img class="imgIconSuggest" src="/img/project_logos/lightrift_icon.png" alt="Lightrift logo"/>
+							<p class="txtHead2">Lightrift</p>
+							<p class="txtHead3">Freedom meets interactive animation.</p>
+						</a>
+						<p class="txtHead3">
+							<img class="imgIconSmall_VW" src="/img/foss_logos/osi_icon.png" alt="Open Source License" title="Open Source License"/>
+						</p>
+					</td>
+					<td class="colTriMenu">
+						<a class="quietLink" href="/software/redstring">
+							<img class="imgIconSuggest" src="/img/project_logos/redstring_icon.png" alt="Redstring logo"/>
+							<p class="txtHead2">Redstring</p>
+							<p class="txtHead3">The REDundant STRING generator.</p>
+						</a>
+						<p class="txtHead3">
+							<img class="imgIconSmall_VW" src="/img/foss_logos/osi_icon.png" alt="Open Source License" title="Open Source License"/>
+						</p>
+					</td>
+					<td class="colTriMenu colVMiddle">
+						<p class="txtHead3"></p>
+						<p class="txtHead2">Keep checking back. More software is coming soon!</p>
+						<p class="txtHead3"></p>
+					</td>
+				</tr>
+			</table>
+
+			<hr/>
+			<p class="txtHead2">Hey, isn't something missing?</p>
+			<p class="txtReg">
+				You may be looking for a few of our old projects. We
+				pulled some previous Labs projects because, really,
+				they were just too rough and clunky to release to the
+				world. One is just a plugin that only a handful of
+				people will be looking for - that one can still
+				be downloaded below.
+			</p>
+			<p class="txtReg">
+				Click a title to see more information.
+			</p>
+			<div class="expander" tabindex=-1>
+				<p class="txtHead3">PocketWatch</p>
+				<div class="hiddenDiv txtReg">
+					<p class="txtReg">
+						This project was built for Adventure Maker,
+						game design platform we were experimenting with.
+						We no longer use either, and honestly, it
+						just didn't rank a project page of its own.
+						Some people still use the plugin, so you can
+						still
+						<a href="/downloads/pocketwatchsetup.exe" target=_blank>Download</a>
+						the installer (Windows only).
+					</p>
+					<p class="txtReg">
+						PocketWatch allows for the execution of a timer
+						of any length, at the end of which, one or more
+						events occur. This offers an advantage over the
+						built-in timer, which only supports up to 60
+						seconds. The GearSets feature allows for the
+						use of up to five independent timers. It is
+						free to use, even in commercial projects.
+					</p>
+				</div>
 			</div>
-			<?php include('footer.php'); ?>
+
+			<div class="expander" tabindex=-1>
+				<p class="txtHead3">Slannan</p>
+				<div class="hiddenDiv txtReg">
+					<p class="txtReg">
+						Our old local-based bug tracker, Slannan,
+						had some serious bugs that we were never able
+						to fix. It is unique, and shows promise as a
+						useful application, but we want to rethink a
+						few things. We'll be revisiting the design of
+						the software somewhere down the line.
+						In the meantime, the code can still be found
+						on <a href="https://github.com/mousepawgames/slannan" target=_blank>Github</a>,
+						so you're welcome to run it from the Python
+						source if you're feeling adventurous.
+					</p>
+
+				</div>
+			</div>
+
+			<div class="expander" tabindex=-1>
+				<p class="txtHead3">TimeCard</p>
+				<div class="hiddenDiv txtReg">
+					<p class="txtReg">
+						This was a very old time-tracker project built
+						with Microsoft Visual .NET framework. We will
+						be rebuilding the project on an open source
+						platform at some undefined point in the future.
+						You might be able to locate this one floating
+						around the internet, but we no longer support
+						nor recommend it, especially since we can't
+						vouch for the safety of any of the sites
+						it is currently being served from. (Actually,
+						we already torched the source code.)
+					</p>
+				</div>
+			</div>
+
+			<hr/>
+
+			<p class="txtFooter">
+				<img class="imgIconSmall_VW" src="/img/icons/gears_icon.png" alt="In Development" title="In Development"/>
+				Unavailable; currently in development. |
+				<img class="imgIconSmall_VW" src="/img/foss_logos/osi_icon.png" alt="Open Source License" title="Open Source License"/>
+				<a href="http://www.opensource.org" target=_blank>Open Source Initiative</a>-approved license
+			</p>
 		</div>
-    </body>
+		<?php include('footer.php'); ?>
+	</div>
+</body>
 </html>

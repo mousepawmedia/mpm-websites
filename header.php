@@ -1,82 +1,89 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
- "http://www.w3.org/TR/html4/strict.dtd">
+"http://www.w3.org/TR/html4/strict.dtd">
 <html>
-    <head>
-        <link type="text/css" rel=stylesheet href="http://www.mousepawgames.com/style.css">
-    </head>
-    <script language="JavaScript" type="text/javascript">
-		window.onscroll = scroll;
-		
-		function scroll()
+<head>
+	<link type="text/css" rel=stylesheet href="/style.css">
+</head>
+<script language="JavaScript" type="text/javascript">
+	window.onscroll = scroll;
+
+	function scroll()
+	{
+		if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100)
 		{
-			if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100)
-			{
-				bannertable.style.display='none';
-			}
-			else
-			{
-				bannertable.style.display='block';
-			}
+			bannertable.style.display='none';
 		}
-	</script>
-    <body>
-		<div class="pagebanner">
-			<table class="bannertable" id="bannertable">
-				<tr>
-					<td class="bannercol_small">
-					</td>
-					<td class="bannercol_large">
-						<a href="http://www.mousepawgames.com/"><img height=90px src="http://www.mousepawgames.com/img/logo_shadowed.png"/></a>
-					</td>
-					<td class="bannercol_small">
-						<p class="txtSmall">Connect with us!</p>
-						<a class="quietLink" href="http://www.mousepawgames.com/enews" target=_blank><img src="http://www.mousepawgames.com/img/pawnews.png" height=30px/></a>
-						
-						<a href="http://www.twitter.com/mousepawgames" target=_blank><img height=30px src="http://www.mousepawgames.com/img/twitter.gif"/></a>
-						<a href="http://www.linkedin.com/company/mousepaw-games-llc" target=_blank><img height=30px src="http://www.mousepawgames.com/img/linkedin.gif"/></a>
-						<a href="https://github.com/mousepawgames" target=_blank><img height=30px src="http://www.mousepawgames.com/img/github_mark.png"/></a>
-						<a href="https://plus.google.com/+Mousepawgames" target=_blank><img height=30px src="http://www.mousepawgames.com/img/google+.png"/></a>
-						<a href="http://www.youtube.com/mousepawgames" target=_blank><img height=30px src="http://www.mousepawgames.com/img/youtube.png"/></a>
-					</td>
-				</tr>
-			</table>
-			<div class="bannerbuttons">
-				<span class="bannerspan" id="btnCompany"><a class="quietLink" href="http://www.mousepawgames.com/company"><b>Company</b></a></span>
-				<span class="bannerspan" id="btnProjects"><a class="quietLink" href="http://www.mousepawgames.com/projects"><b>Projects</b></a></span>
-				<span class="bannerspan" id="btnNews"><a class="quietLink" href="http://www.mousepawgames.com/news"><b>News</b></a></span>
-				<span class="bannerspan" id="btnInvolved"><a class="quietLink" href="http://www.mousepawgames.com/getinvolved"><b>Get Involved!</b></a></span>
-				<span class="bannerspan" id="btnLabs"><a class="quietLink" href="http://www.mousepawgames.com/labs"><b>Labs</b></a></span>
-				<div class="bannersubbuttons" id="barCompany">
-					<a class="quietLink" href="http://www.mousepawgames.com/company"><span class="bannerspan"><b>About</b></span></a>
-					<a class="quietLink" href="http://www.mousepawgames.com/company/team"><span class="bannerspan"><b>Team</b></span></a>
-					<a class="quietLink" href="http://www.mousepawgames.com/company/philosophy"><span class="bannerspan"><b>Philosophy</b></span></a>
-					<a class="quietLink" href="http://www.mousepawgames.com/company/technologies"><span class="bannerspan"><b>Technologies</b></span></a>
-					<a class="quietLink" href="http://www.mousepawgames.com/company/contact"><span class="bannerspan"><b>Contact</b></span></a>
-				</div>
-				<div class="bannersubbuttons" id="barProjects">
-					<a class="quietLink" href="http://www.mousepawgames.com/projects/osr"><span class="bannerspan"><b>Operation SpyRat</b></span></a>
-					<a class="quietLink" href="http://www.mousepawgames.com/projects/lightrift"><span class="bannerspan"><b>Lightrift</b></span></a>
-					<a class="quietLink" href="http://www.mousepawgames.com/projects/trailcrest"><span class="bannerspan"><b>Trailcrest</b></span></a>
-					<a class="quietLink" href="http://www.mousepawgames.com/projects/ratscript"><span class="bannerspan"><b>Ratscript</b></span></a>
-					<a class="quietLink" href="http://www.mousepawgames.com/projects"><span class="bannerspan"><b>More...</b></span></a>
-				</div>
-				<div class="bannersubbuttons" id="barNews">
-					<a class="quietLink" href="http://www.mousepawgames.com/news"><span class="bannerspan"><b>Latest News</b></span></a>
-					<a class="quietLink" href="http://www.mousepawgames.com/news/faq"><span class="bannerspan"><b>FAQ</b></span></a>
-					<a class="quietLink" href="http://www.mousepawgames.com/news/follow"><span class="bannerspan"><b>Follow Us</b></span></a>
-				</div>
-				<div class="bannersubbuttons" id="barInvolved">
-					<a class="quietLink" href="http://www.mousepawgames.com/getinvolved/alpha"><span class="bannerspan"><b>ALPHA</b></span></a>
-					<a class="quietLink" href="http://www.mousepawgames.com/getinvolved/beta"><span class="bannerspan"><b>BETA</b></span></a>
-					<a class="quietLink" href="http://www.mousepawgames.com/getinvolved/creativeauxiliary"><span class="bannerspan"><b>Creative Auxiliary</b></span></a>
-					<a class="quietLink" href="http://www.mousepawgames.com/getinvolved/internships"><span class="bannerspan"><b>Internships</b></span></a>
-					<a class="quietLink" href="http://www.mousepawgames.com/getinvolved/opensource"><span class="bannerspan"><b>Open Source</b></span></a>
-				</div>
-				<div class="bannersubbuttons" id="barLabs">
-					<a class="quietLink" href="http://www.mousepawgames.com/labs/software"><span class="bannerspan"><b>Free Software</b></span></a>
-					<a class="quietLink" href="http://www.mousepawgames.com/labs/yellowsheets"><span class="bannerspan"><b>Yellow Sheets</b></span></a>
-				</div>
+		else
+		{
+			bannertable.style.display='block';
+		}
+	}
+</script>
+<body>
+	<div class="pagebanner">
+		<table class="bannertable" id="bannertable">
+			<tr>
+				<td class="bannercol_small">
+				</td>
+				<td class="bannercol_large">
+					<a href="/">
+						<img width=60% title="MousePaw Games: Scamper Into Adventure!" alt="MousePaw Games" src="/img/company_logos/mousepawgames_shadowed_logo.png"/>
+					</a>
+				</td>
+				<td class="bannercol_small">
+					<p class="txtSmall">Connect with us!</p>
+					<a class="quietLink" href="/out/enews" target=_blank>
+						<img title="Subscribe to PawNews" alt="PawNews" src="/img/social_logos/pawnews_icon.png" width=8%/>
+					</a>
+
+					<a href="/out/twitter" target=_blank><img width=8% title="Twitter: @mousepawgames" alt="Twitter" src="/img/social_logos/twitter_icon.png"/></a>
+					<a href="/out/linkedin" target=_blank><img width=8% title="LinkedIn" alt="LinkedIn" src="/img/social_logos/linkedin_icon.png"/></a>
+					<a href="/out/github" target=_blank><img width=8% title="Github: mousepawgames" alt="Github" src="/img/social_logos/github_icon.png"/></a>
+					<a href="/out/google+" target=_blank><img width=8% title="Google+: mousepawgames" alt="Google+" src="/img/social_logos/google+_icon.png"/></a>
+					<a href="/out/youtube" target=_blank><img width=12% title="YouTube: mousepawgames" alt="YouTube" src="/img/social_logos/youtube_icon.png"/></a>
+				</td>
+			</tr>
+		</table>
+		<div class="bannerbuttons">
+			<span class="bannerspan" id="btnHeadA"><a class="quietLink" href="/company"><b>Company</b></a></span>
+			<span class="bannerspan" id="btnHeadB"><a class="quietLink" href="/news"><b>News</b></a></span>
+			<span class="bannerspan" id="btnHeadC"><a class="quietLink" href="/software"><b>Software</b></a></span>
+			<span class="bannerspan" id="btnHeadD"><a class="quietLink" href="/libraries"><b>Libraries</b></a></span>
+			<span class="bannerspan" id="btnHeadE"><a class="quietLink" href="/participate"><b>Participate</b></a></span>
+			<span class="bannerspan" id="btnHeadF"><a class="quietLink" href="/resources"><b>Resources</b></a></span>
+
+			<div class="bannersubbuttons" id="barHeadA">
+				<a class="quietLink" href="/company"><span class="bannerspan"><b>About</b></span></a>
+				<a class="quietLink" href="/company/team"><span class="bannerspan"><b>Team</b></span></a>
+				<a class="quietLink" href="/company/faq"><span class="bannerspan"><b>FAQ</b></span></a>
+				<a class="quietLink" href="/company/philosophy"><span class="bannerspan"><b>Philosophy</b></span></a>
+				<a class="quietLink" href="/company/technologies"><span class="bannerspan"><b>Tech</b></span></a>
+				<a class="quietLink" href="/company/connect"><span class="bannerspan"><b>Connect</b></span></a>
+			</div>
+			<div class="bannersubbuttons" id="barHeadC">
+				<a class="quietLink" href="/software/osr"><span class="bannerspan"><b>Operation SpyRat</b></span></a>
+				<a class="quietLink" href="/software/infiltrator"><span class="bannerspan"><b>Infiltrator</b></span></a>
+				<a class="quietLink" href="/software/redstring"><span class="bannerspan"><b>Redstring</b></span></a>
+				<a class="quietLink" href="/software"><span class="bannerspan"><b>More...</b></span></a>
+			</div>
+			<div class="bannersubbuttons" id="barHeadD">
+				<a class="quietLink" href="/libraries/anari"><span class="bannerspan"><b>Anari</b></span></a>
+				<a class="quietLink" href="/libraries/pawlib"><span class="bannerspan"><b>PawLIB</b></span></a>
+				<a class="quietLink" href="/libraries/punchline"><span class="bannerspan"><b>Punchline</b></span></a>
+				<a class="quietLink" href="/libraries/trailcrest"><span class="bannerspan"><b>Trailcrest</b></span></a>
+				<a class="quietLink" href="/libraries/ratscript"><span class="bannerspan"><b>Ratscript</b></span></a>
+				<a class="quietLink" href="/libraries"><span class="bannerspan"><b>More...</b></span></a>
+			</div>
+			<div class="bannersubbuttons" id="barHeadE">
+				<a class="quietLink" href="/participate/internships"><span class="bannerspan"><b>Internships</b></span></a>
+				<a class="quietLink" href="/participate/opensource"><span class="bannerspan"><b>Open Source</b></span></a>
+				<a class="quietLink" href="/participate/testers"><span class="bannerspan"><b>Testers</b></span></a>
+			</div>
+			<div class="bannersubbuttons" id="barHeadF">
+				<a class="quietLink" href="/resources/standards"><span class="bannerspan"><b>Standards</b></span></a>
+				<a class="quietLink" href="/resources/education"><span class="bannerspan"><b>Education</b></span></a>
 			</div>
 		</div>
-    </body>
+	</div>
+</body>
 </html>

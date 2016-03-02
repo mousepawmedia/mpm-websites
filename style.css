@@ -1,103 +1,221 @@
+/* CSS - "MousePaw Blue"
+ * Version 2.0
+ * Last Updated: 1 March 2016
+ *
+ * Created for www.mousepawgames.com
+ * Author: Jason C. McDonald
+ *
+ * == LICENSE ==
+ *
+ * The MIT License
+ * Copyright (c) 2016 MousePaw Games.
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without restriction,
+ * including without limitation the rights to use, copy, modify, merge,
+ * publish, distribute, sublicense, and/or sell copies of the Software,
+ * and to permit persons to whom the Software is furnished to do so,
+ * subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+/* == FONT ==
+ * The website uses the font "Days" by Alexander Kalachev.
+ * Licensed under Creative Commons Attribution v3
+ *
+ * The font is made available in the site files. It may also
+ * be downloaded from FontSquirrel.
+ * http://www.fontsquirrel.com/fonts/Days
+ */
 @font-face {
     font-family: 'daysregular';
-    src: url('http://www.mousepawgames.com/fonts/days-webfont.eot');
-    src: url('http://www.mousepawgames.com/fonts/days-webfont.eot?#iefix') format('embedded-opentype'),
-         url('http://www.mousepawgames.com/fonts/days-webfont.woff') format('woff'),
-         url('http://www.mousepawgames.com/fonts/days-webfont.ttf') format('truetype'),
-         url('http://www.mousepawgames.com/fonts/days-webfont.svg#daysregular') format('svg');
+    src: url('/fonts/days-webfont.eot');
+    src: url('/fonts/days-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/days-webfont.woff') format('woff'),
+         url('/fonts/days-webfont.ttf') format('truetype'),
+         url('/fonts/days-webfont.svg#daysregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
+/* == COLOR PALETTE ==
+ * The color palette is based on the main accent color - which was
+ * sourced from the MousePaw Games logo - using split-complements.
+ * The lighter colors are saturation 13 variants on the main three
+ * colors in the palette.
+ *
+ * MAIN ACCENT: #FFCB05 [255, 203, 5] (MousePaw Yellow, from logo.)
+ * BACKGROUND: #3705FF [55, 5, 255] (Dark Blue)
+ * ACCENT, LIGHT: #FFF8DE [255, 248, 222] (Light Yellow)
+ * BACKGROUND, LIGHT: #DEF2FF [222, 242, 255] (Light Blue)
+ *
+ * Color palettes generated using Agave.
+ * http://home.gna.org/colorscheme/
+ */
+
+/* == WEBSITE BACKGROUND == */
 body {
-	background: #0128FF;
-	background-image:url(http://www.mousepawgames.com/img/webback.jpg);
+	/* Use our background blue as a fallback, if the background
+	 * image does not load. */
+	background: #3705FF;
+	/* Load our background image and make sure it does not scroll
+	 * with the page. */
+	background-image:url(/img/webback.jpg);
 	background-attachment: fixed;
 	background-size: 100%;
 	margin:0;
 	padding:0;
 }
 
+/* Define the page itself, in preparation to configure the banner
+ * as fixed and the content as scrollable. */
 .page{
     width:100%;
     position:absolute;
     left:0;
 }
 
+/* == BANNER CSS ==
+ * We want a persistent banner across the entire top of the
+ * page. We'll have it shrink down to buttons-only via our
+ * page HTML/CSS.
+ */
 
-/*BANNER CSS*/
-
+/* BANNER BASE */
 .pagebanner{
-	background:rgba(255, 255, 255, 0.8);
+	/* Give the banner a semi-transparent background so we
+	 * can see the content through it as we scroll.*/
+	background:rgba(222, 242, 255, 0.8);
+
+	/* Fix the banner base to the top of the page. */
 	top:0;
 	width:100%;
 	position:fixed;
-	z-index:1;
+
+	/* Ensure the banner is always above everything else. */
+	z-index:2;
+
+	/* Define the font as "Days", with a fallback on
+	 * the system sans-serif.*/
 	font-family:'daysregular', sans-serif;
+
+	/* Make sure everything aligns properly. */
 	white-space: nowrap;
+	text-align: center;
+	overflow-x:auto;
+
+	/* Add a shadow effect. */
 	-moz-box-shadow:3px 3px 10px 0px #000000;
 	-webkit-box-shadow:3px 3px 10px 0px #000000;
 	box-shadow:3px 3px 10px 0px #000000;
-	text-align: center;
-	overflow-x:auto;
 }
 
+/* BANNER TABLE
+ * The upper half of the banner will contain the logo, primarily,
+ * and the social links.
+ */
 .bannertable{
+	/* Center the content. */
 	margin-left: auto;
 	margin-right: auto;
-	width:1024px;
+
+	/* Ensure the table takes up the entire width of the page */
+	width:100%;
 }
 
-.bannercol_small{
-	width:300px;
-}
-
+/* The main part of the upper banner should have the logo. */
 .bannercol_large{
-	padding:10px;
-	width:424px;
+	/* Give some space between this and the small columns. */
+	padding:1%;
+	/* Give almost half of the banner space to the large column. */
+	width:40%;
 }
 
-.bannerdiv{
-	padding-top:10px;
-	padding-bottom:10px;
-	margin-top:10px;
-	margin-bottom:10px;
+/* This will mark the left and right sides of the upper banner. On the
+ * left, this is a spacer. On the right, we'll put our social links.
+ */
+.bannercol_small{
+	width:29%;
 }
 
+/* I'm fairly sure I don't use this anymore. Remove? */
+/*.bannerdiv{
+	padding-top:1%;
+	padding-bottom:1%;
+	margin-top:1%;
+	margin-bottom:1%;
+}*/
+
+/* BANNER BUTTONS
+ * The lower half of the banner should contain the navigation
+ * buttons. */
+
+ /* This is for the first-level row of buttons, which is
+  * always visible. */
 .bannerbuttons{
-	padding-top:10px;
-	padding-bottom:10px;
-	margin-top:10px;
-	margin-bottom:10px;
+	padding-top:1%;
+	padding-bottom:1%;
+	margin-top:1%;
+	margin-bottom:1%;
 }
 
+/* This is for the second-level row of buttons, which is
+ * not visible by default. */
 .bannersubbuttons{
-	padding-top:20px;
-	padding-bottom:10px;
+	padding-top:1%;
+	padding-bottom:1%;
 	display: none;
 }
 
+/* Display the second-level row of buttons while we are
+ * hovering over that row. */
 .bannersubbuttons:hover{
 	display: block;
 }
 
+/* Display the second-level row of buttons while we are
+ * focused on that row. Necessary for mobile interaction. */
 .bannersubbuttons:focus{
 	display: block;
 }
 
+/* These are the individual buttons. */
 .bannerspan{
-	margin-left:10px;
-	margin-right:10px;
+	/* Define left and right margins, for ideal spacing. */
+	margin-left:1%;
+	margin-right:1%;
+	/* Fall back on extra large font. */
 	font-size:x-large;
-	color:#FFCC06;
-	
-	text-shadow: 
-	black 2px 2px 4px,
-	-1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-	
+	/* Use viewport-width so the buttons resize with the view.
+	 * (Responsive design) */
+	font-size:1.8vw;
+	/* The buttons should be MousePaw Yellow (main accent color). */
+	color:#FFCB05;
+
+	/* Place a drop shadow and border on the button text.
+	 * This is defined in terms of viewport-width, so the
+	 * border and shadow stay the same as the text changes
+	 * size. */
+    text-shadow:
+	black .4vw .4vw .6vw,
+	-.1vw -.1vw 0 black,
+    .1vw -.1vw 0 black,
+    -.1vw .1vw 0 black,
+    .1vw .1vw 0 black;
+
+	/* Make the span behave like a button, instead of like
+	 * the text field that it really is. */
 	cursor: default;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -107,192 +225,358 @@ body {
 	user-select: none;
 }
 
+/* When we hover over the button, change its color to the
+ * light yellow accent. */
 .bannerspan:hover{
-	color:white;
+	color:#FFF8DE;
 }
 
-#btnCompany:hover ~ #barCompany{
+/* Define seven interaction pairs for revealing the second-level
+ * button bar. These will be used to show specific sets of
+ * second-level navigation buttons when we hover over specific
+ * first-level navigation buttons. I've intentially written
+ * these to be generic, and so that I have more than I need,
+ * so updating the actual navigation buttons later is easier,
+ * and doesn't require CSS edits.
+ *
+ * In each interaction pair, the (second-level) bar is displayed
+ * when the paired button is either hovered over (for desktop
+ * compatibility) or focused (for mobile compatibility).
+ *
+ * There is a known bug on mobile that, if we tap a first-level
+ * button, the second-level bar will appear, but we also navigate to
+ * the first-level button's link before we get the chance to interact
+ * with the second-level bar. This can resolved in HTML by removing
+ * the hyperlink, but this seems like a pretty crufty workaround.
+ */
+#btnHeadA:hover ~ #barHeadA{
 	display: block;
 }
 
-#btnCompany:focus ~ #barCompany{
+#btnHeadA:focus ~ #barHeadA{
 	display: block;
 }
 
-#btnProjects:hover ~ #barProjects{
+#btnHeadB:hover ~ #barHeadB{
 	display: block;
 }
 
-#btnProjects:focus ~ #barProjects{
+#btnHeadB:focus ~ #barHeadB{
 	display: block;
 }
 
-#barProjects:focus{
+#btnHeadC:hover ~ #barHeadC{
 	display: block;
 }
 
-#btnNews:hover ~ #barNews{
+#btnHeadC:focus ~ #barHeadC{
 	display: block;
 }
 
-#btnNews:focus ~ #barNews{
+#btnHeadD:hover ~ #barHeadD{
 	display: block;
 }
 
-#btnInvolved:hover ~ #barInvolved{
+#btnHeadD:focus ~ #barHeadD{
 	display: block;
 }
 
-#btnInvolved:focus ~ #barInvolved{
+#btnHeadE:hover ~ #barHeadE{
 	display: block;
 }
 
-#btnLabs:hover ~ #barLabs{
+#btnHeadE:focus ~ #barHeadE{
 	display: block;
 }
 
-#btnLabs:focus ~ #barLabs{
+#btnHeadF:hover ~ #barHeadF{
 	display: block;
 }
 
-/*HIDE/SHOW CONTENT CSS*/
+#btnHeadF:focus ~ #barHeadF{
+	display: block;
+}
 
-/*<div class="expander">
-	<p>Always-visible content here.</p>
-	<div class="hiddenDiv">
-		<p>Hidden content here.</p>
+#btnHeadG:hover ~ #barHeadG{
+	display: block;
+}
+
+#btnHeadG:focus ~ #barHeadG{
+	display: block;
+}
+
+/* == UTILITY COMPONENTS == */
+
+/* ANCHOR OFFSET
+ * We need to offset our anchors to account for our banner's
+ * height, otherwise the anchor jump will show the content
+ * under the banner, instead of at the top of the readable area.
+ *
+ * Based on: http://stackoverflow.com/a/13184714/472647
+ *
+ * Use the following to create an offset anchor:
+	<a class="anchor" id="amcdonald"></a>
+ *
+ * WARNING: You MUST have seperate open and close tags,
+ * or else the entire div will vanish
+ *
+ */
+a.anchor {
+	display:block;
+	position:relative;
+	top:-100px;
+	visibility:hidden;
+}
+
+/* EXPANDER
+ * Display more content when we click on something. This is mainly used
+ * for the FAQs on the site - clicking on the question displays the
+ * answer.
+ *
+ * Use the following to create an expander:
+	<div class="expander" tabindex=-1>
+		<p>Always-visible content here.</p>
+		<div class="hiddenDiv">
+			<p>Hidden content here.</p>
+		</div>
 	</div>
-</div>
 */
 
 .hiddenDiv{
 	display: none;
+	z-index:1;
 }
 
-.demoDiv{
+/* I think we can remove this? */
+/*.demoDiv{
 	display: none;
-}
+}*/
 
+/* Turn the expander light yellow (accent color) when we hover over
+ * it, indicating that clicking will perform some action. */
 .expander:hover{
-	background:rgba(255, 255, 200, 0.8);
+	background:rgba(255, 248, 222, 1.0);
 }
 
+/* Turn the expander light yellow (accent color) when we focus it.
+ * This is both necessary for mobile compatibility and for making the
+ * box glow while it is open (on any platform). */
 .expander:focus{
-	background:rgba(255, 255, 200, 0.8);
+	background:rgba(255, 248, 222, 1.0);
 }
 
-.expander:hover .hiddenDiv{
+/*.expander:hover .hiddenDiv{
 	display: block;
-}
+}*/
 
+/* As long as the expander has focus, display the hidden div in
+ * the expander. */
 .expander:focus .hiddenDiv{
 	display: block;
 }
 
-/*MAIN PAGE CSS*/
-
-.spacer{
-	top:0;
-	width:100%;
-	height:150px;
-	position:relative;
-	white-space: nowrap;
-	text-align: center;
+/* If the hidden div in the expander has focus, keep the div open.
+ * This is necessary if we want the user to be able to select text
+ * inside an open expander. */
+.hiddenDiv:focus{
+	display: block;
 }
 
+/* If we're hovering over the hidden div in the expander, keep the
+ * div open. This really shouldn't have much of an effect anymore,
+ * as we click to open intead of hovering (the original behavior.)
+ * However, we'll leave this here to protect against "shouldn't
+ * happen" behavior and unforseen use cases. It can't hurt.*/
+.hiddenDiv:hover{
+	display: block;
+}
+
+/* == MAIN PAGE CSS == */
+
+/* All our content belongs in this element. */
 .pagemain{
+	/* Make the main page relative, so we can scroll through content. */
 	position:relative;
+
+	/* We make this 80% wide so we have nice blank sidebars framing
+	 * the content. */
 	width:80%;
-	margin-top:100px;
+
+	/* We have to offset all of our content, otherwise it will start
+	 * below the persistent header, and will thus be impossible to read.
+	 * By making our top margin based on viewport-width-units
+	 * (instead of setting it to 100px as before), we improve the
+	 * responsive design.*/
+	margin-top:18vw;
+
+	/* Create the left margin. */
 	margin-left:10%;
+	/* Create the right margin. */
     margin-right:10%;
-    padding:10px;
+
+    /* Pad the content 1% in from the edges. */
+    padding:1%;
+
+    /* Keep content towards the top as much as possible. */
     vertical-align:top;
-    background:rgba(255, 255, 255, 0.8);
+
+    /* Give the page a semi-transparent light blue background. */
+    background:rgba(222, 242, 255, 0.8);
+
+    /* Define the font as "Days", with a fallback on
+	 * the system sans-serif.*/
     font-family:'daysregular', sans-serif;
 }
 
-.tablemain{
-	margin-left: auto;
-	margin-right: auto;
-	width:100%;
+/* Sometimes we want to highlight content by "insetting" it...  */
+.insetColor{
+	background:rgba(222, 242, 255, 0.4);
 }
 
+/* Most pages have a table that defines their layout. */
+.tablemain{
+	/* If we have a total column width less than 100%, we will
+	 * want the columns to be centered. */
+	margin-left: auto;
+	margin-right: auto;
+	/* The table should always take up 100% of the available
+	 * space, usually within .pagemain. */
+	width:100%;
+	table-layout:fixed;
+}
+
+/* Narrow columns. For best results, use with colWide. */
 .colNarrow{
 	width:30%;
 	vertical-align:top;
 }
 
-.colCenter{
-	text-align:center;
-}
-
-.colHalf{
-	width:50%;
-	vertical-align:top;
-}
-
-.colQuarter{
-	width:25%;
-	vertical-align:top;
-}
-
+/* Wide columns. For best results, use with colNarrow. */
 .colWide{
 	width:70%;
 	vertical-align:top;
 }
 
+/* Columns with half width. For best results, use with colQuarter. */
+.colHalf{
+	width:50%;
+	vertical-align:top;
+}
+
+/* Columns with quarter width. For best results, use with colHalf. */
+.colQuarter{
+	width:25%;
+	vertical-align:top;
+}
+
+/* Columns with 1/3 width. Use with themselves only. */
 .colTriMenu{
-	vertical-align:middle;
+	vertical-align:top;
 	text-align:center;
 	width:33%;
 }
 
-.colFloatLeft
+/* Columns with centered content. Generally not intended to be
+ * used alone, but in conjuction with another column type. */
+.colCenter{
+	text-align:center;
+}
+
+.colVMiddle
+{
+	vertical-align:middle;
+}
+
+/* Floating content box, float left. */
+.divFloatLeft
 {
 	width:25%;
 	vertical-align:top;
 	float:left;
-	margin:10px;
+	margin:1%;
 }
 
-.colFloatRight
+/* Floating content box, float right. */
+.divFloatRight
 {
 	width:25%;
 	vertical-align:top;
 	float:right;
-	margin:10px;
+	margin:1%;
 }
 
+/* Add yellow background with black border to floating content box. */
 .yellow
 {
-	background:rgba(255, 255, 200, 0.8);
+	background:rgba(255, 248, 222, 0.8);
 	border:2px solid black;
 }
 
-/*FOOTER CSS*/
+/* == FOOTER CSS == */
 
+/* This is the base element for the footer. */
 .footer{
-	background:rgba(255, 255, 255, 0.8);
+	/* Our footer should have the same background as the header. */
+	background:rgba(222, 242, 255, 0.8);
+	/* Use the Days font, falling back on the system sans-serif. */
 	font-family:'daysregular', sans-serif;
+
+	/* Add a drop shadow to the footer.*/
 	-moz-box-shadow:3px 3px 10px 0px #000000;
 	-webkit-box-shadow:3px 3px 10px 0px #000000;
 	box-shadow:3px 3px 10px 0px #000000;
-	margin-top:50px;
-	margin-bottom:10px;
-	padding-top:5px;
-	padding-bottom:5px;
+
+	/* Make some room between the footer and the main content. */
+	margin-top:4%;
+
+	/* Add some narrow padding to the top of the footer. */
+	padding-top:0.5%;
+
+	/* We need slightly more padding on the bottom of the footer
+	 * than we do on the top, to make it visually obvious that
+	 * there is no more content. */
+	padding-bottom:1%;
+
+	/* We don't want the footer to show up until we scroll to it,
+	 * so we set its position to relative. */
 	position:relative;
+
+	/* The footer should visually match the header. */
 	width:100%;
 	text-align: center;
 }
 
+/* The table that holds the footer's content. */
 .footertable{
+	/* Make sure all of the content is centered. */
 	margin-left: auto;
 	margin-right: auto;
-	width:1024px;
+
+	/* The table should have comfortable margins on the
+	 * left and right. */
+	width:80%;
 }
 
+/* The basic column in the footer. */
+.footercolumn{
+	/* We want lines between columns. In almost all cases,
+	 * the previous column's right border will double as this
+	 * columns' left border. Thus, we only need to define
+	 * the right border. */
+	border-right:1px solid black;
+
+	/* We have five columns, so each column should take up
+	 * only 1/5 of the available space. */
+	width:20%;
+
+	/* Content should line up along the top of the table,
+	 * to look clean. */
+	vertical-align: top;
+}
+
+/* The leftmost column in the footer. It is identical to the
+ * basic footer (see those comments), except it also defines
+ * its own left border. */
 .footercolumn_left{
 	border-left:1px solid black;
 	border-right:1px solid black;
@@ -300,162 +584,542 @@ body {
 	vertical-align: top;
 }
 
-.footercolumn{
-	border-right:1px solid black;
-	width:20%;
-	vertical-align: top;
-}
-
+/* The rightmost column in the footer. It is identical to
+ * the basic footer (see those comments). Technically, we could
+ * just use "footercolumn" and leave this out, but having it here
+ * makes everything more complete. If we later change our style and
+ * we need a separate rightmost column definition, we won't need to
+ * change the HTML. */
 .footercolumn_right{
 	border-right:1px solid black;
 	width:20%;
 	vertical-align: top;
 }
 
-/*TEXT FORMATTING CSS*/
+/* == TEXT FORMATTING CSS == */
 
+/* Large header text. Good for titles. */
 .txtHead1{
 	font-size:large;
 	font-weight:bold;
 	text-align:center;
-	margin-left:50px;
-	margin-right:50px;
+	margin-left:5%;
+	margin-right:5%;
 }
 
+/* Medium header text. Good for sub-titles. */
 .txtHead2{
 	font-size:medium;
 	font-weight:bold;
 	text-align:center;
-	margin-left:50px;
-	margin-right:50px;
+	margin-left:5%;
+	margin-right:5%;
 }
 
+/* Medium, non-bold header text. Good for major heading in text. */
 .txtHead3{
 	font-size:medium;
 	text-align:center;
-	margin-left:50px;
-	margin-right:50px;
+	margin-left:5%;
+	margin-right:5%;
 }
 
+/* Left-oriented header text. Good for subheadings in text. */
 .txtHead4{
 	font-size:medium;
 	text-align:left;
 	font-weight:bold;
-	margin-left:50px;
-	margin-right:50px;
+	margin-left:5%;
+	margin-right:5%;
 }
 
+/* Regular text. */
 .txtReg{
 	font-size:medium;
-	margin-left:50px;
-	margin-right:50px;
+	margin-left:5%;
+	margin-right:5%;
 }
 
+/* Text for "signatures", such as the end of a letter. */
 .txtSig{
 	font-size:medium;
 	font-weight:bold;
 	font-style:oblique;
 	text-align:right;
-	margin-left:50px;
-	margin-right:50px;
+	margin-left:5%;
+	margin-right:5%;
 }
 
+/* Small captions. */
+.txtSmallCaption{
+	font-size:small;
+	text-align:right;
+	/* Captions must fit in a vertically small space, and thus
+	 * should not have any vertical margins. */
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+/* Footer text. */
 .txtFooter{
 	font-size:small;
 	text-align:center;
-	margin-left:50px;
-	margin-right:50px;
+	margin-left:5%;
+	margin-right:5%;
 }
 
+/* Footer heading text. */
 .txtFooterH{
 	font-size:medium;
 	font-weight:bold;
 	text-align:center;
 }
 
+/* Small, regular text. */
 .txtSmall{
 	font-size:small;
-	margin-left:50px;
-	margin-right:50px;
+	margin-left:5%;
+	margin-right:5%;
 }
 
+/* Regular sidebox text. */
 .txtRegS{
 	font-size:medium;
-	margin-left:7px;
-	margin-right:7px;
+	margin-left:3%;
+	margin-right:3%;
 }
 
+/* Signature sidebox text. */
 .txtSigS{
 	font-size:medium;
 	font-weight:bold;
 	font-style:oblique;
 	text-align:right;
-	margin-left:7px;
-	margin-right:7px;
+	margin-left:3%;
+	margin-right:3%;
 }
 
-/*Various*/
-
-.list {
-	margin-left: 80px;
-	padding-left: 0;
+/* Force the text to wrap, even if it means breaking up
+ * a word. Intended to be used with other text styles. */
+.txtForceWrap {
+  word-wrap: break-word;
 }
 
-.quietLink{
-	color:inherit;
-	text-decoration: none;
+/* ENLARGE IMAGE ON CLICK
+ * Display an image thumbnail, and display the full image
+ * in a popup box by clicking the thumbnail. The popup
+ * box may be closed by clicking anywhere.
+ *
+ * Based On: http://cssdemos.tupence.co.uk/image-popup.htm
+ *
+ * Use the following to create a thumbnail/popup pair. Replace
+ * "imgThumbFrameLeft" with "imgThumbFrameRight" to float the thumbnail
+ * to the right.
+	<div class="imgFrameThumb imgThumbFrameLeft" tabindex=-1>
+		<img class="imgThumb" src="/img/image.png" alt="Caption."/>
+		<p class="txtSmallCaption">Click to Enlarge</p>
+		<span class="imgPopupFrame" tabindex=-1>
+		<p class="txtSmallCaption">Click Anywhere to Close</p>
+		<img class="imgPopup" src="/img/image.png"/>
+		<br/>Caption.
+	</span></div>
+*/
+
+/* The image thumbnail. */
+.imgThumbFrame{
+	display:inline-block;
+	position: relative;
+
+	z-index:0;
+	margin-left:50px;
+	margin-right:10px;
+	margin-bottom:10px;
+
+	/* Define our thumbnail frame and give it an accent color... */
+	padding: 1%;
+	background-color:#DEF2FF;
+
+	/* We'll also give the frame a drop shadow. */
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .75);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, .75);
+	box-shadow: 0 0 5px rgba(0, 0, 0, .75);
+
+	/* Round the corners of the frame. */
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 }
 
-.floatLeft{
+/* This is a variant on the thumbnail that floats left. */
+.imgThumbFrame.imgThumbFrameLeft{
 	float:left;
 }
 
-.floatRight{
+/* Ensures our caption aligns left on the left-floating thumbnail. */
+.imgThumbFrameLeft .txtSmallCaption{
+	text-align:left;
+}
+
+/* This is necessary for the click effect. */
+.imgThumbFrameLeft:focus{
+	z-index:1;
+}
+
+/* Position the popup relative to the left-floating thumbnail,
+ * thereby bringing it into view upon clicking the thumbnail. */
+.imgThumbFrameLeft:focus .imgPopupFrame{
+	top:-10vw;
+	left:0px;
+}
+
+/* This is a variant on the thumbnail that floats right. */
+.imgThumbFrame.imgThumbFrameRight{
 	float:right;
 }
 
+/* Ensures our caption aligns right on the right-floating thumbnail. */
+.imgThumbFrameRight .txtSmallCaption{
+	text-align:right;
+}
+
+/* This is necessary for the click effect. */
+.imgThumbFrameRight:focus{
+	z-index:1;
+}
+
+/* Position the popup relative to the right-floating thumbnail,
+ * thereby bringing it into view upon clicking the thumbnail. */
+.imgThumbFrameRight:focus .imgPopupFrame{
+	top:-10vw;
+	left:-10vw;
+}
+
+.imgThumb
+{
+	height:30vh;
+}
+
+.imgPopup
+{
+	width:40vw;
+}
+
+.imgPopupSmall
+{
+	width:30vw;
+}
+
+/* The popup window displaying the full-size image when the
+ * thumbnail image is clicked. */
+.imgPopupFrame{
+	/* The default position is completely off the screen. The
+	 * click behavior will move it into focus. */
+	position:absolute;
+	left:-9999px;
+
+	/* Define the frame and frame color for the popup. */
+	padding:10px;
+	background:#DEF2FF;
+
+	/* Give the frame a drop shadow. */
+	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, .75);
+	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, .75);
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, .75);
+
+	/* Round the corners of the frame. */
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius:8px;
+}
+
+/* If we click the popup, return it to its offscreen position
+ * to hide it. */
+.imgPopupFrame:focus{
+	left:-9999px;
+}
+
+/* == IMAGE FORMATTING CSS == */
+
+/* Figure containing an image and caption, floating left. */
 .figureLeft{
-	margin-left:50px;
-	margin-bottom:10px;
-	margin-right:10px;
+	/* The width should be ~1/3 of the available space. */
+	width:30%;
+	/* The left figure should be the same as for text. */
+	margin-left:5%;
+	/* Leave a little room below the figure, so things don't
+	 * look crowded. */
+	margin-bottom:1%;
+	/* Leave a little room to the figure of the image, so the
+	 * text isn't crowded. */
+	margin-right:1%;
+
+	/* Float the figure to the left. */
 	float:left;
 }
 
+/* Figure containing an image and caption, floating right. */
 .figureRight{
-	margin-left:10px;
-	margin-bottom:10px;
-	margin-right:50px;
+	/* The width should be ~1/3 of the available space. */
+	width:30%;
+	/* Leave a little room to the left of the figure, so the
+	 * text isn't crowded. */
+	margin-left:1%;
+	/* Leave a little room below the figure, so things don't
+	 * look crowded. */
+	margin-bottom:1%;
+	/* The right margin should be the same as for text. */
+	margin-right:5%;
+
+	/* Float the figure to the right. */
 	float:right;
 }
 
-.staffphotoLeft{
-	border: 1px solid black;
-	margin-left:50px;
-	margin-bottom:10px;
-	margin-right:10px;
+/* Image contained in a figure.*/
+.imgFigure
+{
+	/* Use all available width in figure. */
+	width:100%;
+}
+
+.imgFigureFramed
+{
+	/* Use all available width in figure. */
+	width:100%;
+	/* Add a black border on the photo. */
+	border: 3px solid black;
+
+	/* Round the corners of the frame. */
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius:8px;
+}
+
+/* Standard image floating left. */
+.imgLeft{
+	/* The width should be ~1/3 of the available space. */
+	width:30%;
+	/* The left margin should be the same as for text. */
+	margin-left:5%;
+	/* Leave a little room below the image, so things don't
+	 * look crowded. */
+	margin-bottom:1%;
+	/* Leave a little room to the right of the image, so the
+	 * text isn't crowded. */
+	margin-right:1%;
+
+	/* Float the image to the left. */
 	float:left;
 }
 
-.staffphotoRight{
-	border: 1px solid black;
-	margin-left:10px;
-	margin-bottom:10px;
-	margin-right:50px;
+/* Standard centered image. */
+.imgCenter{
+	/* Centered images should be a little wider than floating images,
+	 * since there won't be anything wrapping around them. */
+	width:35%;
+
+	/* Let the left and right margins be determined automatically,
+	 * thereby centering the image. */
+	margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+
+/* Standard image floating right. */
+.imgRight{
+	/* The width should be ~1/3 of the available space. */
+	width:30%;
+	/* Leave a little room to the left of the image, so the
+	 * text isn't crowded. */
+	margin-left:1%;
+	/* Leave a little room below the image, so things don't
+	 * look crowded. */
+	margin-bottom:1%;
+	/* The right margin should be the same as for text. */
+	margin-right:5%;
+
+	/* Float the image to the right. */
 	float:right;
 }
 
-.characterLeft{
-	margin-left:50px;
-	margin-bottom:10px;
-	margin-right:10px;
+/* Framed image floating left. */
+.imgFramedLeft{
+	/* The width should be ~1/3 of the available space. */
+	width:30%;
+	/* Add a black border on the photo. */
+	border: 3px solid black;
+
+	/* Round the corners of the frame. */
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius:8px;
+
+	/* The left margin should be the same as for text. */
+	margin-left:5%;
+	/* Leave a little room below the image, so things don't
+	 * look crowded. */
+	margin-bottom:1%;
+	/* Leave a little room to the right of the image, so the
+	 * text isn't crowded. */
+	margin-right:1%;
+
+	/* Float the image to the left. */
 	float:left;
 }
 
-.characterRight{
-	margin-left:10px;
-	margin-bottom:10px;
-	margin-right:50px;
+/* Framed image floating right. */
+.imgFramedRight{
+	/* The width should be ~1/3 of the available space. */
+	width:30%;
+	/* Add a black border on the photo. */
+	border: 3px solid black;
+
+	/* Round the corners of the frame. */
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius:8px;
+
+	/* Leave a little room to the left of the image, so the
+	 * text isn't crowded. */
+	margin-left:1%;
+	/* Leave a little room below the image, so things don't
+	 * look crowded. */
+	margin-bottom:1%;
+	/* The right margin should be the same as for text. */
+	margin-right:5%;
+
+	/* Float the image to the right. */
 	float:right;
+}
+
+/* Full width image. Intended to be combined with other image classes.*/
+.imgFull{
+	width:100%;
+}
+
+/* Half width image. Intended to be combined with other image classes.*/
+.imgHalf{
+	width:50%;
+}
+
+/* Medium width image, slightly smaller than standard size.
+ * Intended to be combined with other image classes. */
+.imgMedium{
+	width:25%
+}
+
+/* A small image. Intended to be combined with other image classes. */
+.imgSmall{
+	/* The width should be ~1/6 of the available space. */
+	width:15%
+}
+
+/* Very large icon image. */
+.imgIconXL
+{
+	width:50%;
+
+	/* Let the left and right margins be determined automatically,
+	 * thereby centering the image. */
+	margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+/* Large icon image. */
+.imgIconLarge{
+	width:35%;
+
+	/* Let the left and right margins be determined automatically,
+	 * thereby centering the image. */
+	margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+/* Standard icon image, such as for project pages. */
+.imgIcon{
+	width:30%;
+
+	/* Let the left and right margins be determined automatically,
+	 * thereby centering the image. */
+	margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+/* Medium icon image, slightly smaller than standard. */
+.imgIconMed{
+	width:20%;
+
+	/* Let the left and right margins be determined automatically,
+	 * thereby centering the image. */
+	margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+/* Small icon image. */
+.imgIconSmall{
+	width:10%;
+
+	/* Let the left and right margins be determined automatically,
+	 * thereby centering the image. */
+	margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+/* Small icon image, designed for inline use with a viewport width,
+ * instead of a percentage width. */
+.imgIconSmall_VW
+{
+	width:2vw;
+
+	/* Let the left and right margins be determined automatically,
+	 * thereby centering the image. */
+	margin-left:auto;
+    margin-right:auto;
+    /*display:block;*/
+}
+
+/* Navigation icons with hover effect. */
+.imgIconSuggest{
+	width:30%;
+
+	/* Let the left and right margins be determined automatically,
+	 * thereby centering the image. */
+	margin-left:auto;
+    margin-right:auto;
+    display:block;
+
+    background: #FFF8DE;
+	border: 3px solid black;
+
+	/* Round the corners of the frame. */
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius:8px;
+
+	/* Add a drop shadow. */
+	-webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, .75);
+	-moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, .75);
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, .75);
+}
+
+/* When we hover over a navigation icon, switch its background color
+ * to MousePaw Yellow. */
+.imgIconSuggest:hover
+{
+	background: #FFCB05;
+}
+
+/*.photoLeft{
+	margin-left:auto;
+    margin-right:10px;
+    margin-bottom:10px;
+    float:left;
+    display:block;
 }
 
 .photoCenter{
@@ -464,26 +1128,83 @@ body {
     display:block;
 }
 
+.photoRight{
+	margin-left:10px;
+    margin-right:auto;
+    margin-bottom:10px;
+    float:right;
+    display:block;
+}*/
+
+/* VARIOUS FORMATTING*/
+
+/* Bulleted lists need to be shifted over to the left, to ensure the
+ * bullet points do not overflow into the left margin. */
+.list {
+	margin-left: 8%;
+	padding-left: 0px;
+}
+
+/* Quiet links do not behave like hyperlinks. These are vital
+ * to creating buttons from text. */
+.quietLink{
+	/* The text color should be derived from the original text's
+	 * formatting, and not changed with hyperlink state. */
+	color:inherit;
+	/* Do not underline the text! */
+	text-decoration: none;
+}
+
+/* Float the object to the left. */
+.floatLeft{
+	float:left;
+}
+
+/* Float the object to the right. */
+.floatRight{
+	float:right;
+}
+
+/* A table within the main table. */
 .subTable{
 	margin-left: auto;
 	margin-right: auto;
 	border-collapse:collapse;
 }
 
+/* Further formatting for the subtable. */
 .subTable,.subTable td,.subTable tr
 {
+	/* Establish spacing (as padding) between rows and columns. */
 	padding:10px;
+	/* Give each row and column a thin black border. */
     border:1px solid black;
 }
 
+/* Highlight an element with a light yellow background. */
 .highlight
 {
-	background-color:yellow;
+	background-color:(255, 248, 222, 1.0);
 }
 
+/* Embedded YouTube video elements belong in a video-wrapper div. */
 .video-wrapper{
 	display:block;
 	width:480px;
+	max-width:100%;
 	margin-left:auto;
 	margin-right:auto;
+}
+
+/* The iFrame component of an embedded YouTube video. */
+.video-iframe{
+	width:480px;
+	height:360px;
+	max-width:100%;
+}
+
+/* The embedded Twitter timeline belongs in a twitter-timeline div. */
+.twitter-timeline{
+	width:300px;
+	max-width:80%;
 }
