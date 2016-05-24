@@ -82,7 +82,7 @@
 
 				<a class="anchor" id="banders"></a>
 				<p class="txtHead2">Bryan Anders</p>
-				<p class="txtHead2">Assistant Lead Developer (2015-)</p>
+				<p class="txtHead2">Senior Programmer (2015-)</p>
 				<p class="txtHead2">Specialty: <a href="/punchline" target=_blank>Punchline</a></p>
 				<img class="imgFramedRight" src="/img/staff/BryanAnders.png"/>
 				<p class="txtReg">
@@ -101,7 +101,7 @@
 
 				<a class="anchor" id="ngroggett"></a>
 				<p class="txtHead2">Nate Groggett</p>
-				<p class="txtHead2">Programmer (2015-)</p>
+				<p class="txtHead2">Senior Programmer (2015-)</p>
 				<p class="txtHead2">Specialty: <a href="/trailcrest" target=_blank>Trailcrest</a>, <a href="/pawlib" target=_blank>PawLIB</a></p>
 				<img class="imgFramedRight" src="/img/staff/NateGroggett.png"/>
 				<p class="txtReg">
@@ -156,27 +156,6 @@
 					Alternative Time Period: &quot;The future, where I
 					have taken over the world. See you all there
 					soon! :)&quot;
-				</p>
-				<p class="txtSmall"><a href=#top>Top</a></p>
-				<hr/>
-
-				<a class="anchor" id="rjensen"></a>
-				<p class="txtHead2">Robert Jensen</p>
-				<p class="txtHead2">Content Developer (2016-)</p>
-				<p class="txtHead2">Specialty: <a href="/operationspyrat" target=_blank><i>Operation SpyRat</i></a> Content</p>
-				<img class="imgFramedRight" src="/img/staff/RobertJensen.png"/>
-				<p class="txtReg">
-					Robert first discovered his love of writing through
-					video games, finding his passion for the creativity
-					and imagination involved. Armed with an English
-					degree and a love of reading, Robert helps to
-					develop the content for <i>Operation SpyRat: Word4Word</i>.
-				</p>
-				<p class="txtReg">Writing: Epic Fantasy and Sci-Fi</p>
-				<p class="txtReg">Other Vehicle: The Slave I from <i>Star Wars</i></p>
-				<p class="txtReg">Starbucks Order: Whatever has the most sugar and whipped cream.</p>
-				<p class="txtReg">
-					<a href="https://mindofamillennialmadman.wordpress.com/" target=_blank>[Robert's Wordpress]</a>
 				</p>
 				<p class="txtSmall"><a href=#top>Top</a></p>
 				<hr/>
@@ -246,7 +225,7 @@
 
 				<a class="anchor" id="sramirez"></a>
 				<p class="txtHead2">Sergio Ramirez</p>
-				<p class="txtHead2">Programmer (2015-)</p>
+				<p class="txtHead2">Programmer (2016-)</p>
 				<p class="txtHead2">Specialty: <a href="/anari" target=_blank>Anari Graphics Engine</a></p>
 				<img class="imgFramedRight" src="/img/staff/SergioRamirez.png"/>
 				<p class="txtReg">
@@ -263,9 +242,29 @@
 				<hr/>
 
 
+				<a class="anchor" id="dsmith"></a>
+				<p class="txtHead2">Dave Smith</p>
+				<p class="txtHead2">Programmer (2016-)</p>
+				<p class="txtHead2">Specialty: Content Development tools</p>
+				<img class="imgFramedRight" src="/img/staff/DaveSmith.png"/>
+				<p class="txtReg">
+					As a lifetime gamer, Dave has continually become
+					more interested in how games work behind the
+					scenes as his tastes and curiousity developed.
+					The mechanics under the hood drew him closer to
+					the back-end programming of his favorite gaming
+					experiences.
+				</p>
+				<p class="txtReg">Pizza Order: All the meats, with BBQ sauce</p>
+				<p class="txtReg">Hobbies: Foosball, Casual Gaming (PC, Nintendo)</p>
+				<p class="txtReg">Playing: Heroes of the Storm, Fallout 4. Still waiting for the next Zelda!</p>
+				<p class="txtSmall"><a href=#top>Top</a></p>
+				<hr/>
+
+
 				<a class="anchor" id="ltalkov"></a>
 				<p class="txtHead2">Leah Talkov</p>
-				<p class="txtHead2">Second Asst. Lead Developer (2015-)</p>
+				<p class="txtHead2">Assistant Lead Developer (2015-)</p>
 				<p class="txtHead2">Specialty: <a href="/anari" target=_blank>Anari Graphics Engine</a></p>
 				<img class="imgFramedRight" src="/img/staff/LeahTalkov.png"/>
 				<p class="txtReg">
@@ -352,9 +351,8 @@
 					<br/>Lead Developer
 				</p>
 				<p class="txtHead3">
-					<a href=#banders>Bryan Anders</a>
+					<a href=#ltalkov>Leah Talkov</a>
 					<br/>Asst Lead Developer
-					<br/>Senior Programmer
 				</p>
 				<p class="txtHead3">
 					<a href=#staylor>Scott Taylor</a>
@@ -365,11 +363,15 @@
 					<br/>2nd Asst Lead Developer
 				</p>
 				<p class="txtHead3">
-					<a href=#ltalkov>Leah Talkov</a>
-					<br/>2nd Asst Lead Developer
+					<a href=#banders>Bryan Anders</a>
+					<br/>Senior Programmer
 				</p>
 				<p class="txtHead3">
 					<a href=#mparkman>Michael Parkman</a>
+					<br/>Senior Programmer
+				</p>
+				<p class="txtHead3">
+					<a href=#ngroggett>Nate Groggett</a>
 					<br/>Senior Programmer
 				</p>
 				<p class="txtHead3">
@@ -377,11 +379,11 @@
 					<br/>Programmer
 				</p>
 				<p class="txtHead3">
-					<a href=#ngroggett>Nate Groggett</a>
+					<a href=#sramirez>Sergio Ramirez</a>
 					<br/>Programmer
 				</p>
 				<p class="txtHead3">
-					<a href=#sramirez>Sergio Ramirez</a>
+					<a href=#dsmith>Dave Smith</a>
 					<br/>Programmer
 				</p>
 				<p class="txtHead3">
@@ -408,10 +410,6 @@
 				<p class="txtHead3">
 					<a href=#jmcarthur>Jane McArthur</a>
 					<br/>Senior Content Developer
-				</p>
-				<p class="txtHead3">
-					<a href=#rjensen>Robert Jensen</a>
-					<br/>Content Developer
 				</p>
 				<hr/>
 

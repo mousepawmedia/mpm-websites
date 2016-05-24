@@ -36,7 +36,11 @@
 						</a>
 					</td>
 					<td class="colTriMenu">
-						<br/>
+						<!--<a class="quietLink" href="/resources/standards">
+							<img class="imgIconSuggest" src="/img/icons/fa-binoculars.png" alt="Binoculars symbol."/>
+							<p class="txtHead2">Field Guide to Common Nerds</p>
+							<p class="txtHead3">Presentations and resources by Jason C. McDonald on surviving the world of programming.<br/>(External Link)</p>
+						</a>-->
 					</td>
 				</tr>
 			</table>

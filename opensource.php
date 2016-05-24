@@ -33,7 +33,8 @@
 				<p class="txtReg">
 					We maintain mirrors of our repositories on Github.
 					<a href="#contribute">Click here</a> for
-					information on how to get started.
+					information on how to get started, or read
+					our <a href="/termsofdevelopment">Terms of Development</a>.
 				</p>
 				<hr/>
 
@@ -345,6 +346,19 @@
 						work. We've found that the features of that
 						platform fit our workflow better than Github
 						does.
+					</p></div>
+				</div>
+
+				<div class="expander" tabindex=-1>
+					<p class="txtReg"><b>
+						What are those weird ".arc[whatever]" files
+						on your Github repositories?
+					</b></p>
+					<div class="hiddenDiv"><p class="txtReg">
+						Those allow Phabricator to interface with
+						Git and do all sorts of neat code review
+						stuff for us. You can safely ignore those -
+						you will never need them.
 					</p></div>
 				</div>
 

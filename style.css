@@ -365,9 +365,11 @@ a.anchor {
 	background:rgba(255, 248, 222, 1.0);
 }
 
-/*.expander:hover .hiddenDiv{
+/* As long as the expander has hover (touch focus), display the hidden
+ * div in the expander. */
+.expander:hover .hiddenDiv{
 	display: block;
-}*/
+}
 
 /* As long as the expander has focus, display the hidden div in
  * the expander. */
@@ -383,10 +385,7 @@ a.anchor {
 }
 
 /* If we're hovering over the hidden div in the expander, keep the
- * div open. This really shouldn't have much of an effect anymore,
- * as we click to open intead of hovering (the original behavior.)
- * However, we'll leave this here to protect against "shouldn't
- * happen" behavior and unforseen use cases. It can't hurt.*/
+ * div open. This also is used for touch focus.*/
 .hiddenDiv:hover{
 	display: block;
 }

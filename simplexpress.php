@@ -27,19 +27,28 @@
 						<p class="txtReg">
 							SIMPLEXpress uses a visible and predictable
 							syntax to make writing expressions easier.
-							By only reserving three characters for
-							special purposes ('\', '^', and ' '), it is
-							easier to remember the syntax, and the
-							space-delimited format makes it easier to
-							read. Not convinced? Decide for yourself
-							which is easier for matching a phone
-							number:
+							Nearly everything is literal, except within
+							a "unit". Units always begin with a <b>'^'</b>,
+							and end with an <b>'/'</b>. Only two symbols
+							are always reserved: '^' and '~'.
 						</p>
 						<p class="txtReg">
-							Regular expression: \(?\d{3}[\)\-]? ?\d{3}-\d{4}
+
 						</p>
 						<p class="txtReg">
-							SIMPLEXpress: ( \? ^D \3 \[ ) - \] ^S \? ^D \3 - ^D \4
+							Not convinced? Decide for yourself which is
+							easier to remember. We want to match "GREETING,
+							NAME. How are you?", where NAME is any English name,
+							GREETING is one of four options, and where
+							we end the first sentences with either a
+							period or an exclaimation point. Sounds
+							tricky, right?
+						</p>
+						<p class="txtReg">
+							Regular expression: <mark>/(Hello|Hi)(there )?, [A-Z][a-z]+[.!] How are you\?/</mark>
+						</p>
+						<p class="txtReg">
+							SIMPLEXpress: <mark><font color="purple">^<font color="blue">[(<font color="black">Hello</font>)(<font color="black">Hi</font>)]</font>/</font><font color="purple">^<font color="blue">(<font color="black">there </font>)?</font>/</font>, <font color="purple">^<font color="blue"><font color="green">lu</font></font>/</font><font color="purple">^<font color="blue"><font color="green">ll</font>+</font>/</font><font color="purple">^<font color="blue">[<font color="black">.!</font>]</font>/</font> How are you?</mark>
 						</p>
 						<p class="txtHead2">Expanded.</p>
 						<p class="txtReg">
@@ -47,18 +56,27 @@
 							your own complicated test cases for
 							character sets, and Unicode support is
 							only available through third-party
-							libraries. SIMPLEXpress has full built-in
-							Unicode support via PawLIB library, and
-							dozens of pre-programmed character sets,
-							including...
+							libraries.
 						</p>
-						<ul class="list">
-							<li>Latin Extended Uppercase and Lowercase,</li>
-							<li>Greek/Coptic Uppercase and Lowercase,</li>
-							<li>International Phonetic Alphabet,</li>
-							<li>Mathematical operators, and</li>
-							<li>More to come!</li>
-						</ul>
+						<p class="txtReg">
+							On the other hand, SIMPLEXpress
+							has dozens of character classes,
+							called "specifiers". Most also have
+							sub-classes for more fine-grained matching.
+							All of these specifiers automatically kick
+							in within a unit. For example, you could use
+							<b>'m'</b> to match all common math symbols,
+							<b>'lu'</b> to match all uppercase letters,
+							and <b>'aU'</b> to match any alphanumeric
+							character that <i>isn't</i> uppercase.
+							(Yup, you guessed it - any character class
+							or subclass can be inverted by capitalizing
+							its letter.)
+						</p>
+						<p class="txtReg">
+							You can even match a range of Unicode
+							characters with the specifier <b>'u123-456'</b>!
+						</p>
 						<p class="txtHead2">Express.</p>
 						<p class="txtReg">
 							SIMPLEXpress was designed specifically for
@@ -66,6 +84,14 @@
 							expressions are infamously ill-suited for.
 							Because of this goal, SIMPLEXpress is fast
 							and efficient.
+						</p>
+						<p class="txtReg">
+							That second reserved symbol, <b>'~'</b>,
+							is used to "snag" units and arbitrary
+							literal segments, which can then be
+							returned on demand. This, paired with
+							efficiency, makes SIMPLEXpress
+							ideal for language parsing.
 						</p>
 						<hr/>
 

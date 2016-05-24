@@ -43,14 +43,16 @@
 					</td>
 					<td class="colWide">
 						<p class="txtHead1">Math. Mining. Dig it?</p>
-						<div class="imgThumb imgThumbRight" tabindex=-1>
-							<img src="/img/screenshots/diamondquest/start.png" height=200px alt="Start screen of DiamondQuest."/>
+
+						<div class="imgThumbFrame imgThumbFrameRight" tabindex=-1>
+							<img class="imgThumb" src="/img/screenshots/diamondquest/start.png" alt="Start screen of DiamondQuest."/>
 							<p class="txtSmallCaption">Click to Enlarge</p>
-							<span class="imgPopup" tabindex=-1>
+							<span class="imgPopupFrame" tabindex=-1>
 							<p class="txtSmallCaption">Click anywhere to close</p>
-							<img src="/img/screenshots/diamondquest/start.png" height=400px/>
+							<img class="imgPopup" src="/img/screenshots/diamondquest/start.png"/>
 							<br/>Start screen of DiamondQuest.
 						</span></div>
+
 						<p class="txtReg">
 							<i>DiamondQuest</i> was created for a very special
 							friend, to make math practice more fun. Solve
@@ -68,15 +70,6 @@
 							detailed customization.
 						</p>
 
-						<div class="imgThumb imgThumbRight" tabindex=-1>
-							<img src="/img/screenshots/diamondquest/foundgems.png" height=200px alt="We found gems in DiamondQuest!"/>
-							<p class="txtSmallCaption">Click to Enlarge</p>
-							<span class="imgPopup" tabindex=-1>
-							<p class="txtSmallCaption">Click anywhere to close</p>
-							<img src="/img/screenshots/diamondquest/foundgems.png" height=400px/>
-							<br/>We found gems in DiamondQuest!
-						</span></div>
-
 						<p class="txtHead2">Retro Fun</p>
 						<p class="txtReg">
 							Featuring classic ASCII art from Joan G Stark and miK,
@@ -84,6 +77,15 @@
 							command-line games. In addition, it is easy to learn and
 							use - you only need a keyboard!
 						</p>
+
+						<div class="imgThumbFrame imgThumbFrameRight" tabindex=-1>
+							<img class="imgThumb" src="/img/screenshots/diamondquest/foundgems.png" alt="We found gems in DiamondQuest!"/>
+							<p class="txtSmallCaption">Click to Enlarge</p>
+							<span class="imgPopupFrame" tabindex=-1>
+							<p class="txtSmallCaption">Click anywhere to close</p>
+							<img class="imgPopup" src="/img/screenshots/diamondquest/foundgems.png"/>
+							<br/>We found gems in DiamondQuest!
+						</span></div>
 
 						<p class="txtHead2">What's Next?</p>
 						<p class="txtReg">
@@ -103,10 +105,10 @@
 						<p class="txtHead2">Download and Play!</p>
 						<p class="txtReg">
 							<i>DiamondQuest 1.0</i> is officially available
-							for Windows and Linux.
+							for Windows and Linux. Binaries coming soon.
 						</p>
 						<hr width=80%/>
-						<p class="txtReg">
+						<!--<p class="txtReg">
 							Download for Linux:
 							<a href="" target=_blank>32-bit</a> |
 							<a href="" target=_blank>64-bit</a>
@@ -116,7 +118,7 @@
 						<p class="txtReg">
 							Download for Windows:
 							<a href="" target=_blank>32-bit</a>
-						</p>
+						</p>-->
 
 						<hr width=80%/>
 						<p class="txtReg">Source:
