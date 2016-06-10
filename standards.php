@@ -14,9 +14,15 @@
 		<div class="pagemain">
 			<p class="txtHead1">Standards</p>
 			<p class="txtHead3">
-				Please pardon our dust. This resource is coming soon!
-				In the meantime, check out our
-				<a href="/resources">other resources.</a>
+				MousePaw Games has authored a number of standards to
+				guide their ongoing software development efforts.
+				These standards are made freely available for the
+				benefit of the open source community, and the
+				programming community at large.
+				<br/>
+				<br/>
+				<a href="http://standards.mousepawgames.com">Read the Standards</a> |
+				<a href="http://github.com/mousepawgames/standards">Github Mirror</a>
 			</p>
 			<hr/>
 		</div>

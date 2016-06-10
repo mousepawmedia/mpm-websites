@@ -261,28 +261,6 @@
 				<p class="txtSmall"><a href=#top>Top</a></p>
 				<hr/>
 
-
-				<a class="anchor" id="ltalkov"></a>
-				<p class="txtHead2">Leah Talkov</p>
-				<p class="txtHead2">Assistant Lead Developer (2015-)</p>
-				<p class="txtHead2">Specialty: <a href="/anari" target=_blank>Anari Graphics Engine</a></p>
-				<img class="imgFramedRight" src="/img/staff/LeahTalkov.png"/>
-				<p class="txtReg">
-					Leah's long-time passion for math (especially
-					linear algebra) has led to a passion in computer
-					programming. Quiet, yet brilliant, she once
-					eliminated all of her opponents in <i>Infiltrator</i>,
-					a current record in the company.
-				</p>
-				<p class="txtReg">
-					Starbucks Order: White Chocolate Mocha...double
-					shot on stressful days.
-				</p>
-				<p class="txtReg">Watching: <i>Tangled</i>, or any other Disney movie.</p>
-				<p class="txtReg">Hobbies: Playing piano, going to the gym, video games, karaoke.</p>
-				<p class="txtSmall"><a href=#top>Top</a></p>
-				<hr/>
-
 				<a class="anchor" id="staylor"></a>
 				<p class="txtHead2">Scott Taylor</p>
 				<p class="txtHead2">Assistant Lead Developer (2015-)</p>
@@ -349,10 +327,6 @@
 					<a href=#jcmcdonald>Jason C. McDonald</a>
 					<br/>Chief Exective Officer
 					<br/>Lead Developer
-				</p>
-				<p class="txtHead3">
-					<a href=#ltalkov>Leah Talkov</a>
-					<br/>Asst Lead Developer
 				</p>
 				<p class="txtHead3">
 					<a href=#staylor>Scott Taylor</a>
