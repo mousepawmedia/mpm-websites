@@ -119,7 +119,7 @@
 
 				<a class="anchor" id="ahenry"></a>
 				<p class="txtHead2">Audrey Henry</p>
-				<p class="txtHead2">Programmer (2015-)</p>
+				<p class="txtHead2">Senior Programmer (2015-)</p>
 				<p class="txtHead2">Specialty: <a href="/anari" target=_blank>Anari Graphics Engine</a></p>
 				<img class="imgFramedRight" src="/img/staff/AudreyHenry.png"/>
 				<p class="txtReg">
@@ -340,6 +340,10 @@
 					<a href=#banders>Bryan Anders</a>
 					<br/>Senior Programmer
 				</p>
+                <p class="txtHead3">
+					<a href=#ahenry>Audrey Henry</a>
+					<br/>Senior Programmer
+				</p>
 				<p class="txtHead3">
 					<a href=#mparkman>Michael Parkman</a>
 					<br/>Senior Programmer
@@ -347,10 +351,6 @@
 				<p class="txtHead3">
 					<a href=#ngroggett>Nate Groggett</a>
 					<br/>Senior Programmer
-				</p>
-				<p class="txtHead3">
-					<a href=#ahenry>Audrey Henry</a>
-					<br/>Programmer
 				</p>
 				<p class="txtHead3">
 					<a href=#sramirez>Sergio Ramirez</a>
