@@ -57,6 +57,7 @@
 					</p>
 					<p class="txtHead3 txtForceWrap"><a href="http://www.ubuntu.com", target=_blank>www.ubuntu.com</a></p>
 					<hr/>
+
 					<img class="imgCenter" src="/img/foss_logos/libreoffice_logo.png", alt="LibreOffice"/>
 					<p class="txtReg">
 						Documents, spreadsheets, presentations,
@@ -70,6 +71,7 @@
 					</p>
 					<p class="txtHead3 txtForceWrap"><a href="http://www.libreoffice.org/", target=_blank>www.libreoffice.org</a></p>
 					<hr/>
+
 					<img class="imgCenter" src="/img/foss_logos/codeblocks_logo.png", alt="Code::Blocks"/>
 					<p class="txtReg">
 						Code::Blocks is the leading open-source IDE for
@@ -83,6 +85,7 @@
 					</p>
 					<p class="txtHead3 txtForceWrap"><a href="http://www.codeblocks.org/", target=_blank>www.codeblocks.org</a></p>
 					<hr/>
+
 					<img class="imgCenter" src="/img/foss_logos/ninjaide_logo.png", alt="NINJA-IDE"/>
 					<p class="txtReg">
 						For rapid application development, nothing
@@ -98,17 +101,31 @@
 					</p>
 					<p class="txtHead3 txtForceWrap"><a href="http://ninja-ide.org/", target=_blank>www.ninja-ide.org</a></p>
 					<hr/>
-					<img class="imgCenter" src="/img/foss_logos/geany_logo.png", alt="Geany"/>
+
+					<img class="imgCenter" src="/img/foss_logos/atom_logo.png", alt="Geany"/>
 					<p class="txtReg">
-						We use Geany first-and-foremost as our web
-						editor, because of its superb HTML, CSS, and
-						XML support. That said, Geany is a fantastic
-						multi-language editor, supporting dozens of
-						formats. It is designed to automate many common
-						coding tasks, and boasts superb code completion.
+						Atom, by GitHub, is the most powerful and feature-rich
+                        multi-language editor we've ever used. It is our go-to
+                        for web development, XML, and documentation (ReST).
+                        The build-in Git integration makes keeping track of
+                        changes easy, and the hackable-to-the-core interface
+                        means that each programmer can customize it to his or
+                        her needs and tastes.
+					</p>
+					<p class="txtHead3 txtForceWrap"><a href="http://atom.io/", target=_blank>www.atom.io</a></p>
+					<hr/>
+
+                    <img class="imgCenter" src="/img/foss_logos/geany_logo.png", alt="Geany"/>
+					<p class="txtReg">
+						Geany is our go-to lightweight editor. It offers
+                        great support for many languages and formats, and
+                        quite a few helpful features, without slowing down.
+                        It is designed to automate many common coding tasks,
+                        and boasts superb code completion.
 					</p>
 					<p class="txtHead3 txtForceWrap"><a href="http://www.geany.org/", target=_blank>www.geany.org</a></p>
 					<hr/>
+
 					<img class="imgCenter" src="/img/foss_logos/phabricator_logo.png", alt="Phabricator"/>
 					<p class="txtReg">
 						The lion's share of our collaboration takes
@@ -119,7 +136,18 @@
 						dozens of collaboration tools to streamline
 						software production.
 					</p>
-					<p class="txtHead3 txtForceWrap"><a href="http://phacility.com/", target=_blank>www.phacility.org</a></p>
+                    <p class="txtHead3 txtForceWrap"><a href="http://phacility.com/", target=_blank>www.phacility.com</a></p>
+                    <hr/>
+
+                    <img class="imgCenter" src="/img/foss_logos/cmake_logo.png", alt="Phabricator"/>
+					<p class="txtReg">
+						Building software for multiple operating system is no
+                        small task. That's why we use CMake. It gives us the
+                        power to build our code the way we want, without all
+                        the hassle of older, less intuitive systems.
+					</p>
+                    <p class="txtHead3 txtForceWrap"><a href="https://cmake.org", target=_blank>www.cmake.org</a></p>
+                    <hr/>
 				</td>
 				<td class="colHalf">
 					<img class="imgCenter" src="/img/foss_logos/synfig_logo.png", alt="Synfig Studio"/>
@@ -134,6 +162,7 @@
 					</p>
 					<p class="txtHead3 txtForceWrap"><a href="http://www.synfig.org/", target=_blank>www.synfig.org</a></p>
 					<hr/>
+
 					<img class="imgCenter" src="/img/foss_logos/gimp_logo.png", alt="GIMP"/>
 					<p class="txtReg">
 						GIMP has long been the go-to for painting and
@@ -144,6 +173,7 @@
 					</p>
 					<p class="txtHead3 txtForceWrap"><a href="http://www.gimp.org/", target=_blank>www.gimp.org</a></p>
 					<hr/>
+
 					<img class="imgCenter" src="/img/foss_logos/blender_logo.png", alt="Blender"/>
 					<p class="txtReg">
 						Working in 3D design has almost always meant
@@ -156,6 +186,7 @@
 					</p>
 					<p class="txtHead3 txtForceWrap"><a href="http://www.blender.org/", target=_blank>www.blender.org</a></p>
 					<hr/>
+
 					<img class="imgCenter" src="/img/foss_logos/inkscape_logo.png", alt="Inkscape"/>
 					<p class="txtReg">
 						Inkscape™ is proof that open-source doesn't
@@ -167,6 +198,7 @@
 					</p>
 					<p class="txtHead3 txtForceWrap"><a href="https://inkscape.org/", target=_blank>www.inkscape.org</a></p>
 					<hr/>
+
 					<img class="imgCenter" src="/img/foss_logos/audacity_logo.png", alt="Audacity"/>
 					<p class="txtReg">
 						When it comes to editing audio, Audacity has
@@ -180,6 +212,35 @@
 					</p>
 					<p class="txtHead3 txtForceWrap"><a href="http://audacity.sourceforge.net/", target=_blank>audacity.sourceforge.net</a></p>
 					<hr/>
+
+					<img class="imgIcon" src="/img/foss_logos/jenkins_logo.png", alt="Jenkins"/>
+					<p class="txtReg">
+						Making sure code works is rather important, but it is
+                        also surprisingly easy for a programmer to miss!
+                        We use Jenkins to regularly build and test our code,
+                        to make sure no major errors slip under the radar.
+					</p>
+					<p class="txtHead3 txtForceWrap"><a href="https://jenkins.io/", target=_blank>www.jenkins.io</a></p>
+                    <hr/>
+
+                    <p class="txtReg">
+                        We also use the
+                        <a href="https://github.com/uber/phabricator-jenkins-plugin", target=_blank>phabricator-jenkins-plugin</a>
+                        by Uber to keep Jenkins and Phabricator Harbormaster
+                        happily working together!
+					</p>
+                    <hr/>
+
+                    <img class="imgCenter" src="/img/foss_logos/sphinx_logo.png", alt="Phabricator"/>
+					<p class="txtReg">
+						Great software means nothing if you don't have great
+                        documentation to go along with it. Sphinx allows us
+                        to create and maintain high-quality documentation that
+                        renders beautifully in any form we need it in.
+					</p>
+                    <p class="txtHead3 txtForceWrap"><a href="http://www.sphinx-doc.org/", target=_blank>www.sphinx-doc.org</a></p>
+                    <hr/>
+
 					<img class="imgIcon" src="/img/foss_logos/virtualbox_icon.png", alt="Oracle VirtualBox"/>
 					<p class="txtReg">
 						Running in Linux is fantastic, but every so
@@ -196,88 +257,81 @@
 				</td>
 			</tr></table>
 			<hr/>
-			<table class="tablemain">
-				<tr>
-					<td class="colHalf">
-						<p class="txtHead2">Languages and Libraries</p>
-						<p class="txtReg">
-							We've used a lot of programming languages
-							over the years, and a lot of blood, sweat,
-							and tears have gone into these decisions.
-						</p>
-						<hr/>
-						<img class="imgIconMed" src="/img/foss_logos/c++_icon.png", alt="C++"/>
-						<p class="txtReg">
-							Far from being "outdated", Bjarne Strostrup's
-							masterpiece langauge is unparalled in its
-							power and control, which is why it is the
-							heart of our most essential technologies.
-						</p>
-						<p class="txtHead3 txtForceWrap"><a href="http://www.stroustrup.com/C++.html", target=_blank>www.stroustrup.com/C++.html</a></p>
-						<hr/>
-						<img class="imgIconMed" src="/img/foss_logos/gtk+_icon.png", alt="GTK+"/>
-						<p class="txtReg">
-							The "GIMP ToolKit" was first created
-							specifically for building GIMP's GUI. Today,
-							GTK is the driving force behind many of
-							our favorite tools, including Synfig Studio,
-							as well as our own projects.
-						</p>
-						<p class="txtHead3 txtForceWrap"><a href="http://www.gtk.org/", target=_blank>www.gtk.org</a></p>
-						<hr/>
-						<img class="imgCenter" src="/img/foss_logos/python_logo.png", alt="Python"/>
-						<p class="txtReg">
-							Named for Monty Python, the Python
-							language is famous for its simple, clean
-							syntax. That makes it our go-to whenever
-							we need to create a utility or tool as soon
-							as possible. Besides that, it has a lively
-							community built around it...
-						</p>
-						<p class="txtHead3 txtForceWrap"><a href="https://www.python.org/", target=_blank>www.python.org</a></p>
-					</td>
-					<td class="colHalf">
-						<p class="txtHead2">File Formats</p>
-						<p class="txtReg">
-							These formats were carefully selected for
-							their superb quality and open-source
-							emphasis. Support open-source by using and
-							promoting these formats.
-						</p>
-						<hr/>
-						<img class="imgCenter" src="/img/foss_logos/xiph_logo.png", alt="XIPH"/>
-						<p class="txtReg">
-							The codecs of the Xiph.org Foundation are
-							an undisputed cornerstone of the open-source
-							movement, so it should be no surprise that
-							we rely on their Ogg Vorbis (audio) and
-							Theora (video) formats.
-						</p>
-						<p class="txtHead3 txtForceWrap"><a href="http://www.xiph.org/", target=_blank>www.xiph.org</a></p>
-						<hr/>
-						<img class="imgIconMed" src="/img/foss_logos/odf_logo.png", alt="ODF"/>
-						<p class="txtReg">
-							The OpenDocument Format was designed to
-							remove the software restrictions we face
-							with other formats. ODF documents open with
-							just about everything, including LibreOffice.
-							MousePaw Games is proud to be among the
-							many companies to adopt ODF as its standard.
-						</p>
-						<p class="txtHead3 txtForceWrap"><a href="http://www.opendocumentformat.org/", target=_blank>www.opendocumentformat.org</a></p>
-						<hr/>
-						<p class="txtReg">
-							The Portable Network Graphics format, or
-							PNG, was created as an answer to the
-							restrictions of the GIF image format, among
-							others. Today, many consider it to be one
-							of (if not THE) best image format. We do
-							too.
-						</p>
-						<p class="txtHead3 txtForceWrap"><a href="http://www.libpng.org/", target=_blank>www.libpng.org</a></p>
-					</td>
-				</tr>
-			</table>
+			<table class="tablemain"><tr>
+    			<td class="colHalf">
+    				<p class="txtHead2">Languages and Libraries</p>
+    				<p class="txtReg">
+    					We've used a lot of programming languages
+    					over the years, and a lot of blood, sweat,
+    					and tears have gone into these decisions.
+    				</p>
+    				<hr/>
+
+    				<img class="imgIconMed" src="/img/foss_logos/c++_icon.png", alt="C++"/>
+    				<p class="txtReg">
+    					Far from being "outdated", Bjarne Strostrup's
+    					masterpiece langauge is still a leader in
+    					power and control, which is why it is the
+    					heart of our most essential technologies.
+    				</p>
+    				<p class="txtHead3 txtForceWrap"><a href="http://www.stroustrup.com/C++.html", target=_blank>www.stroustrup.com/C++.html</a></p>
+    				<hr/>
+
+    				<img class="imgCenter" src="/img/foss_logos/python_logo.png", alt="Python"/>
+    				<p class="txtReg">
+    					Named for Monty Python, the Python
+    					language is famous for its simple, clean
+    					syntax. That makes it our go-to whenever
+    					we need to create a utility or tool as soon
+    					as possible. Besides that, it has a lively
+    					community built around it...
+    				</p>
+    				<p class="txtHead3 txtForceWrap"><a href="https://www.python.org/", target=_blank>www.python.org</a></p>
+    			</td>
+    			<td class="colHalf">
+    				<p class="txtHead2">File Formats</p>
+    				<p class="txtReg">
+    					These formats were carefully selected for
+    					their superb quality and open-source
+    					emphasis. Support open-source by using and
+    					promoting these formats.
+    				</p>
+    				<hr/>
+
+    				<img class="imgCenter" src="/img/foss_logos/xiph_logo.png", alt="XIPH"/>
+    				<p class="txtReg">
+    					The codecs of the Xiph.org Foundation are
+    					an undisputed cornerstone of the open-source
+    					movement, so it should be no surprise that
+    					we rely on their Ogg Vorbis (audio) and
+    					Theora (video) formats.
+    				</p>
+    				<p class="txtHead3 txtForceWrap"><a href="http://www.xiph.org/", target=_blank>www.xiph.org</a></p>
+    				<hr/>
+
+    				<img class="imgIconMed" src="/img/foss_logos/odf_logo.png", alt="ODF"/>
+    				<p class="txtReg">
+    					The OpenDocument Format was designed to
+    					remove the software restrictions we face
+    					with other formats. ODF documents open with
+    					just about everything, including LibreOffice.
+    					MousePaw Games is proud to be among the
+    					many companies to adopt ODF as its standard.
+    				</p>
+    				<p class="txtHead3 txtForceWrap"><a href="http://www.opendocumentformat.org/", target=_blank>www.opendocumentformat.org</a></p>
+    				<hr/>
+
+    				<p class="txtReg">
+    					The Portable Network Graphics format, or
+    					PNG, was created as an answer to the
+    					restrictions of the GIF image format, among
+    					others. Today, many consider it to be one
+    					of (if not THE) best image format. We do
+    					too.
+    				</p>
+    				<p class="txtHead3 txtForceWrap"><a href="http://www.libpng.org/", target=_blank>www.libpng.org</a></p>
+    			</td>
+			</tr></table>
 
 		</div>
 		<?php include('footer.php'); ?>
