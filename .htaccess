@@ -36,79 +36,83 @@ RewriteRule ^out\/youtube$ "http\:\/\/youtube\.com\/mousepawgames" [L]
 RewriteRule ^out\/youtube\/subscribe$ "http\:\/\/youtube\.com\/subscription_center\?add_user\=mousepawgames" [L]
 
 # ERROR PAGES
-ErrorDocument 403 /403.php
-ErrorDocument 404 /404.php
+ErrorDocument 403 /mousepawgames/403.php
+ErrorDocument 404 /mousepawgames/404.php
+
+RewriteRule ^header.php "mousepawgames/header.php [L,R=301]
+
+RewriteRule ^software\/slannan\/?$ "mousepawgames/slannan.php" [NC,L]
 
 # COMPANY PAGES
-RewriteRule ^company\/?$ "company.php" [NC,L]
+RewriteRule ^company\/?$ "mousepawgames/company.php" [NC,L]
 Redirect 301 /about /company
 
-RewriteRule ^company\/connect\/?$ "connect.php" [NC,L]
+RewriteRule ^company\/connect\/?$ "mousepawgames/connect.php" [NC,L]
 Redirect 301 /contact /company/connect
 Redirect 301 /connect /company/connect
 Redirect 301 /company/contact /company/connect
 Redirect 301 /follow /company/connect
 Redirect 301 /news/follow /company/connect
 
-RewriteRule ^company\/faq\/?$ "faq.php" [NC,L]
+RewriteRule ^company\/faq\/?$ "mousepawgames/faq.php" [NC,L]
 Redirect 301 /faq /company/faq
 Redirect 301 /news/faq /company/faq
 
-RewriteRule ^company\/philosophy\/?$ "philosophy.php" [NC,L]
+RewriteRule ^company\/philosophy\/?$ "mousepawgames/philosophy.php" [NC,L]
 Redirect 301 /philosophy /company/philosophy
 
-RewriteRule ^company\/team\/?$ "team.php" [NC,L]
+RewriteRule ^company\/team\/?$ "mousepawgames/team.php" [NC,L]
 Redirect 301 /team /company/team
 
-RewriteRule ^company\/technologies\/?$ "technologies.php" [NC,L]
+RewriteRule ^company\/technologies\/?$ "mousepawgames/technologies.php" [NC,L]
 Redirect 301 /technologies /company/technologies
 Redirect 301 /technology /company/technologies
 Redirect 301 /tech /company/technologies
 
 # NEWS PAGES
-RewriteRule ^news\/?$ "news.php" [NC,L]
+RewriteRule ^news\/?$ "mousepawgames/news.php" [NC,L]
 RewriteRule ^news\/articles\/(\w*)\/?$ "article-$1.php" [NC,L]
 
 # SOFTWARE PAGES
-RewriteRule ^software\/?$ "software.php" [NC,L]
+RewriteRule ^software\/?$ "mousepawgames/software.php" [NC,L]
 Redirect 301 /labs /software
 Redirect 301 /labs/software /software
 Redirect 301 /projects /software
 
-RewriteRule ^software\/diamondquest\/?$ "diamondquest.php" [NC,L]
+RewriteRule ^software\/diamondquest\/?$ "mousepawgames/diamondquest.php" [NC,L]
 Redirect 301 /diamondquest /software/diamondquest
 Redirect 301 /projects/diamondquest /software/diamondquest
 
-RewriteRule ^software\/infiltrator\/?$ "infiltrator.php" [NC,L]
+RewriteRule ^software\/infiltrator\/?$ "mousepawgames/infiltrator.php" [NC,L]
 Redirect 301 /infiltrator /software/infiltrator
 Redirect 301 /projects/infiltrator /software/infiltrator
 
-RewriteRule ^software\/lightrift\/?$ "lightrift.php" [NC,L]
+RewriteRule ^software\/lightrift\/?$ "mousepawgames/lightrift.php" [NC,L]
 Redirect 301 /lightrift /software/lightrift
 Redirect 301 /projects/lightrift /software/lightrift
 
-RewriteRule ^software\/osr\/?$ "operationspyrat.php" [NC,L]
+RewriteRule ^software\/osr\/?$ "mousepawgames/operationspyrat.php" [NC,L]
 Redirect 301 /osr /software/osr
 Redirect 301 /software/operationspyrat /projects/osr
 Redirect 301 /operationspyrat /projects/osr
 Redirect 301 /projects/osr /software/osr
 
-RewriteRule ^software\/redstring\/?$ "redstring.php" [NC,L]
+RewriteRule ^software\/redstring\/?$ "mousepawgames/redstring.php" [NC,L]
 Redirect 301 /redstring /software/redstring
 Redirect 301 /projects/redstring /software/redstring
 
-RewriteRule ^software\/slannan\/?$ "slannan.php" [NC,L]
+RewriteRule ^software\/slannan\/?$ "mousepawgames/slannan.php" [NC,L]
 Redirect 301 /slannan /software/slannan
 Redirect 301 /projects/slannan /software/slannan
 
 # LIBRARIES PAGES
-RewriteRule ^libraries\/?$ "libraries.php" [NC,L]
+RewriteRule ^libraries\/?$ "mousepawgames/libraries.php" [NC,L]
 
-RewriteRule ^libraries\/anari\/?$ "anari.php" [NC,L]
+RewriteRule ^libraries\/anari\/?$ "mousepawgames/anari.php" [NC,L]
 Redirect 301 /anari /libraries/anari
 Redirect 301 /projects/anari /libraries/anari
 
-RewriteRule ^libraries\/pawlib\/?$ "pawlib.php" [NC,L]
+RewriteRule ^libraries\/pawlib\/?$ "mousepawgames/pawlib.php" [NC,L]
 Redirect 301 /pawlib /libraries/pawlib
 Redirect 301 /projects/pawlib /libraries/pawlib
 
@@ -118,37 +122,37 @@ Redirect 301 /iochannel /libraries/pawlib#iochannel
 Redirect 301 /pawstring /libraries/pawlib#pawstring
 Redirect 301 /puppeteerxml /libraries/pawlib#puppeteerxml
 
-RewriteRule ^libraries\/punchline\/?$ "punchline.php" [NC,L]
+RewriteRule ^libraries\/punchline\/?$ "mousepawgames/punchline.php" [NC,L]
 Redirect 301 /punchline /libraries/punchline
 Redirect 301 /projects/punchline /libraries/punchline
 
-RewriteRule ^libraries\/ratscript\/?$ "ratscript.php" [NC,L]
+RewriteRule ^libraries\/ratscript\/?$ "mousepawgames/ratscript.php" [NC,L]
 Redirect 301 /ratscript /libraries/ratscript
 Redirect 301 /projects/ratscript /libraries/ratscript
 
-RewriteRule ^libraries\/simplexpress\/?$ "simplexpress.php" [NC,L]
+RewriteRule ^libraries\/simplexpress\/?$ "mousepawgames/simplexpress.php" [NC,L]
 Redirect 301 /simplexpress /libraries/simplexpress
 Redirect 301 /projects/simplexpress /libraries/simplexpress
 
-RewriteRule ^libraries\/trailcrest\/?$ "trailcrest.php" [NC,L]
+RewriteRule ^libraries\/trailcrest\/?$ "mousepawgames/trailcrest.php" [NC,L]
 Redirect 301 /trailcrest /libraries/trailcrest
 Redirect 301 /projects/trailcrest /libraries/trailcrest
 
-RewriteRule ^libraries\/stormsound\/?$ "stormsound.php" [NC,L]
+RewriteRule ^libraries\/stormsound\/?$ "mousepawgames/stormsound.php" [NC,L]
 Redirect 301 /stormsound /libraries/stormsound
 Redirect 301 /projects/stormsound /libraries/stormsound
 
 # PARTICIPATE PAGES
-RewriteRule ^participate\/?$ "participate.php" [NC,L]
+RewriteRule ^participate\/?$ "mousepawgames/participate.php" [NC,L]
 Redirect 301 /getinvolved /participate
 
-RewriteRule ^participate\/internships$ "internships.php" [NC,L]
+RewriteRule ^participate\/internships$ "mousepawgames/internships.php" [NC,L]
 Redirect 301 /careers /participate/internships
 Redirect 301 /getinvolved/internships /participate/internships
 Redirect 301 /internships /participate/internships
 Redirect 301 /jobs /participate/internships
 
-RewriteRule ^participate\/testers$ "testers.php" [NC,L]
+RewriteRule ^participate\/testers$ "mousepawgames/testers.php" [NC,L]
 Redirect 301 /alpha /participate/testers
 Redirect 301 /beta /participate/testers
 Redirect 301 /getinvolved/alpha /participate/testers
@@ -156,29 +160,25 @@ Redirect 301 /getinvolved/beta /participate/testers
 Redirect 301 /testers /participate/testers
 Redirect 301 /testing /participate/testers
 
-RewriteRule ^participate\/opensource\/?$ "opensource.php" [NC,L]
+RewriteRule ^participate\/opensource\/?$ "mousepawgames/opensource.php" [NC,L]
 Redirect 301 /getinvolved/opensource /participate/opensource
 Redirect 301 /opensource /participate/opensource
 
 # RESOURCES PAGES
-RewriteRule ^resources\/?$ "resources.php" [NC,L]
+RewriteRule ^resources\/?$ "mousepawgames/resources.php" [NC,L]
 
-RewriteRule ^resources/standards\/?$ "standards.php" [NC,L]
+RewriteRule ^resources/standards\/?$ "mousepawgames/standards.php" [NC,L]
 Redirect 301 /standards /resources/standards
 
-# This will redirect to standards and their versions.
-RewriteRule ^resources/standards/(\w*)\/?$ "standards-$1.php" [NC,L]
-
-RewriteRule ^resources/education\/?$ "education.php" [NC,L]
+RewriteRule ^resources/education\/?$ "mousepawgames/education.php" [NC,L]
 Redirect 301 /education /resources/education
 
-RewriteRule ^resources/education/yellowsheets\/?$ "yellowsheets.php" [NC,L]
+RewriteRule ^resources/education/yellowsheets\/?$ "mousepawgames/yellowsheets.php" [NC,L]
 Redirect 301 /yellowsheets /resources/education/yellowsheets
 Redirect 301 /labs/yellowsheets /resources/education/yellowsheets
 
 # LEGAL STUFF
-RewriteRule ^termsofuse\/?$ "termsofuse.php" [NC,L]
-RewriteRule ^privacy\/?$ "privacy.php" [NC,L]
-RewriteRule ^legal\/?$ "legal.php" [NC,L]
-RewriteRule ^termsofdevelopment\/?$ "termsofdevelopment.php" [NC,L]
-
+RewriteRule ^termsofuse\/?$ "mousepawgames/termsofuse.php" [NC,L]
+RewriteRule ^privacy\/?$ "mousepawgames/privacy.php" [NC,L]
+RewriteRule ^legal\/?$ "mousepawgames/legal.php" [NC,L]
+RewriteRule ^termsofdevelopment\/?$ "mousepawgames/termsofdevelopment.php" [NC,L]
