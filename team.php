@@ -205,7 +205,7 @@
 
 				<a class="anchor" id="aprice"></a>
 				<p class="txtHead2">Alex Price</p>
-				<p class="txtHead2">Second Asst. Lead Developer (2015-)</p>
+				<p class="txtHead2">Assistant Lead Developer (2015-)</p>
 				<p class="txtHead2">Specialty: <a href="/stormsound" target=_blank>Stormsound</a></p>
 				<img class="imgFramedRight" src="/img/staff/AlexPrice.png"/>
 				<p class="txtReg">
@@ -263,8 +263,8 @@
 
 				<a class="anchor" id="staylor"></a>
 				<p class="txtHead2">Scott Taylor</p>
-				<p class="txtHead2">Assistant Lead Developer (2015-)</p>
-				<p class="txtHead2">Specialty: <a href="/trailcrest" target=_blank>Trailcrest</a>, <a href="/pawlib" target=_blank>PawLIB</a></p>
+				<p class="txtHead2">Senior Programmer (2015-)</p>
+				<p class="txtHead2">Specialty: <a href="/pawlib" target=_blank>PawLIB</a></p>
 				<img class="imgFramedRight" src="/img/staff/ScottTaylor.png"/>
 				<p class="txtReg">
 					Scott is an enigma wrapped in a conundrum
@@ -297,7 +297,7 @@
 
 				<a class="anchor" id="jthomas"></a>
 				<p class="txtHead2">Jarek Thomas</p>
-				<p class="txtHead2">Programmer (2016-)</p>
+				<p class="txtHead2">Second Asst. Lead Developer (2016-)</p>
 				<p class="txtHead2">Specialty: <a href="/simplexpress" target=_blank>SIMPLEXpress</a></p>
 				<img class="imgFramedRight" src="/img/staff/JarekThomas.png"/>
 				<p class="txtReg">
@@ -329,11 +329,11 @@
 					<br/>Lead Developer
 				</p>
 				<p class="txtHead3">
-					<a href=#staylor>Scott Taylor</a>
+					<a href=#aprice>Alex Price</a>
 					<br/>Asst Lead Developer
 				</p>
-				<p class="txtHead3">
-					<a href=#aprice>Alex Price</a>
+                <p class="txtHead3">
+					<a href=#jthomas>Jarek Thomas</a>
 					<br/>2nd Asst Lead Developer
 				</p>
 				<p class="txtHead3">
@@ -352,16 +352,16 @@
 					<a href=#ngroggett>Nate Groggett</a>
 					<br/>Senior Programmer
 				</p>
+                <p class="txtHead3">
+					<a href=#staylor>Scott Taylor</a>
+					<br/>Senior Programmer
+				</p>
 				<p class="txtHead3">
 					<a href=#sramirez>Sergio Ramirez</a>
 					<br/>Programmer
 				</p>
 				<p class="txtHead3">
 					<a href=#dsmith>Dave Smith</a>
-					<br/>Programmer
-				</p>
-				<p class="txtHead3">
-					<a href=#jthomas>Jarek Thomas</a>
 					<br/>Programmer
 				</p>
 				<p class="txtHead3">

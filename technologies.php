@@ -20,7 +20,7 @@
 				source community is built around that notion. By freely
 				sharing ideas, creations, and code, we can make a better
 				world for everyone – a world driven by innovation, and
-				not by greed.
+				not by profit.
 			</p>
 			<p class="txtReg">
 				Many of our projects are open-source, and we are
@@ -148,6 +148,17 @@
 					</p>
                     <p class="txtHead3 txtForceWrap"><a href="https://cmake.org", target=_blank>www.cmake.org</a></p>
                     <hr/>
+
+                    <img class="imgIcon" src="/img/foss_logos/jitsi_icon.png", alt="Jitsi Meet"/>
+					<p class="txtReg">
+						Successful teams collaborate, but that can be hard when
+                        everyone is working remotely. This is where video chat
+                        comes in, and nobody does it like Jitsi. With Jitsi Meet,
+                        our whole team can work together. It's smooth, simple, secure
+                        and totally open source!
+					</p>
+					<p class="txtHead3 txtForceWrap"><a href="https://jitsi.org/", target=_blank>www.jitsi.org</a></p>
+
 				</td>
 				<td class="colHalf">
 					<img class="imgCenter" src="/img/foss_logos/synfig_logo.png", alt="Synfig Studio"/>
@@ -303,8 +314,8 @@
     					The codecs of the Xiph.org Foundation are
     					an undisputed cornerstone of the open-source
     					movement, so it should be no surprise that
-    					we rely on their Ogg Vorbis (audio) and
-    					Theora (video) formats.
+    					we rely on their Opus, Ogg Vorbis, and
+    					Theora formats.
     				</p>
     				<p class="txtHead3 txtForceWrap"><a href="http://www.xiph.org/", target=_blank>www.xiph.org</a></p>
     				<hr/>

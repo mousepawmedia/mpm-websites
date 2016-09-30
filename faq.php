@@ -232,15 +232,6 @@
 						and security breach for every single user. Yes,
 						we read through that entire contract, and we
 						want nothing to do with that ticking time bomb.
-					</p>
-					<p class="txtReg">
-						If you think about it, the idea of anti-supporting
-						an operating system isn't new. Big software giants
-						have been anti-supporting Linux for years, when
-						making their software work on that operating
-						system would often take all of three days work.
-						We're just using the move to support freedom in
-						computing.
 					</p></div>
 				</div>
 
