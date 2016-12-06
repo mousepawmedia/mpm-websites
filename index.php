@@ -13,16 +13,7 @@
 		<div class="spacer"><p>&nbsp;</p></div>
 		<div class="pagemain">
 			<table class="tablemain"><tr>
-				<td class="colWide">
-					<p class="txtHead1">Scamper into Adventure!</p>
-					<p class="txtReg">
-						MousePaw Games is dedicated to creating
-						innovative solutions for education. Our
-						flagship project, Operation SpyRat, seeks
-						to provide a game experience that is at
-						once visually appealing, entertaining,
-						and academically robust.
-					</p>
+				ect
 					<p class="txtReg">
 						We know that not everyone learns the same.
 						We're dedicating extra attention to ensuring

@@ -14,7 +14,7 @@
 			<div class="pagemain">
 				<p class="txtHead1">Terms of Use</p>
 				<p class="txtReg">
-					PLEASE READ THESE TERMS OF USECAREFULLY (THIS
+					PLEASE READ THESE TERMS OF USE CAREFULLY (THIS
 					"AGREEMENT") BEFORE USING THIS SITE. By
 					continuing to browse and use this website (or
 					"Site"), you are agreeing to comply with and be
