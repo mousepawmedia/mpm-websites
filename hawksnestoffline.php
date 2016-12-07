@@ -21,7 +21,7 @@
                 inconvenience.
 			</p>
             <p class="txtHead3">
-				Our <a href="/out/github",target=_blank>Github mirrors</a>,
+				Our <a href="/out/github",target=_blank>GitHub mirrors</a>,
                 on the other hand, are available 24/7!
 			</p>
 			<p class="txtHead3">

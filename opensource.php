@@ -31,7 +31,7 @@
 					bugs, and contributing ideas and code.
 				</p>
 				<p class="txtReg">
-					We maintain mirrors of our repositories on Github.
+					We maintain mirrors of our repositories on GitHub.
 					<a href="#contribute">Click here</a> for
 					information on how to get started, or read
 					our <a href="/termsofdevelopment">Terms of Development</a>.
@@ -271,7 +271,7 @@
 						<li>
 							Obtain a copy of the project code from
 							<a href="https://github.com/mousepawgames" target=_blank>
-								Github.
+								GitHub.
 							</a>
 						</li>
 						<li>
@@ -290,7 +290,7 @@
 						</li>
 						<li>
 							Export your changes to a patch file. We are
-							unlikely to accept pull requests on Github.
+							unlikely to accept pull requests on GitHub.
 						</li>
 						<li>
 							Email your patch file to us. By submitting
@@ -326,25 +326,25 @@
 				<div class="expander" tabindex=-1>
 					<p class="txtReg"><b>
 						I don't see the code for one of your
-						projects on	Github!
+						projects on	GitHub!
 					</b></p>
 					<div class="hiddenDiv"><p class="txtReg">
 						We're in the process of getting our core
 						projects ready for open-sourcing. Stay tuned,
 						we promise they're coming. Subscribe to the
-						project in question on Github to get alerted
+						project in question on GitHub to get alerted
 						when we start mirroring.
 					</p></div>
 				</div>
 
 				<div class="expander" tabindex=-1>
 					<p class="txtReg"><b>
-						Why don't you accept Github pull requests?
+						Why don't you accept GitHub pull requests?
 					</b></p>
 					<div class="hiddenDiv"><p class="txtReg">
 						We use Phabricator for all of our development
 						work. We've found that the features of that
-						platform fit our workflow better than Github
+						platform fit our workflow better than GitHub
 						does.
 					</p></div>
 				</div>
@@ -352,7 +352,7 @@
 				<div class="expander" tabindex=-1>
 					<p class="txtReg"><b>
 						What are those weird ".arc[whatever]" files
-						on your Github repositories?
+						on your GitHub repositories?
 					</b></p>
 					<div class="hiddenDiv"><p class="txtReg">
 						Those allow Phabricator to interface with
@@ -366,7 +366,7 @@
 				<a href="https://github.com/mousepawgames" target=_blank>
 					<img class="imgIconSmall" src="/img/social_logos/github_icon.png"/>
 				</a>
-				<p class="txtHead3">Find our projects on Github!</p>
+				<p class="txtHead3">Find our projects on GitHub!</p>
 				<hr/>
 				<a href="http://opensource.org/" target=_blank>
 					<img class="imgIconSmall" src="/img/foss_logos/osi_logo.png"/>

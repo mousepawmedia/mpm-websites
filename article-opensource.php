@@ -70,7 +70,7 @@
 						</p>
 						<p class="txtReg">
 							The company will be maintaining mirrors of all its open-source
-							projects on Github. Developers are encouraged to get involved.
+							projects on GitHub. Developers are encouraged to get involved.
 							More details can be found <a href="/participate/opensource">here.</a>
 						</p>
 					</td>

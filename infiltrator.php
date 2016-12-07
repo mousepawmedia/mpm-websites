@@ -129,12 +129,12 @@
 								<a href="" target=_blank>64-bit</a>
 								-->
 								(Coming Soon! You can get the source
-								code from Github at the link below.)
+								code from GitHub at the link below.)
 							</p>
 							<hr width=80%/>
 							<p class="txtReg">
 								Download for Windows 7:
-								<a href="" target=_blank>64-bit</a>
+								<a href="http://www.mousepawgames.com/downloads/InfiltratorSetupX64.exe" target=_blank>64-bit</a>
 							</p>
 							<p class="txtReg">
 								NOTE: We'll keep trying to get this built for other versions
@@ -146,7 +146,7 @@
 							</p>
 							<hr width=80%/>
 							<p class="txtReg">Source:
-								<a href="https://github.com/mousepawgames/infiltrator" target=_blank>Github</a>
+								<a href="https://github.com/mousepawgames/infiltrator" target=_blank>GitHub</a>
 							</p>
 							<hr/>
 							<p class="txtFooter">*Features and details subject to change.</p>
@@ -167,8 +167,8 @@
 							</ul>
 							<hr/>
 							<a href="https://github.com/mousepawgames/infiltrator" target=_blank>
-								<img class="imgIcon" src="/img/social_logos/github_icon.png" alt="Github"/>
-								<p class="txtHead2">Find Infiltrator on Github</p>
+								<img class="imgIcon" src="/img/social_logos/github_icon.png" alt="GitHub"/>
+								<p class="txtHead2">Find Infiltrator on GitHub</p>
 							</a>
 							<hr/>
 							<p class="txtHead2">You May Also Like...</p>

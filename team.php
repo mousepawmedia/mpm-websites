@@ -298,7 +298,7 @@
 				<p class="txtReg">Hobbies: Coin collecting, soccer.</p>
 				<p class="txtReg">Reading: Sci-Fi, especially David Eddings.</p>
 				<p class="txtReg">
-					<a href="https://github.com/jthomas17" target=_blank>[Jarek's Github]</a>
+					<a href="https://github.com/jthomas17" target=_blank>[Jarek's GitHub]</a>
 				</p>
 				<p class="txtSmall"><a href=#top>Top</a></p>
 				<hr/>

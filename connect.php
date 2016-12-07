@@ -32,10 +32,10 @@
 						</p>
 					</td>
 					<td class="colQuarter colCenter colVMiddle">
-						<a href="/out/github" target=_blank><img class="imgIcon" src="/img/social_logos/github_icon.png" alt="Github"/>
+						<a href="/out/github" target=_blank><img class="imgIcon" src="/img/social_logos/github_icon.png" alt="GitHub"/>
 						<p class="txtHead2 txtForceWrap">mousepawgames</p></a>
 						<p class="txtReg">
-							Browse and download our code on Github.
+							Browse and download our code on GitHub.
 						</p>
 					</td>
 				</tr>

@@ -67,7 +67,7 @@
 							but I believe the payoff will be more than worth it.”
 						</p>
 						<p class="txtReg">
-							MousePaw Games has forked Synfig Studio on Github, and will be focusing
+							MousePaw Games has forked Synfig Studio on GitHub, and will be focusing
 							on building full interactivity and scripting capabilities into the
 							animation software. The company is dedicated to supporting Synfig Studio
 							for the long haul in whatever way possible.

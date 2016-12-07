@@ -26,8 +26,8 @@
 							</ul>
 							<hr/>
 							<a href="https://github.com/mousepawgames/redstring" target=_blank>
-								<img class="imgIcon" src="/img/social_logos/github_icon.png" alt="Github"/>
-								<p class="txtHead2">Find Redstring on Github</p>
+								<img class="imgIcon" src="/img/social_logos/github_icon.png" alt="GitHub"/>
+								<p class="txtHead2">Find Redstring on GitHub</p>
 							</a>
 							<hr/>
 							<p class="txtHead2">You May Also Like...</p>
@@ -139,7 +139,7 @@
 
 							<hr width=80%/>
 							<p class="txtReg">Source:
-								<a href="https://github.com/mousepawgames/redstring" target=_blank>Github</a>
+								<a href="https://github.com/mousepawgames/redstring" target=_blank>GitHub</a>
 							</p>
 
 							<hr/>

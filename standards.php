@@ -22,7 +22,7 @@
 				<br/>
 				<br/>
 				<a href="http://standards.mousepawgames.com">Read the Standards</a> |
-				<a href="http://github.com/mousepawgames/standards">Github Mirror</a>
+				<a href="http://github.com/mousepawgames/standards">GitHub Mirror</a>
 			</p>
 			<hr/>
 		</div>

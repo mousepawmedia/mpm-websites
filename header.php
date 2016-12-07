@@ -38,7 +38,7 @@
 
 					<a href="/out/twitter" target=_blank><img width=8% title="Twitter: @mousepawgames" alt="Twitter" src="/img/social_logos/twitter_icon.png"/></a>
 					<a href="/out/linkedin" target=_blank><img width=8% title="LinkedIn" alt="LinkedIn" src="/img/social_logos/linkedin_icon.png"/></a>
-					<a href="/out/github" target=_blank><img width=8% title="Github: mousepawgames" alt="Github" src="/img/social_logos/github_icon.png"/></a>
+					<a href="/out/github" target=_blank><img width=8% title="GitHub: mousepawgames" alt="GitHub" src="/img/social_logos/github_icon.png"/></a>
 					<a href="/out/google+" target=_blank><img width=8% title="Google+: mousepawgames" alt="Google+" src="/img/social_logos/google+_icon.png"/></a>
 					<a href="/out/youtube" target=_blank><img width=12% title="YouTube: mousepawgames" alt="YouTube" src="/img/social_logos/youtube_icon.png"/></a>
 				</td>
