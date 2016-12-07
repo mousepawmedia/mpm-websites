@@ -145,9 +145,7 @@
 				<img class="imgFramedRight" src="/img/staff/DanielLee.png"/>
 				<p class="txtReg">
 					(Bio coming soon.)
-                    <br/>
-                    <br/>
-                    <br/>
+                    &nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>
 				</p>
 				<p class="txtSmall"><a href=#top>Top</a></p>
 				<hr/>
@@ -182,9 +180,7 @@
 				<img class="imgFramedRight" src="/img/staff/AndrewPeacock.png"/>
 				<p class="txtReg">
 					(Bio coming soon.)
-                    <br/>
-                    <br/>
-                    <br/>
+                    &nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>
 				</p>
 				<p class="txtSmall"><a href=#top>Top</a></p>
 				<hr/>
