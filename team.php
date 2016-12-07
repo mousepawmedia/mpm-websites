@@ -145,7 +145,7 @@
 				<img class="imgFramedRight" src="/img/staff/DanielLee.png"/>
 				<p class="txtReg">
 					(Bio coming soon.)
-                    &nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>
+                    &nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>
 				</p>
 				<p class="txtSmall"><a href=#top>Top</a></p>
 				<hr/>
