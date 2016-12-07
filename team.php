@@ -80,21 +80,19 @@
 				<hr/>
 
 
-				<a class="anchor" id="banders"></a>
-				<p class="txtHead2">Bryan Anders</p>
+                <a class="anchor" id="cfrasier"></a>
+				<p class="txtHead2">Chris Frasier</p>
 				<p class="txtHead2">Senior Programmer (2015-)</p>
-				<p class="txtHead2">Specialty: <a href="/punchline" target=_blank>Punchline</a></p>
-				<img class="imgFramedRight" src="/img/staff/BryanAnders.png"/>
+				<img class="imgFramedRight" src="/img/staff/ChrisFrasier.png"/>
 				<p class="txtReg">
-					Bryan discovered computer science after a
-					couple of years "wandering in the wilderness
-					of college," as he says. He fell in love with
-					problem solving at the core of programming.
+					Chris is an old school coder (he speaks of punchcards and
+                    COBOL) who contributes his expertise and snark to the
+                    development team at MousePaw Games. He's also one of the
+                    nerds responsible for wrangling the production server.
 				</p>
-				<p class="txtReg">&nbsp;</p>
-				<p class="txtReg">&nbsp;</p>
-				<p class="txtReg">&nbsp;</p>
-				<p class="txtReg">&nbsp;</p>
+				<p class="txtReg">SpyRat Identity: Fox</p>
+				<p class="txtReg">Hobbies: Camping, hiking, rock climbing.</p>
+				<p class="txtReg">Alternative Time Period: Star date 48315.6</p>
 				<p class="txtSmall"><a href=#top>Top</a></p>
 				<hr/>
 
@@ -113,26 +111,6 @@
 				<p class="txtReg">Playing: Tabletop &amp; graphical RPGs, chess, card games.</p>
 				<p class="txtReg">Pizza Order: Meatlovers</p>
 				<p class="txtReg">Other Vehicle: Light Jet from <i>Tron Legacy</i></p>
-				<p class="txtSmall"><a href=#top>Top</a></p>
-				<hr/>
-
-
-				<a class="anchor" id="ahenry"></a>
-				<p class="txtHead2">Audrey Henry</p>
-				<p class="txtHead2">Senior Programmer (2015-)</p>
-				<p class="txtHead2">Specialty: <a href="/anari" target=_blank>Anari Graphics Engine</a></p>
-				<img class="imgFramedRight" src="/img/staff/AudreyHenry.png"/>
-				<p class="txtReg">
-					Audrey has always loved computers and games since
-					she was little, having been raised playing
-					educational games. It wasn't until her first
-					quarter of college that she discovered what
-					actually goes into a computer program, but once
-					she started coding, she was hooked.
-				</p>
-				<p class="txtReg">SpyRat Identity: Hermit Crab</p>
-				<p class="txtReg">Hobbies: Knitting, reading, drawing.</p>
-				<p class="txtReg">Pizza Order: Plain ol' Pepperoni</p>
 				<p class="txtSmall"><a href=#top>Top</a></p>
 				<hr/>
 
@@ -160,6 +138,21 @@
 				<p class="txtSmall"><a href=#top>Top</a></p>
 				<hr/>
 
+
+                <a class="anchor" id="dlee"></a>
+				<p class="txtHead2">Daniel Lee</p>
+				<p class="txtHead2">Content Developer (2016-)</p>
+				<img class="imgFramedRight" src="/img/staff/DanielLee.png"/>
+				<p class="txtReg">
+					(Bio coming soon.)
+                    <br/>
+                    <br/>
+                    <br/>
+				</p>
+				<p class="txtSmall"><a href=#top>Top</a></p>
+				<hr/>
+
+
 				<a class="anchor" id="jmcarthur"></a>
 				<p class="txtHead2">Jane McArthur</p>
 				<p class="txtHead2">Senior Content Developer (2014-)</p>
@@ -181,24 +174,18 @@
 				<p class="txtSmall"><a href=#top>Top</a></p>
 				<hr/>
 
-				<a class="anchor" id="mparkman"></a>
-				<p class="txtHead2">Michael Parkman</p>
-				<p class="txtHead2">Senior Programmer (2014-)</p>
-				<p class="txtHead2">Specialty: <a href="/ratscript" target=_blank>Ratscript</a>, <a href="/pawlib" target=_blank>PawLIB</a></p>
-				<img class="imgFramedRight" src="/img/staff/MichaelParkman.png"/>
+
+                <a class="anchor" id="apeacock"></a>
+				<p class="txtHead2">Andrew Peacock</p>
+				<p class="txtHead2">Programmer (2016-)</p>
+                <p class="txtHead2">Specialty: <a href="/anari" target=_blank>Anari Graphics Engine</a>
+				<img class="imgFramedRight" src="/img/staff/AndrewPeacock.png"/>
 				<p class="txtReg">
-					Michael first got into computers after
-					a course at his high school, and started getting
-					ideas from his friends on what to build. The
-					son of a preschool teacher, Michael enjoys working
-					with kids, so it is no surprise that he now
-					helps build children's educational software.
-					(Rumor has it, he is also capable of appearing as
-					an ethereal fog.)
+					(Bio coming soon.)
+                    <br/>
+                    <br/>
+                    <br/>
 				</p>
-				<p class="txtReg">Playing: Super Mario Sunshine, Mario Kart, Guitar Hero 3</p>
-				<p class="txtReg">SpyRat Identity: Wolf</p>
-				<p class="txtReg">Pizza Order: Pepperoni</p>
 				<p class="txtSmall"><a href=#top>Top</a></p>
 				<hr/>
 
@@ -245,7 +232,7 @@
 				<a class="anchor" id="dsmith"></a>
 				<p class="txtHead2">Dave Smith</p>
 				<p class="txtHead2">Programmer (2016-)</p>
-				<p class="txtHead2">Specialty: Content Development tools</p>
+				<p class="txtHead2">Specialty: <a href="/lightrift" target=_blank>Lightrift</a>
 				<img class="imgFramedRight" src="/img/staff/DaveSmith.png"/>
 				<p class="txtReg">
 					As a lifetime gamer, Dave has continually become
@@ -260,6 +247,7 @@
 				<p class="txtReg">Playing: Heroes of the Storm, Fallout 4. Still waiting for the next Zelda!</p>
 				<p class="txtSmall"><a href=#top>Top</a></p>
 				<hr/>
+
 
 				<a class="anchor" id="staylor"></a>
 				<p class="txtHead2">Scott Taylor</p>
@@ -277,9 +265,10 @@
 				<p class="txtSmall"><a href=#top>Top</a></p>
 				<hr/>
 
+
 				<a class="anchor" id="jtheodore"></a>
 				<p class="txtHead2">Jonathan Theodore</p>
-				<p class="txtHead2">Junior Programmer (2016-)</p>
+				<p class="txtHead2">Programmer (2016-)</p>
 				<p class="txtHead2">Specialty: <a href="/pawlib" target=_blank>PawLIB</a></p>
 				<img class="imgFramedRight" src="/img/staff/JonathanTheodore.png"/>
 				<p class="txtReg">
@@ -337,24 +326,16 @@
 					<br/>2nd Asst Lead Developer
 				</p>
 				<p class="txtHead3">
-					<a href=#banders>Bryan Anders</a>
-					<br/>Senior Programmer
-				</p>
-                <p class="txtHead3">
-					<a href=#ahenry>Audrey Henry</a>
-					<br/>Senior Programmer
-				</p>
-				<p class="txtHead3">
-					<a href=#mparkman>Michael Parkman</a>
-					<br/>Senior Programmer
-				</p>
-				<p class="txtHead3">
 					<a href=#ngroggett>Nate Groggett</a>
 					<br/>Senior Programmer
 				</p>
                 <p class="txtHead3">
 					<a href=#staylor>Scott Taylor</a>
 					<br/>Senior Programmer
+				</p>
+                <p class="txtHead3">
+					<a href=#jtheodore>Andrew Peacock</a>
+					<br/>Programmer
 				</p>
 				<p class="txtHead3">
 					<a href=#sramirez>Sergio Ramirez</a>
@@ -364,9 +345,9 @@
 					<a href=#dsmith>Dave Smith</a>
 					<br/>Programmer
 				</p>
-				<p class="txtHead3">
+                <p class="txtHead3">
 					<a href=#jtheodore>Jonathan Theodore</a>
-					<br/>Junior Programmer
+					<br/>Programmer
 				</p>
 				<hr/>
 
@@ -380,6 +361,10 @@
 				<p class="txtHead3">
 					<a href=#ajensen>Alex Jensen</a>
 					<br/>Asst Lead Content Developer
+				</p>
+                <p class="txtHead3">
+					<a href=#dlee>Daniel Lee</a>
+					<br/>Programmer
 				</p>
 				<p class="txtHead3">
 					<a href=#jmcarthur>Jane McArthur</a>
@@ -395,6 +380,11 @@
 
 
 				<p class="txtHead2">Alumni</p>
+                <p class="txtHead3">
+					Bryan Anders
+					<br/>Senior Programmer
+					<br/>(2014-2016)
+				</p>
 				<p class="txtHead3">
 					Stacy Carlson
 					<br/>Senior Programmer
@@ -410,10 +400,20 @@
 					<br/>Asst Lead Developer
 					<br/>(2010-2012)
 				</p>
+                <p class="txtHead3">
+					Audrey Henry
+					<br/>Senior Programmer
+					<br/>(2014-2016)
+				</p>
 				<p class="txtHead3">
 					Jared Hutton
 					<br/>Senior Programmer
 					<br/>(2014-2015)
+				</p>
+                <p class="txtHead3">
+					Michael Parkman
+					<br/>Senior Programmer
+					<br/>(2014-2016)
 				</p>
 				<p class="txtHead3">
 					Mallory Ruesch

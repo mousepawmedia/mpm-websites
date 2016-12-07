@@ -37,8 +37,6 @@
 								with the other players, and try to collect the most. There's
 								a catch, however: one of the agents is the infiltrator,
 								and if you enter a code from them, you're out of the game!
-								Can someone correctly identify the double agent, or will
-								the infiltrator be the last one standing?
 							</p>
 							<p class="txtReg">
 								Can someone correctly identify the double agent, or will
