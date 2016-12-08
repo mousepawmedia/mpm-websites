@@ -13,7 +13,7 @@
 		<div class="spacer"><p>&nbsp;</p></div>
 		<div class="pagemain">
 			<table class="tablemain"><tr>
-                <td>
+                <td class="colWide">
                     <p class="txtHead1">Scamper into Adventure!</p>
 					<p class="txtReg">
 						We know that not everyone learns the same.
