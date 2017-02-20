@@ -32,7 +32,7 @@
 							Get notified when Ratscript is released!
 						</a></p>
 						<hr/>
-						<a href="https://github.com/mousepawgames/ratscript" target=_blank>
+						<a href="https://github.com/mousepawmedia/ratscript" target=_blank>
 							<img class="imgIcon" src="/img/social_logos/github_icon.png" alt="GitHub"/>
 							<p class="txtHead2">Find Ratscript on GitHub</p>
 						</a>
@@ -161,7 +161,7 @@
 							<div class="hiddenDiv"><p class="txtReg">
 								Ratscript is in active development.
 								You can check out the code on the
-								<a href="https://github.com/mousepawgames/ratscript" target=_blank>
+								<a href="https://github.com/mousepawmedia/ratscript" target=_blank>
 									GitHub mirror,
 								</a> and subscribe to
 								<a href="http://ratbox:81/out/enews/pawnews" target=_blank>

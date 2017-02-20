@@ -148,7 +148,7 @@
 							<div class="hiddenDiv"><p class="txtReg">
 								SIMPLEXpress is in active development.
 								You can check out the code on the
-								<a href="https://github.com/mousepawgames/simplexpress" target=_blank>
+								<a href="https://github.com/mousepawmedia/simplexpress" target=_blank>
 									GitHub mirror,
 								</a> and subscribe to
 								<a href="http://ratbox:81/out/enews/pawnews" target=_blank>
@@ -171,7 +171,7 @@
 							<li>Free and Open Source.</li>
 						</ul>
 						<hr/>
-						<a href="https://github.com/mousepawgames/simplexpress" target=_blank>
+						<a href="https://github.com/mousepawmedia/simplexpress" target=_blank>
 							<img class="imgIcon" src="/img/social_logos/github_icon.png" alt="GitHub"/>
 							<p class="txtHead2">Find SIMPLEXpress on GitHub</p>
 						</a>

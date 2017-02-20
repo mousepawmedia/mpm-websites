@@ -25,7 +25,7 @@
 								<li>Free and Open Source</li>
 							</ul>
 							<hr/>
-							<a href="https://github.com/mousepawgames/redstring" target=_blank>
+							<a href="https://github.com/mousepawmedia/redstring" target=_blank>
 								<img class="imgIcon" src="/img/social_logos/github_icon.png" alt="GitHub"/>
 								<p class="txtHead2">Find Redstring on GitHub</p>
 							</a>
@@ -139,7 +139,7 @@
 
 							<hr width=80%/>
 							<p class="txtReg">Source:
-								<a href="https://github.com/mousepawgames/redstring" target=_blank>GitHub</a>
+								<a href="https://github.com/mousepawmedia/redstring" target=_blank>GitHub</a>
 							</p>
 
 							<hr/>

@@ -176,7 +176,7 @@
 							<div class="hiddenDiv"><p class="txtReg">
 								Trailcrest is in active development.
 								You can check out the code on the
-								<a href="https://github.com/mousepawgames/ratscript" target=_blank>
+								<a href="https://github.com/mousepawmedia/ratscript" target=_blank>
 									GitHub mirror,
 								</a> and subscribe to
 								<a href="http://ratbox:81/out/enews/pawnews" target=_blank>
@@ -200,7 +200,7 @@
 							<li>Educators have complete control.</li>
 						</ul>
 						<hr/>
-						<a href="https://github.com/mousepawgames/trailcrest" target=_blank>
+						<a href="https://github.com/mousepawmedia/trailcrest" target=_blank>
 							<img class="imgIcon" src="/img/social_logos/github_icon.png" alt="GitHub"/>
 							<p class="txtHead2">Find Trailcrest on GitHub</p>
 						</a>

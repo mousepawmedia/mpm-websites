@@ -25,7 +25,7 @@
 							<li>Free and Open Source</li>
 						</ul>
 						<hr/>
-						<a href="https://github.com/mousepawgames/diamondquest" target=_blank>
+						<a href="https://github.com/mousepawmedia/diamondquest" target=_blank>
 							<img class="imgIcon" src="/img/social_logos/github_icon.png" alt="GitHub"/>
 							<p class="txtHead2">Find DiamondQuest on GitHub</p>
 						</a>
@@ -122,7 +122,7 @@
 
 						<hr width=80%/>
 						<p class="txtReg">Source:
-							<a href="https://github.com/mousepawgames/diamondquest" target=_blank>GitHub</a>
+							<a href="https://github.com/mousepawmedia/diamondquest" target=_blank>GitHub</a>
 						</p>
 
 						<hr/>

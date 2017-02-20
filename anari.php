@@ -26,7 +26,7 @@
 							<li>Ideal for game development!</li>
 						</ul>
 						<hr/>
-						<a href="https://github.com/mousepawgames/anari" target=_blank>
+						<a href="https://github.com/mousepawmedia/anari" target=_blank>
 							<img class="imgIcon" src="/img/social_logos/github_icon.png" alt="GitHub"/>
 							<p class="txtHead2">Find Anari on GitHub</p>
 						</a>
@@ -142,7 +142,7 @@
 							<div class="hiddenDiv"><p class="txtReg">
 								Anari is in active development.
 								You can check out the code on the
-								<a href="https://github.com/mousepawgames/ratscript" target=_blank>
+								<a href="https://github.com/mousepawmedia/ratscript" target=_blank>
 									GitHub mirror,
 								</a> and subscribe to
 								<a href="http://ratbox:81/out/enews/pawnews" target=_blank>

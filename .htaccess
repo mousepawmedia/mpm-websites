@@ -30,7 +30,7 @@ Redirect 301 /facebook /news/articles/leaving_facebook
 RewriteRule ^out\/twitter$ "https\:\/\/twitter\.com\/mousepawgames" [L]
 Redirect 301 /twitter /out/twitter
 RewriteRule ^out\/linkedin$ "http\:\/\/linkedin\.com\/company/mousepaw-games" [L]
-RewriteRule ^out\/github$ "http\:\/\/github\.com\/mousepawgames" [L]
+RewriteRule ^out\/github$ "http\:\/\/github\.com\/mousepawmedia" [L]
 RewriteRule ^out\/google\+$ "http\:\/\/plus\.google\.com\/\+Mousepawgames" [L]
 RewriteRule ^out\/youtube$ "http\:\/\/youtube\.com\/mousepawgames" [L]
 RewriteRule ^out\/youtube\/subscribe$ "http\:\/\/youtube\.com\/subscription_center\?add_user\=mousepawgames" [L]

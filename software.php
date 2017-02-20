@@ -144,7 +144,7 @@
 						few things. We'll be revisiting the design of
 						the software somewhere down the line.
 						In the meantime, the code can still be found
-						on <a href="https://github.com/mousepawgames/slannan" target=_blank>GitHub</a>,
+						on <a href="https://github.com/mousepawmedia/slannan" target=_blank>GitHub</a>,
 						so you're welcome to run it from the Python
 						source if you're feeling adventurous.
 					</p>

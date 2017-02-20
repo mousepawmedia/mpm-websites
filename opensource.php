@@ -270,7 +270,7 @@
 						<ol>
 						<li>
 							Obtain a copy of the project code from
-							<a href="https://github.com/mousepawgames" target=_blank>
+							<a href="https://github.com/mousepawmedia" target=_blank>
 								GitHub.
 							</a>
 						</li>
@@ -363,7 +363,7 @@
 				</div>
 
 				<hr/>
-				<a href="https://github.com/mousepawgames" target=_blank>
+				<a href="https://github.com/mousepawmedia" target=_blank>
 					<img class="imgIconSmall" src="/img/social_logos/github_icon.png"/>
 				</a>
 				<p class="txtHead3">Find our projects on GitHub!</p>

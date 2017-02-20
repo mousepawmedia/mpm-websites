@@ -146,7 +146,7 @@
 							</p>
 							<hr width=80%/>
 							<p class="txtReg">Source:
-								<a href="https://github.com/mousepawgames/infiltrator" target=_blank>GitHub</a>
+								<a href="https://github.com/mousepawmedia/infiltrator" target=_blank>GitHub</a>
 							</p>
 							<hr/>
 							<p class="txtFooter">*Features and details subject to change.</p>
@@ -166,7 +166,7 @@
 								<li>Auto-saves your game.</li>
 							</ul>
 							<hr/>
-							<a href="https://github.com/mousepawgames/infiltrator" target=_blank>
+							<a href="https://github.com/mousepawmedia/infiltrator" target=_blank>
 								<img class="imgIcon" src="/img/social_logos/github_icon.png" alt="GitHub"/>
 								<p class="txtHead2">Find Infiltrator on GitHub</p>
 							</a>

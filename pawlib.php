@@ -116,7 +116,7 @@
 							<div class="hiddenDiv"><p class="txtReg">
 								PawLIB is in active development.
 								You can check out the code on the
-								<a href="https://github.com/mousepawgames/pawlib" target=_blank>
+								<a href="https://github.com/mousepawmedia/pawlib" target=_blank>
 									GitHub mirror,
 								</a> and subscribe to
 								<a href="http://ratbox:81/out/enews/pawnews" target=_blank>
@@ -139,7 +139,7 @@
 							<li>Resource-friendly data structures.</li>
 						</ul>
 						<hr/>
-						<a href="https://github.com/mousepawgames/pawlib" target=_blank>
+						<a href="https://github.com/mousepawmedia/pawlib" target=_blank>
 							<img class="imgIcon" src="/img/social_logos/github_icon.png" alt="GitHub"/>
 							<p class="txtHead2">Find PawLIB on GitHub</p>
 						</a>
