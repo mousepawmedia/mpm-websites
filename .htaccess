@@ -63,6 +63,7 @@ Redirect 301 /philosophy /company/philosophy
 
 RewriteRule ^company\/team\/?$ "/team.php" [NC,L]
 Redirect 301 /team /company/team
+Redirect 301 /staff /company/team
 
 RewriteRule ^company\/technologies\/?$ "/technologies.php" [NC,L]
 Redirect 301 /technologies /company/technologies
