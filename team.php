@@ -117,7 +117,7 @@
 
 				<a class="anchor" id="ajensen"></a>
 				<p class="txtHead2">Alex Jensen</p>
-				<p class="txtHead2">Assistant Lead Content Developer (2015-)</p>
+				<p class="txtHead2">2nd Asst Lead Content Developer (2015-)</p>
 				<p class="txtHead2">Specialty: <a href="/operationspyrat" target=_blank><i>Operation SpyRat</i></a> Content</p>
 				<img class="imgFramedRight" src="/img/staff/AlexJensen.png"/>
 				<p class="txtReg">
@@ -227,7 +227,7 @@
 
 				<a class="anchor" id="dsmith"></a>
 				<p class="txtHead2">Dave Smith</p>
-				<p class="txtHead2">Programmer (2016-)</p>
+				<p class="txtHead2">Senior Programmer (2016-)</p>
 				<p class="txtHead2">Specialty: <a href="/lightrift" target=_blank>Lightrift</a>
 				<img class="imgFramedRight" src="/img/staff/DaveSmith.png"/>
 				<p class="txtReg">
@@ -262,27 +262,9 @@
 				<hr/>
 
 
-				<a class="anchor" id="jtheodore"></a>
-				<p class="txtHead2">Jonathan Theodore</p>
-				<p class="txtHead2">Programmer (2016-)</p>
-				<p class="txtHead2">Specialty: <a href="/pawlib" target=_blank>PawLIB</a></p>
-				<img class="imgFramedRight" src="/img/staff/JonathanTheodore.png"/>
-				<p class="txtReg">
-					Jonathan has been interested in game development
-					and storytelling since childhood. After exploring
-					psychology and pre-med in college, he switched his
-					focus to computer programming. He is especially
-					interested in the creative facets of game design.
-				</p>
-				<p class="txtReg">Coffee Order: Dutch Bros White Chocolate Caramel Kicker w/ Cinnamon Sprinkles</p>
-				<p class="txtReg">Hobbies: Making and performing music.</p>
-				<p class="txtReg">Alternate Time Period: The future, where Netnavis are a thing.</p>
-				<p class="txtSmall"><a href=#top>Top</a></p>
-				<hr/>
-
 				<a class="anchor" id="jthomas"></a>
 				<p class="txtHead2">Jarek Thomas</p>
-				<p class="txtHead2">Second Asst. Lead Developer (2016-)</p>
+				<p class="txtHead2">Asst. Lead Developer (2016-)</p>
 				<p class="txtHead2">Specialty: <a href="/simplexpress" target=_blank>SIMPLEXpress</a></p>
 				<img class="imgFramedRight" src="/img/staff/JarekThomas.png"/>
 				<p class="txtReg">
@@ -315,19 +297,23 @@
 				</p>
 				<p class="txtHead3">
 					<a href=#aprice>Alex Price</a>
-					<br/>Asst Lead Developer
+					<br/>Asst Lead Developer*
 				</p>
                 <p class="txtHead3">
 					<a href=#jthomas>Jarek Thomas</a>
-					<br/>2nd Asst Lead Developer
+					<br/>Asst Lead Developer*
 				</p>
 				<p class="txtHead3">
 					<a href=#ngroggett>Nate Groggett</a>
-					<br/>Senior Programmer
+					<br/>Senior Programmer*
+				</p>
+                <p class="txtHead3">
+					<a href=#dsmith>Dave Smith</a>
+					<br/>Senior Programmer*
 				</p>
                 <p class="txtHead3">
 					<a href=#staylor>Scott Taylor</a>
-					<br/>Senior Programmer
+					<br/>Senior Programmer*
 				</p>
                 <p class="txtHead3">
 					<a href=#jtheodore>Andrew Peacock</a>
@@ -335,14 +321,6 @@
 				</p>
 				<p class="txtHead3">
 					<a href=#sramirez>Sergio Ramirez</a>
-					<br/>Programmer
-				</p>
-				<p class="txtHead3">
-					<a href=#dsmith>Dave Smith</a>
-					<br/>Programmer
-				</p>
-                <p class="txtHead3">
-					<a href=#jtheodore>Jonathan Theodore</a>
 					<br/>Programmer
 				</p>
 				<hr/>
@@ -356,11 +334,11 @@
 				</p>
 				<p class="txtHead3">
 					<a href=#ajensen>Alex Jensen</a>
-					<br/>Asst Lead Content Developer
+					<br/>2nd Asst Lead Content Dev
 				</p>
                 <p class="txtHead3">
 					<a href=#dlee>Daniel Lee</a>
-					<br/>Programmer
+					<br/>Content Developer
 				</p>
 				<p class="txtHead3">
 					<a href=#jmcarthur>Jane McArthur</a>
@@ -368,22 +346,24 @@
 				</p>
 				<hr/>
 
-
 				<p class="txtHead2">You Could Be Here!</p>
-				<p class="txtReg">We're currently looking to expand our team. Come intern with us, and become a part of the team at the cutting edge of educational software.</p>
+				<p class="txtReg">
+                    We're currently looking to expand our team. Come intern
+                    with us, and become a part of the team at the cutting edge
+                    of educational software.
+                </p>
 				<p class="txtHead3"><a href="/participate/internships" target=_blank>Find out more!</a></p>
 				<hr/>
-
 
 				<p class="txtHead2">Alumni</p>
                 <p class="txtHead3">
 					Bryan Anders
-					<br/>Senior Programmer
+					<br/>Senior Programmer*
 					<br/>(2014-2016)
 				</p>
 				<p class="txtHead3">
 					Stacy Carlson
-					<br/>Senior Programmer
+					<br/>Senior Programmer*
 					<br/>(2014-2015)
 				</p>
 				<p class="txtHead3">
@@ -398,17 +378,17 @@
 				</p>
                 <p class="txtHead3">
 					Audrey Henry
-					<br/>Senior Programmer
+					<br/>Senior Programmer*
 					<br/>(2014-2016)
 				</p>
 				<p class="txtHead3">
 					Jared Hutton
-					<br/>Senior Programmer
+					<br/>Senior Programmer*
 					<br/>(2014-2015)
 				</p>
                 <p class="txtHead3">
 					Michael Parkman
-					<br/>Senior Programmer
+					<br/>Senior Programmer*
 					<br/>(2014-2016)
 				</p>
 				<p class="txtHead3">
@@ -420,6 +400,13 @@
 					Jason Swannack
 					<br/>Programmer
 					<br/>(2013)</p>
+
+				<p class="txtHead2">Note To Employers</p>
+				<p class="txtReg">
+                    All internship graduates are exhaustively listed in this
+                    column, with a (*) next to their title.
+                </p>
+				<hr/>
 			</td>
 			</tr></table>
 		</div>
