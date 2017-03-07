@@ -303,7 +303,11 @@
 					<a href=#jthomas>Jarek Thomas</a>
 					<br/>Asst Lead Developer*
 				</p>
-				<p class="txtHead3">
+                <p class="txtHead3">
+					<a href=#cfrasier>Chris Frasier</a>
+					<br/>Senior Programmer
+				</p>
+                <p class="txtHead3">
 					<a href=#ngroggett>Nate Groggett</a>
 					<br/>Senior Programmer*
 				</p>
@@ -401,12 +405,12 @@
 					<br/>Programmer
 					<br/>(2013)</p>
 
+                <hr/>
 				<p class="txtHead2">Note To Employers</p>
 				<p class="txtReg">
                     All internship graduates are exhaustively listed in this
                     column, with a (*) next to their title.
                 </p>
-				<hr/>
 			</td>
 			</tr></table>
 		</div>
