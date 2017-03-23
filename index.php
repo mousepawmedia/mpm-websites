@@ -39,9 +39,14 @@
 					</p>
 					<hr/>
                     <img class="imgIcon" src="/img/mousepawdcast_weblogo.png" alt="MousePaw'dCast Logo"/>
-                    <p class="txtHead2"><a href="https://archive.org/details/mousepawdcast_ep1" target=_blank>Episode 1: History and Characters</a></p>
+                    <p class="txtHead2"><a href="https://archive.org/details/mousepawdcast_ep2" target=_blank>Episode 2: Accents and APIs</a></p>
                     <p class="txtHead3">
-                        <iframe src="https://archive.org/embed/mousepawdcast_ep1" width="500" height="140" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+                        <iframe src="https://archive.org/embed/mousepawdcast_ep2" width="500" height="140" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+                    </p>
+                    <p class="txtHead3">
+                        Previous Episodes:
+                        <br/>
+                        <a href="https://archive.org/details/mousepawdcast_ep1" target=_blank>Episode 1: History and Characters</a>
                     </p>
 				</td>
 				<td class="colNarrow colCenter">
