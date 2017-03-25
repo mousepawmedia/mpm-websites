@@ -27,7 +27,7 @@
 				</td>
 				<td class="bannercol_large">
 					<a href="/">
-						<img width=60% title="MousePaw Games: Scamper Into Adventure!" alt="MousePaw Games" src="/img/company_logos/mousepawgames_shadowed_logo.png"/>
+						<img width=60% title="MousePaw Games: Scamper Into Adventure!" alt="MousePaw Games" src="/img/company_logos/mousepawgames_wordmark_shadowed.png"/>
 					</a>
 				</td>
 				<td class="bannercol_small">
