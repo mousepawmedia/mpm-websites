@@ -30,51 +30,126 @@
             <img class=banner src='/img/banners/bugtracker.png'/>
         </article>
         <article class=normal>
-            <h1>Title</h1>
+            <h1>Contribution Guide</h1>
             <section>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Duis tincidunt velit a ipsum pretium, eu faucibus eros
-                    aliquam. Curabitur sit amet magna urna. Vestibulum rhoncus,
-                    risus bibendum consectetur scelerisque, dolor nunc tincidunt
-                    ipsum, nec ornare massa quam eget eros. Nullam mattis, felis
-                    non faucibus bibendum, urna tellus vulputate sem, sit amet
-                    semper massa quam bibendum ipsum. Fusce in ligula nec enim
-                    tincidunt varius sit amet vitae elit. In accumsan nibh ac
-                    enim porta, vitae sollicitudin erat sollicitudin. Praesent
-                    aliquam mi mi, non porttitor nibh laoreet et. Cras vel
-                    efficitur turpis. Aenean gravida consectetur leo sed cursus.
+                    So you want to get involved with MousePaw Media's open
+                    source development? Awesome! We've worked hard to make
+                    this process and smooth and simple as possible.
                 </p>
-                <p>
-                    Proin sed viverra diam. Nullam placerat volutpat eros, id
-                    mollis metus vestibulum in. Maecenas tempor posuere
-                    imperdiet. Nunc eros libero, convallis et nibh id, consequat
-                    sodales sapien. Pellentesque tincidunt, dolor et molestie
-                    dapibus, risus purus maximus enim, quis laoreet lectus metus
-                    ac nibh. Etiam pulvinar ut ex vitae dapibus. Aliquam erat
-                    volutpat. Pellentesque pulvinar, velit vitae dictum
-                    facilisis, dolor lorem vestibulum libero, nec pulvinar nisl
-                    turpis a turpis. Ut tincidunt lacinia luctus. Mauris eu
-                    mollis tellus, sagittis lobortis justo.
-                </p>
-                <p>
-                    In hac habitasse platea dictumst. Mauris elementum mi a sem
-                    rutrum, sit amet ullamcorper velit suscipit. Curabitur
-                    fermentum consectetur elit, molestie ullamcorper lectus
-                    placerat sed. Suspendisse aliquam facilisis tortor ut
-                    vehicula. Curabitur tortor neque, volutpat ut eros eu,
-                    mollis cursus nulla. Curabitur a enim turpis. Praesent ut
-                    lorem vel mauris dapibus ultrices. Suspendisse aliquet, nisi
-                    sit amet egestas euismod, diam augue iaculis enim, ut
-                    feugiat purus ligula in ante. Quisque ipsum quam, venenatis
-                    ac nisi nec, consectetur semper ligula. Aenean sapien leo,
-                    tincidunt at sem eu, porta gravida justo. Duis cursus
-                    lacinia ipsum. Suspendisse non convallis lacus. Donec eu
-                    urna dolor. Vestibulum eget lacus hendrerit tellus facilisis
-                    semper. Integer suscipit rutrum magna non eleifend.
-                </p>
+                <ol>
+                    <li>
+                        Read through our
+                        <a href=/termsofdevelopment target=_blank>
+                            Terms of Development
+                        </a>, which you are agreeing to by contributing code to
+                        MousePaw Media. This is to save everyone a few dozen
+                        headaches; it assures you that we'll always be open
+                        source, and it enables us to re-license the code as
+                        necessary.
+                    </li>
+                    <li>
+                        Sign into our instance of <a href=/devnet target=_blank>
+                            Phabricator on DevNet
+                        </a> using your GitHub credentials. This is where all
+                        of our development work takes place.
+                    </li>
+                    <li>
+                        Follow our
+                        <a href=https://mousepawmedia.net/help/guides/contrib.html target=_blank>
+                            handy guide to Code Contributions
+                        </a> (also hosted on <a href=/devnet>DevNet</a>), which
+                        will walk you through the process of setting up your
+                        development environment and checking out a repository.
+                    </li>
+                    <li>
+                        The best way to connect with us is through Phabricator,
+                        but depending on the day and time, you may be able to
+                        find us on our <a href=/irc target=_blank>
+                            Freenode IRC chatroom
+                        </a>.
+                    </li>
+                </ol>
             </section>
 
+            <section class=border-top>
+                <h2>FAQs: Contributing</h2>
+
+                <p class=center>(Click a question to view the answer.)</p>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        Why do I need a GitHub account?
+                    </p>
+                    <div><p>
+                        GitHub is fairly ubiquitous among programmers; the
+                        majority of developers have accounts there. GitHub
+                        accounts are also more frequently legitimate -
+                        developers rely on them to track and display their code
+                        contributions - which helps us ensure that the majority
+                        of people signing up for Phabricator are <em>real
+                        people</em>.
+                    </p></div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        Why don't you accept GitHub pull requests?
+                    </p>
+                    <div><p>
+                        We use Phabricator for all of our development work.
+                        We've found that the features of that platform fit our
+                        workflow better than GitHub does.
+                    </p></div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        What are those weird ".arc[whatever]" files on your
+                        repositories?
+                    </p>
+                    <div><p>
+                        Those allow Phabricator to interface with Git and do all
+                        sorts of neat code review stuff for us. You can safely
+                        ignore those - you will never need them.
+                    </p></div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        What's with the Terms of Development?
+                    </p>
+                    <div><p>
+                        That's to save everyone a few dozen headaches. If we
+                        realize later that we need to license a project under
+                        different terms, we don't want to try and track down a
+                        few hundred people.
+                    </p>
+                    <p>
+                        Besides that, it simply states that your code is
+                        licensed to us under the MIT License, unless you select
+                        another non-restrictive open source license that is
+                        compatible with GPL.
+                    </p>
+                    <p>
+                        Third, it holds us accountable - as long as we're using
+                        your code, the project you contributed to shall have an
+                        open-source license.
+                    </p></div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        Why isn't the link to the Code Contributions guide
+                        working?
+                    </p>
+                    <div><p>
+                        That guide is hosted on <a href=/devnet target=_blank>
+                            DevNet
+                        </a>, which is only available during certain hours.
+                        See the DevNet page for more information.
+                    </p></div>
+                </div>
             </section>
         </article>
 
