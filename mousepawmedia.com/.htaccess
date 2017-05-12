@@ -1,0 +1,157 @@
+# Do not allow browsing indexes. (-Indexes)
+# MultiViews MUST be off for this thing to work right! (-MultiViews)
+# Includes allows using the common header/footer (etc) files.
+Options +FollowSymLinks +Includes -Indexes -MultiViews
+
+# Allow rewriting URLs
+RewriteEngine on
+
+# This allows SSI conditionals
+SSILegacyExprParser on
+
+# Process SSI in .html files
+AddHandler server-parsed .html
+
+<FilesMatch "\.(ttf|otf|eot|woff)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+ </IfModule>
+</FilesMatch>
+
+# DOMAIN NAME UNIFICATION
+RewriteCond %{HTTP_HOST} ^mousepawmedia\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.mousepawmedia\.com$
+RewriteRule ^/?$ "http\:\/\/www\.mousepawmedia\.com\/" [R=301,L]
+
+# SOCIAL REDIRECTS
+RewriteRule ^out\/enews$ "http\:\/\/mousepawgames\.com\/enews" [L]
+RewriteRule ^out\/enews\/pawnews$ "http\:\/\/mousepawgames\.com\/enews\/mail.cgi\/list\/pawnews\/" [L]
+RewriteRule ^out\/enews\/yellowsheets$ "http\:\/\/mousepawgames\.com\/enews\/mail.cgi\/list\/yellowsheets\/" [L]
+
+RewriteRule ^out\/twitter$ "https\:\/\/twitter\.com\/mousepawmedia" [L]
+RewriteRule ^out\/linkedin$ "http\:\/\/linkedin\.com\/company/mousepaw-media" [L]
+RewriteRule ^out\/github$ "http\:\/\/github\.com\/mousepawmedia" [L]
+RewriteRule ^out\/google\+$ "http\:\/\/plus\.google\.com\/\+MousePawMedia" [L]
+RewriteRule ^out\/youtube$ "http\:\/\/youtube\.com\/mousepawgames" [L]
+RewriteRule ^out\/youtube\/subscribe$ "http\:\/\/youtube\.com\/subscription_center\?add_user\=mousepawgames" [L]
+
+# ERROR PAGES
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+
+# CORE PAGES
+RewriteRule ^communityrules\/?$ "/communityrules.html" [NC,L]
+RewriteRule ^legal\/?$ "/legal.html" [NC,L]
+RewriteRule ^privacy\/?$ "/privacy.html" [NC,L]
+RewriteRule ^sitemap\/?$ "/sitemap.html" [NC,L]
+RewriteRule ^termsofdevelopment\/?$ "/termsofdevelopment.html" [NC,L]
+RewriteRule ^termsofuse\/?$ "/termsofuse.html" [NC,L]
+
+# PROJECTS PAGES
+RewriteRule ^projects\/?$ "/projects.html" [NC,L]
+
+RewriteRule ^projects\/software\/?$ "/software.html" [NC,L]
+Redirect 301 /software /projects/software
+
+RewriteRule ^projects\/libraries\/anari\/?$ "/anari.html" [NC,L]
+Redirect 301 /anari /libraries/anari
+
+RewriteRule ^projects\/libraries\/pawlib\/?$ "/pawlib.html" [NC,L]
+Redirect 301 /pawlib /libraries/pawlib
+
+RewriteRule ^projects\/libraries\/puppeteerxml\/?$ "/puppeteerxml.html" [NC,L]
+Redirect 301 /puppeteerxml /libraries/puppeteerxml
+
+RewriteRule ^projects\/libraries\/simplexpress\/?$ "/simplexpress.html" [NC,L]
+Redirect 301 /simplexpress /libraries/simplexpress
+
+RewriteRule ^projects\/libraries\/stormsound\/?$ "/stormsound.html" [NC,L]
+Redirect 301 /stormsound /libraries/stormsound
+
+RewriteRule ^projects\/libraries\/trailcrest\/?$ "/trailcrest.html" [NC,L]
+Redirect 301 /trailcrest /libraries/trailcrest
+
+RewriteRule ^projects\/software\/lightrift\/?$ "/lightrift.html" [NC,L]
+Redirect 301 /lightrift /software/lightrift
+
+RewriteRule ^projects\/software\/ratscript\/?$ "/ratscript.html" [NC,L]
+Redirect 301 /ratscript /software/ratscript
+
+RewriteRule ^projects\/software\/redstring\/?$ "/redstring.html" [NC,L]
+Redirect 301 /redstring /software/redstring
+
+RewriteRule ^projects\/libraries\/?$ "/libraries.html" [NC,L]
+Redirect 301 /libraries /projects/libraries
+
+RewriteRule ^projects\/standards\/?$ "/standards.html" [NC,L]
+Redirect 301 /standards /projects/standards
+
+RewriteRule ^out\/mousepawgames$ "http\:\/\/mousepawgames\.com" [L]
+
+# COMPANY PAGES
+RewriteRule ^company\/?$ "/company.html" [NC,L]
+Redirect 301 /about /company
+Redirect 301 /company/about /company
+
+RewriteRule ^company\/team\/?$ "/team.html" [NC,L]
+Redirect 301 /staff /company/team
+Redirect 301 /team /company/team
+
+RewriteRule ^company\/faq\/?$ "/faq.html" [NC,L]
+Redirect 301 /faq /company/faq
+
+RewriteRule ^company\/philosophy\/?$ "/philosophy.html" [NC,L]
+Redirect 301 /philosophy /company/philosophy
+
+RewriteRule ^company\/connect\/?$ "/connect.html" [NC,L]
+Redirect 301 /connect /company/connect
+Redirect 301 /contact /company/connect
+Redirect 301 /company/contact /company/connect
+
+# NEWS PAGES
+RewriteRule ^news\/?$ "/news.html" [NC,L]
+RewriteRule ^news\/articles\/(\w*)\/?$ "article-$1.html" [NC,L]
+
+RewriteRule ^news\/podcast?$ "/podcast.html" [NC,L]
+Redirect 301 /mousepawdcast /news/podcast
+Redirect 301 /podcast /news/podcast
+
+RewriteRule ^news\/press$ "/press.html" [NC,L]
+Redirect 301 /press /news/press
+
+# DEVELOPER PAGES
+RewriteRule ^developers\/?$ "/developers.html" [NC,L]
+Redirect 301 /opensource /developers
+
+RewriteRule ^developers\/contributing?$ "/contributing.html" [NC,L]
+Redirect 301 /contributing /developers/contributing
+
+RewriteRule ^developers\/technology?$ "/technology.html" [NC,L]
+Redirect 301 /technology /developers/technology
+Redirect 301 /tech /developers/technology
+Redirect 301 /developers/tech /developers/technology
+
+RewriteRule ^developers\/documentation?$ "/documentation.html" [NC,L]
+Redirect 301 /documentation /developers/documentation
+
+RewriteRule ^developers\/irc?$ "/irc.html" [NC,L]
+Redirect 301 /irc /developers/irc
+
+RewriteRule ^developers\/devnet?$ "/devnet.html" [NC,L]
+Redirect 301 /devnet /developers/devnet
+
+RewriteRule ^out\/devnet$ "https\:\/\/mousepawmedia\.net" [L]
+
+# INTERNSHIPS PAGES
+RewriteRule ^internships\/?$ "/internships.html" [NC,L]
+
+RewriteRule ^internships\/programming?$ "/intern_programming.html" [NC,L]
+RewriteRule ^internships\/designproduction?$ "/intern_designprod.html" [NC,L]
+RewriteRule ^internships\/contentdev?$ "/intern_contentdev.html" [NC,L]
+RewriteRule ^internships\/masscomm?$ "/intern_masscomm.html" [NC,L]
+
+# RESOURCES PAGES
+RewriteRule ^resources\/?$ "/resources.html" [NC,L]
+
+RewriteRule ^resources\/yellowsheets?$ "/yellowsheets.html" [NC,L]
+Redirect 301 /yellowsheets /resources/yellowsheets
