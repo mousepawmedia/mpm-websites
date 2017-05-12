@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html lang='en-US'>
+<head>
+    <!--#include virtual='/common/commonhead.html' -->
+
+    <!--Display information-->
+    <title>DevNet</title>
+    <meta name='author' content='MousePaw Media'>
+    <meta name='description' content=''>
+
+    <!--Open Graph data (http://ogp.me/)-->
+    <meta property='og:title' content='DevNet'>
+    <meta property='og:description' content="">
+    <meta property='og:image' content='http://www.mousepawmedia.com/img/thumbnails/phab.png'>
+
+    <!--Twitter Card data (https://dev.twitter.com/cards/getting-started)-->
+    <meta name='twitter:card' content='summary'>
+    <meta name='twitter:site' content='@mousepawmedia'>
+    <meta name='twitter:creator' content='@mousepawmedia'>
+    <!--Must be square, >=120px*120px, <1MB -->
+    <meta name='twitter:image' content='http://www.mousepawmedia.com/img/thumbnails/phab.png'>
+    <meta name='twitter:image:alt' content='Screenshot of a repository commit list.'>
+    <!--See: https://moz.com/blog/meta-data-templates-123-->
+</head>
+<body>
+    <!--#include virtual='/common/header.html' -->
+
+    <main>
+        <article class=banner>
+            <img class=banner src='/img/banners/phab.png'/>
+        </article>
+        <article class=normal>
+            <h1>DevNet</h1>
+            <section>
+                <p>
+                    We've opened our development server to the public, so you
+                    can get involved in our open source projects! DevNet is home
+                    to our repositories, bug tracker, wiki, building and testing
+                    system, and many of our collaborative tools.
+                </p>
+                <p class=center><strong>
+                    Access DevNet at <a href='/out/devnet' target=_blank>mousepawmedia.net</a>.
+                </strong></p>
+                <p>
+                    DevNet lives on Hawksnest, a server operated by MousePaw
+                    Media. Hawksnest is typically available 7 days a week, from
+                    7am-10pm U.S. Pacific Time (14:00-06:00 UTC). The server's
+                    status will be published to this page.
+                </p>
+                <!--#include virtual='/serverstatus/serverstatus.html' -->
+                <p>
+                    Please report problems to
+                    <a href='mailto:hawksnest@mousepawmedia.com' blank=_target>hawksnest@mousepawmedia.com</a>.
+            </section>
+            <section class=border-top>
+                <h2>FAQs: DevNet</h2>
+
+                <p class=center>(Click a question to view the answer.)</p>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        Do I need a login?
+                    </p>
+                    <div><p>
+                        Community members can register with Phabricator
+                        using their GitHub accuont. Anyone may browse Jenkins
+                        and all documentation without a login.
+                    </p></div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        Hawksnest is listed as ONLINE, but I can't access DevNet.
+                        What's going on?
+                    </p>
+                    <div>
+                    <p>
+                        There are three common reasons for this:
+                    </p>
+                    <ol>
+                        <li>
+                            Internet issues at our office. When this happens,
+                            by time we can list the outage on our website,
+                            the problem is resolved.
+                        </li>
+                        <li>
+                            A server issue we haven't found out about yet.
+                            You're welcome to report it to us.
+                        </li>
+                        <li>
+                            If you were using DevNet and suddenly
+                            lost access, you likely triggered the server's
+                            security systems. If you believe this was in
+                            error, contact us for help regaining access.
+                        </li>
+                    </ol>
+                    </div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        Why do you have server hours?
+                    </p>
+                    <div><p>
+                        There are several reasons, but a major one is that we
+                        have a small team, and we don't want the logistical
+                        annoyances of handling technical and security alerts
+                        in the middle of the night.
+                    </p></div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        I'm in another part of the world, so those server
+                        hours are really hard to work around! Can you leave
+                        the server up for me?
+                    </p>
+                    <div><p>
+                        Sorry, only staff can request server hour extensions.
+                        However, all things considered, you have 18 hours in
+                        which to access DevNet.
+                    </p></div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        It's after hours, but the server is still up. What's
+                        the deal?
+                    </p>
+                    <div><p>
+                        The server hours really just mean "it should be online
+                        during this time." Sometimes we run the development
+                        server outside of those hours as well.
+                    </p></div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        Why aren't you using [INSERT HOSTING SERVICE HERE]?
+                    </p>
+                    <div><p>
+                        We carefully considered a lot of options, factoring in
+                        logistics, technical needs, maintainance, security, and
+                        data storage. For what we're doing, we believe that
+                        hosting DevNet on Hawksnest is the best option for us.
+                    </p></div>
+                </div>
+
+            </section>
+        </article>
+
+        <div class='toggle nav_buttonsquare'>
+            <p class=rotate><<</p>
+        </div>
+
+        <aside class=sidebar>
+            <section>
+                <p class=days><a href='/developers'>
+                    Developers
+                </a></p>
+                <p class=days><a href='/developers/contributing'>
+                    Contribution Guide
+                </a></p>
+                <p class=days><a href='/developers/documentation'>
+                    Documentation
+                </a></p>
+                <p class=days><a href='/developers/devnet'>
+                    DevNet
+                </a></p>
+                <p class=days><a href='/developers/devnet'>
+                    IRC
+                </a></p>
+                <p class=days><a href='/developers/technology'>
+                    Technology
+                </a></p>
+            </section>
+        </aside>
+    </main>
+
+    <!--#include virtual='/common/footer.html' -->
+</body>
+
+<!--Javascript Modernizer, for backwards compatability.-->
+<script src='/common/js/vendor/modernizr-2.8.3.min.js'></script>
+
+</html>

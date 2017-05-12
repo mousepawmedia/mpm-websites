@@ -1,32 +1,34 @@
-MousePaw Games Website
-=========================
+# MousePaw Media Websites
 
-The MousePaw Games website is made with HTML and CSS, with some PHP.
+The MousePaw Games and MousePaw Media websites are made with HTML5 and CSS3.
 Our goal is to keep the amount of Javascript to a minimum.
 
-Authors
--------------
+The `stable` branch contains the versions currently live on `mousepawmedia.com`
+and `mousepawgames.com`. The `master` branch is the current work-in-progress
+versions of the sites.
+
+## Authors
+
  - Jason C. McDonald
 
-Feedback
--------------
-You can also frequently find us in the #mousepawgames
-channel on Freenode.
+## Contributions
 
-Pull requests to this repository are not accepted. If
-you wish to propose a change, email your patch to us
-at the address above.
+We do NOT accept pull requests through GitHub.
+If you would like to contribute code, please read our
+[Contribution Guide][3].
 
-For more information about contributing to MousePaw Games
-projects, see [mousepawgames.com/opensource][2].
+All contributions are licensed to us under the
+[MousePaw Media Terms of Development][4].
 
-License
--------------
-The MousePaw Games website code is licenced under the BSD-3 License.
-(See LICENSE.)
+## License
 
-The content is Copyright ⓒ 2016 MousePaw Media. All Rights Reserved.
+Our source code is licensed under the BSD-3 License. (See LICENSE.md)
+Actual website content is Copyright (c) 2017 MousePaw Media. All Rights
+Reserved.
 
-The project is owned and maintained by [MousePaw Games][2].
+The project is owned and maintained by [MousePaw Media][2].
 
 [2]: http://www.mousepawgames.com/opensource
+[3]: http://www.mousepawgames.com/opensource#contribute
+[4]: http://www.mousepawgames.com/termsofdevelopment
+[5]: http://github.com/mousepawmedia/website
