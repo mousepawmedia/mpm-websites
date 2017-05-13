@@ -54,7 +54,7 @@ Redirect 301 /company/contact /company/connect
 Redirect 301 /follow /company/connect
 Redirect 301 /news/follow /company/connect
 
-RewriteRule ^company\/faq\/?$ "/faq.php" [NC,L]
+RewriteRule ^company\/faq\/?$ "https\:\/\/mousepawmedia\.com\/faq" [L]
 Redirect 301 /faq /company/faq
 Redirect 301 /news/faq /company/faq
 
