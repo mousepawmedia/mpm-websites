@@ -24,16 +24,19 @@ AddHandler server-parsed .html
 #RewriteRule ^/?$ "http\:\/\/www\.mousepawmedia\.com\/" [R=301,L]
 
 # SOCIAL REDIRECTS
-RewriteRule ^out\/enews$ "http\:\/\/mousepawgames\.com\/enews" [L]
-RewriteRule ^out\/enews\/pawnews$ "http\:\/\/mousepawgames\.com\/enews\/mail.cgi\/list\/pawnews\/" [L]
-RewriteRule ^out\/enews\/yellowsheets$ "http\:\/\/mousepawgames\.com\/enews\/mail.cgi\/list\/yellowsheets\/" [L]
+#RewriteRule ^out\/enews$ "http\:\/\/mousepawgames\.com\/enews" [L]
+#RewriteRule ^out\/enews\/pawnews$ "http\:\/\/mousepawgames\.com\/enews\/mail.cgi\/list\/pawnews\/" [L]
+#RewriteRule ^out\/enews\/yellowsheets$ "http\:\/\/mousepawgames\.com\/enews\/mail.cgi\/list\/yellowsheets\/" [L]
 
-RewriteRule ^out\/twitter$ "https\:\/\/twitter\.com\/mousepawmedia" [L]
-RewriteRule ^out\/linkedin$ "http\:\/\/linkedin\.com\/company/mousepaw-media" [L]
-RewriteRule ^out\/github$ "http\:\/\/github\.com\/mousepawmedia" [L]
+RewriteRule ^out\/github$ "https\:\/\/github\.com\/mousepawmedia" [L]
 RewriteRule ^out\/google\+$ "http\:\/\/plus\.google\.com\/\+MousePawMedia" [L]
-RewriteRule ^out\/youtube$ "http\:\/\/youtube\.com\/mousepawgames" [L]
-RewriteRule ^out\/youtube\/subscribe$ "http\:\/\/youtube\.com\/subscription_center\?add_user\=mousepawgames" [L]
+RewriteRule ^out\/internetarchive$ "https\:\/\/archive\.org\/details\/@mousepaw_games" [L]
+RewriteRule ^out\/linkedin$ "http\:\/\/linkedin\.com\/company/mousepaw-media" [L]
+RewriteRule ^out\/sourceforge$ "https\:\/\/sourceforge\.net\/u\/mousepawmedia" [L]
+RewriteRule ^out\/twitter$ "https\:\/\/twitter\.com\/mousepawmedia" [L]
+RewriteRule ^out\/twitter_mpg$ "https\:\/\/twitter\.com\/mousepawgames" [L]
+RewriteRule ^out\/youtube$ "https\:\/\/youtube\.com\/mousepawgames" [L]
+RewriteRule ^out\/youtube\/subscribe$ "https\:\/\/youtube\.com\/subscription_center\?add_user\=mousepawgames" [L]
 
 # ERROR PAGES
 ErrorDocument 403 /403.html
