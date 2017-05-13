@@ -52,7 +52,7 @@
 				</tr>
 			</table>
 			<hr/>
-			<p class="txtFooter">Copyright © 2016 <a href="http://www.mousepawmedia.com/" target=_blank>MousePaw Media</a>. All Rights Reserved.</p>
+			<p class="txtFooter">Copyright © 2016 <a href="https://www.mousepawmedia.com/" target=_blank>MousePaw Media</a>. All Rights Reserved.</p>
 			<p class="txtFooter">
 				<a href="/termsofuse">Terms of Use</a> |
 				<a href="/privacy">Privacy Policy</a> |

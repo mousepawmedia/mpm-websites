@@ -31,7 +31,7 @@
 						</p>
 						<hr/>
 						<p class="txtSmall">11/22/2014</p>
-						<img class="imgRight imgMedium" width=150 alt="Synfig Studio logo" src="http://mousepawgames.com/img/opensource-logos/synfig-logo.png"/>
+						<img class="imgRight imgMedium" width=150 alt="Synfig Studio logo" src="http://www.mousepawgames.com/img/opensource-logos/synfig-logo.png"/>
 						<p class="txtReg">
 							On November 19, Jason C. McDonald made the call to abandon
 							Adobe Flash as a platform immediately. The timing of the

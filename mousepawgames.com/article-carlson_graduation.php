@@ -18,7 +18,7 @@
 						<p class="txtHead1">Stacy Carlson Completes Internship</p>
 						<hr/>
 						<p class="txtSmall">04/30/2015</p>
-						<img class="imgFramedLeft" width=300 alt="Jason McDonald, Stacy Carlson, and Anne McDonald" src="http://mousepawgames.com/img/carlson_graduation.png"/>
+						<img class="imgFramedLeft" width=300 alt="Jason McDonald, Stacy Carlson, and Anne McDonald" src="http://www.mousepawgames.com/img/carlson_graduation.png"/>
 						<p class="txtReg">
 							On April 25th, Stacy Carlson became the first official
 							graduate of the MousePaw Games internship program. Stacy

@@ -44,10 +44,10 @@ RewriteRule ^header.php "/header.php [L,R=301]
 RewriteRule ^software\/slannan\/?$ "/slannan.php" [NC,L]
 
 # COMPANY PAGES
-RewriteRule ^company\/?$ "/company.php" [NC,L]
+RewriteRule ^company\/?$ "https\:\/\/mousepawmedia\.com\/company" [L]
 Redirect 301 /about /company
 
-RewriteRule ^company\/connect\/?$ "/connect.php" [NC,L]
+RewriteRule ^company\/connect\/?$ "https\:\/\/mousepawmedia\.com\/connect" [L]
 Redirect 301 /contact /company/connect
 Redirect 301 /connect /company/connect
 Redirect 301 /company/contact /company/connect
@@ -161,7 +161,7 @@ Redirect 301 /getinvolved/beta /participate/testers
 Redirect 301 /testers /participate/testers
 Redirect 301 /testing /participate/testers
 
-RewriteRule ^participate\/opensource\/?$ "/opensource.php" [NC,L]
+RewriteRule ^participate\/opensource\/?$ "https\:\/\/mousepawmedia\.com\/developers" [L]
 Redirect 301 /getinvolved/opensource /participate/opensource
 Redirect 301 /opensource /participate/opensource
 

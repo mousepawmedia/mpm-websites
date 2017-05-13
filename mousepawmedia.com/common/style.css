@@ -395,6 +395,10 @@ section.border-top {
     border-top: solid black 1px;
 }
 
+section.border-bottom {
+    border-bottom: solid black 1px;
+}
+
 /* Section should contain its elements and prevents overflow into
  * adjacent sections. Works best with border-top */
 section.contain {
