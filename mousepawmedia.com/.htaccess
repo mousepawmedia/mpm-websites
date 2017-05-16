@@ -44,6 +44,7 @@ ErrorDocument 404 /404.html
 
 # CORE PAGES
 RewriteRule ^communityrules\/?$ "/communityrules.html" [NC,L]
+RewriteRule ^communityrules_general\/?$ "/communityrules_general.html" [NC,L]
 RewriteRule ^legal\/?$ "/legal.html" [NC,L]
 RewriteRule ^privacy\/?$ "/privacy.html" [NC,L]
 RewriteRule ^sitemap\/?$ "/sitemap.html" [NC,L]
