@@ -9,12 +9,12 @@ versions of the sites.
 
 ## Authors
 
- - Jason C. McDonald
+ - Jason C. McDonald (@CodeMouse92)
 
 ### Special Thanks
 
-Special thanks to AtomicSpark for a TON of technical advice and debugging help.
-This website literally would not exist without you.
+Special thanks to Scott Shields (@AtomicSpark) for a TON of technical advice
+and debugging help. This website literally would not exist without you.
 
 ## Contributions
 
@@ -28,12 +28,13 @@ All contributions are licensed to us under the
 ## License
 
 Our source code is licensed under the BSD-3 License. (See LICENSE.md)
+
 Actual website content is Copyright (c) 2017 MousePaw Media. All Rights
 Reserved.
 
 The project is owned and maintained by [MousePaw Media][2].
 
-[2]: http://www.mousepawgames.com/opensource
-[3]: http://www.mousepawgames.com/opensource#contribute
-[4]: http://www.mousepawgames.com/termsofdevelopment
+[2]: http://www.mousepawmedia.com/developers
+[3]: https://www.mousepawmedia.com/developers/contributing
+[4]: http://www.mousepawmedia.com/termsofdevelopment
 [5]: http://github.com/mousepawmedia/website
