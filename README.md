@@ -11,6 +11,11 @@ versions of the sites.
 
  - Jason C. McDonald
 
+### Special Thanks
+
+Special thanks to AtomicSpark for a TON of technical advice and debugging help.
+This website literally would not exist without you.
+
 ## Contributions
 
 We do NOT accept pull requests through GitHub.
