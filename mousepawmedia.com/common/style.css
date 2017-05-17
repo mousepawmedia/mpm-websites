@@ -534,6 +534,10 @@ div.flex_item_equal {
     flex: 1 1 1%;
 }
 
+div.flex_item {
+    flex: 1 0 30%;
+}
+
 div.center_content {
     vertical-align: top;
     text-align: center;
