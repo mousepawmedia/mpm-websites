@@ -65,7 +65,7 @@ RewriteRule ^company\/team\/?$ "https\:\/\/mousepawmedia\.com\/team" [L]
 Redirect 301 /team /company/team
 Redirect 301 /staff /company/team
 
-RewriteRule ^company\/technologies\/?$ "/technologies.php" [NC,L]
+RewriteRule ^company\/technologies\/?$ "https\:\/\/mousepawmedia\.com\/developers\/technology" [L]
 Redirect 301 /technologies /company/technologies
 Redirect 301 /technology /company/technologies
 Redirect 301 /tech /company/technologies
