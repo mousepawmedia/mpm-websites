@@ -12,15 +12,180 @@
     <!--#include virtual='/common/header.html' -->
 
     <main>
-        <article class=center>
-            <h1>Pardon Our Dust!</h1>
-            <p>
-                This website is still under construction. Please check back
-                later. If you can't wait, you can still view our old website at
-                <a href='http://mousepawgames.com/' target=_blank>mousepawgames.com</a>.
-                We apologize for the inconvenience.
-            </p>
+        <article class=banner>
+            <img class=banner src='/img/banners/podcast.jpg'/>
         </article>
+        <article class=normal>
+            <section class='visible-mobile border-bottom'>
+                <p class='days center'>
+                    <a href='/news'>News</a> |
+                    <a href='/news/podcast'>Podcast</a> |
+                    <a href='/news/press'>Press</a>
+                </p>
+            </section>
+            <h1>The MousePaw'dCast</h1>
+            <section>
+                <img class='float_left med' src='/img/ours/mousepawdcast_weblogo.png'/>
+                <p>
+                    Tune in every month* as the staff of MousePaw Media
+                    discuss open source software development, game design,
+                    education, content development, and everything in between.
+                </p>
+                <p>
+                    You can subscribe to our podcast via
+                    <a href=/rss/mousepawdcast.xml target=_blank>RSS</a>.
+                    (We've submitted to a few podcast directories, and will
+                    add that info here once accepted.)
+                </p>
+                <p>
+                    The podcast is distributed via the
+                    <a href=https://archive.org target=_blank>
+                        Internet Archive,
+                    </a>
+                    and is licensed under
+                    <a href=https://creativecommons.org/licenses/by-nc-nd/4.0/ target=_blank>
+                        CC-BY-NC-ND 4.0
+                    </a>, meaning you are free to download and share.
+                </p>
+                <p class=small>
+                    *That's what we aim for, anyway.
+                </p>
+            </section>
+            <section class=border-top>
+                <a class=anchor id='current'></a>
+                <h2>Current Episode</h2>
+
+                <h3>Episode 2: Accents and APIs</h3>
+                <p class=center><em>March 2017</em></p>
+                <p>
+                    In this episode, Anne McDonald, Allie Jensen, and Daniel Lee
+                    discuss their adventures in phonetics and pronunciations
+                    when working on the master word list. Nate Groggett and
+                    Jason C. McDonald talk about common pitfalls in API design
+                    and documentation.
+                </p>
+                <p class='center'><a href=https://archive.org/details/mousepawdcast_ep2 target=_blank>
+                    Listen on the Internet Archive
+                </a></p>
+            </section>
+
+            <section class=border-top>
+                <a class=anchor id='archives'></a>
+                <h2>Archives</h2>
+                <p class=center>(Click an episode to view more info.)</p>
+
+                <div class=expander tabindex=1>
+                    <h3>
+                        Episode 1: History and Characters
+                    </h3>
+                    <div>
+                        <p class=center><em>August 2016</em></p>
+                        <p>
+                            In this episode, Anne and Jason McDonald discuss the
+                            colorful history behind MousePaw Games. Also, Scott Taylor
+                            talks about creating a Unicode-friendly string class in C++.
+                            (Debut episode.)
+                        </p>
+                        <p class='center'><a href=https://archive.org/details/mousepawdcast_ep1 target=_blank>
+                            Listen on the Internet Archive
+                        </a></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class=border-top>
+                <a class=anchor id='faq'></a>
+                <h2>FAQs: Podcast</h2>
+
+                <p class=center>(Click a question to view the answer.)</p>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        What is the music on your podcast?
+                    </p>
+                    <div><p>
+                        Our music is
+                        <a href=https://archive.org/details/freemusicarchive.org/music/Revolution_Void/The_Politics_of_Desire/revolution_void_-_06_-_outer_orbit target=_blank>
+                            "Outer Orbit" by Revolution Void,
+                        </a>
+                        which is licensed under
+                        <a href=https://creativecommons.org/licenses/by/3.0/ target=_blank>
+                            Creative Commons Attribution 3.0.
+                        </a>
+                        You can find this and more great free music on the
+                        <a href=https://freemusicarchive.org target=_blank>
+                            Free Music Archive.
+                        </a>
+                    </p></div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        What software do you use to produce the podcast?
+                    </p>
+                    <div><p>
+                        We use Audacity for recording and mixing. Check out
+                        that and more great projects on our
+                        <a href=/technology>Technology</a> page.
+                    </p></div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        Can I be featured on your open source spot?
+                    </p>
+                    <div><p>
+                        We currently only feature projects listed on
+                        our <a href=/technology>Technology</a> page. If your
+                        project is there, just be patient - we'll get to you!
+                    </p></div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        Why'd you miss a month (or more)?
+                    </p>
+                    <div><p>
+                        We try to produce a new podcast each month, but
+                        sometimes more urgent deadlines get in the way.
+                    </p></div>
+                </div>
+            </section>
+        </article>
+
+        <div class='toggle nav_buttonsquare'>
+            <p class=rotate><<</p>
+        </div>
+
+        <aside class=sidebar>
+            <section>
+                <p class=days><a href='/news'>
+                    News
+                </a></p>
+                <p class=days><a href='/news/podcast'>
+                    Podcast
+                </a></p>
+                <p class=days><a href='/news/press'>
+                    Press
+                </a></p>
+            </section>
+            <section class=border-top>
+                <h2>Subscribe</h2>
+                <a href='/rss/mousepawdcast.xml' target=_blank><img class=icon_social title='RSS' alt='RSS' src='/img/icons/rss.png'/></a>
+            </section>
+            <section class=border-top>
+                <h2>Episodes</h2>
+                <p class='center'><a href=#archives>
+                    Archives
+                </a></p>
+                <p class='center'><a href=#faq>
+                    FAQ
+                </a></p>
+                <p class='center'><a href=#current>
+                    Current Episode
+                </a></p>
+            </section>
+        </aside>
     </main>
 
     <!--#include virtual='/common/footer.html' -->
