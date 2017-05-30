@@ -76,7 +76,7 @@
 
             </media:content>
 
-            <enclosure url="https://archive.org/download/mousepawdcast_ep2/MousePawdCast_March2017.mp3" length="43749376" type="audio/mpeg"/>
+            <enclosure url="http://archive.org/download/mousepawdcast_ep2/MousePawdCast_March2017.mp3" length="43749376" type="audio/mpeg"/>
 
             <itunes:image href="http://mousepawmedia.com/img/ours/mousepawdcast_cover.jpg"/>
             <itunes:explicit>clean</itunes:explicit>
@@ -109,7 +109,7 @@
 
                 <media:rating scheme="urn:simple">nonadult</media:rating>
 
-                <media:thumbnail url="https://mousepawmedia.com/img/ours/mousepawdcast_cover.jpg"/>
+                <media:thumbnail url="http://mousepawmedia.com/img/ours/mousepawdcast_cover.jpg"/>
 
                 <media:keywords>
                     programming, strings, game development, education, software, C++, unicode, mousepaw media
@@ -117,7 +117,7 @@
 
             </media:content>
 
-            <enclosure url="https://archive.org/download/mousepawdcast_ep1/episode1_final.mp3" length="52138496" type="audio/mpeg"/>
+            <enclosure url="http://archive.org/download/mousepawdcast_ep1/episode1_final.mp3" length="52138496" type="audio/mpeg"/>
 
             <itunes:image href="http://mousepawmedia.com/img/ours/mousepawdcast_cover.jpg"/>
             <itunes:explicit>clean</itunes:explicit>
