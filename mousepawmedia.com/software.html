@@ -12,15 +12,171 @@
     <!--#include virtual='/common/header.html' -->
 
     <main>
-        <article class=center>
-            <h1>Pardon Our Dust!</h1>
-            <p>
-                This website is still under construction. Please check back
-                later. If you can't wait, you can still view our old website at
-                <a href='http://mousepawgames.com/' target=_blank>mousepawgames.com</a>.
-                We apologize for the inconvenience.
-            </p>
+        <article class=banner>
+            <img class=banner src='/img/banners/harddrive.jpg'/>
         </article>
+
+        <article class=normal>
+            <section class='visible-mobile border-bottom'>
+                <p class='days center'>
+                    <a href='/projects'>Projects</a> |
+                    <a href='/projects/libraries'>Libraries</a> |
+                    <a href='https://mousepawgames.com/ target=_blank'>Games</a> |
+                    <a href='/projects/standards'>Standards</a> |
+                    <a href='/projects/software'>Software</a>
+                </p>
+            </section>
+            <section>
+                <h1>Software</h1>
+                <p>
+                    Games aren't all we create; in pursuing our main projects,
+                    we create other tools and applications. Some are to make
+                    our work easier, others are proofs-of-concept for technical
+                    stuff.
+                </p>
+                <p class=small>
+                    *Indicates that the library is still in early development,
+                    and is not yet available for download.
+                </p>
+            </section>
+            <section class=border-top>
+                <h2>Browse</h2>
+                <div class=flex>
+
+                    <div class='center_content flex_item'>
+                        <a href='/projects/libraries/lightrift'>
+                            <img class='icon_large hoverable framed' src='/img/projects/lightrift_icon.png'>
+                            <p class='center days'>Lightrift*</p>
+                        </a>
+                        <p class='center'>
+                            Freedom meets interactive animation.
+                        </p>
+                    </div>
+
+                    <div class='center_content flex_item'>
+                        <a href='/projects/software/ratscript'>
+                            <img class='icon_large hoverable framed' src='/img/projects/ratscript_icon.png'>
+                            <p class='center days'>Ratscript*</p>
+                        </a>
+                        <p class='center'>
+                            A new interpreted language with a simple, original
+                            syntax.
+                        </p>
+                    </div>
+
+                    <div class='center_content flex_item'>
+                        <a href='/projects/libraries/redstring'>
+                            <img class='icon_large hoverable framed' src='/img/projects/redstring_icon.png'>
+                            <p class='center days'>Redstring</p>
+                        </a>
+                        <p class='center'>
+                            The <strong>Red</strong>undant
+                            <strong>String</strong> Generator.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+            <section class=border-top>
+                <h2>Old Projects</h2>
+                <p>
+                    You may be looking for a few of our old projects.
+                    We pulled some previous Labs projects because, really, they
+                    were just too rough and clunky to release to the world. One
+                    is just a plugin that only a handful of people will be
+                    looking for - that one can still be downloaded below.
+                </p>
+                <p class=center>
+                    (Click a title to see more information.)
+                </p>
+
+                <div class=expander tabindex=1>
+                    <h3>PocketWatch</h3>
+                    <div>
+                        <p>
+                            This project was built for Adventure Maker, game
+                            design platform we were experimenting with. We no
+                            longer use either, and honestly, it just didn't rank
+                            a project page of its own. Some people still use the
+                            plugin, so you can still
+                            <a href=/downloads/pocketwatchsetup.exe>Download</a>
+                            the installer (Windows only).
+                        </p>
+                        <p>
+                            PocketWatch allows for the execution of a timer of
+                            any length, at the end of which, one or more events
+                            occur. This offers an advantage over the built-in
+                            timer, which only supports up to 60 seconds. The
+                            GearSets feature allows for the use of up to five
+                            independent timers. It is free to use, even in
+                            commercial projects.
+                        </p>
+                        <p>
+                            This project is unsupported, and will never be
+                            updated. Actually, we seem to have lost the source
+                            code.
+                        </p>
+                    </div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <h3>Slannan</h3>
+                    <div>
+                        <p>
+                            Our old local-based bug tracker, Slannan, had some
+                            serious bugs that we were never able to fix. It is
+                            unique, and shows promise as a useful application,
+                            but we want to rethink a few things. We'll be
+                            revisiting the design of the software somewhere down
+                            the line. In the meantime, the code can still be
+                            found on
+                            <a href=https://github.com/mousepawmedia/slannan target=_blank>GitHub</a>,
+                            so you're welcome to run it from the Python source
+                            if you're feeling adventurous.
+                        </p>
+                    </div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <h3>TimeCard</h3>
+                    <div>
+                        <p>
+                            This was a very old time-tracker project built with
+                            Microsoft Visual .NET framework. We will be
+                            rebuilding the project on an open source platform at
+                            some undefined point in the future. You might be
+                            able to locate this one floating around the
+                            internet, but we no longer support nor recommend it,
+                            especially since we can't vouch for the safety of
+                            any of the sites it is currently being served from.
+                            (Actually, we already torched the source code.)
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+        </article>
+
+        <div class='toggle nav_buttonsquare'>
+            <p class=rotate><<</p>
+        </div>
+
+        <aside class=sidebar>
+            <section>
+                <p class=days><a href='/projects'>
+                    Projects
+                </a></p>
+                <p class=days><a href='/projects/libraries'>
+                    Libraries
+                </a></p>
+                <p class=days><a href='/projects/software'>
+                    Software
+                </a></p>
+                <p class=days><a href='/projects/standards'>
+                    Standards
+                </a></p>
+            </section>
+        </aside>
     </main>
 
     <!--#include virtual='/common/footer.html' -->

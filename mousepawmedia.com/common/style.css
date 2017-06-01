@@ -900,6 +900,17 @@ img.framed {
 	border-radius:8px;
 }
 
+img.hoverable {
+    background: #FFF8DE;
+}
+
+/* When we hover over a button image, switch its background color
+ * to MousePaw Yellow. */
+img.hoverable:hover
+{
+    background: #FFCB05;
+}
+
 img.float_left {
     float: left;
 	/* Leave a little room below the image, so things don't
