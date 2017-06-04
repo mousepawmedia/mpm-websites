@@ -92,13 +92,13 @@
 html {
     /* Use our background blue as a fallback, if the background
 	 * image does not load. */
-    background: #000EFE;
+    background: #0075E5;
 
 	/* Load our background image and make sure it does not scroll
 	 * with the page. */
-	background-image: url(/img/webback.jpg);
+	/*background-image: url(/img/webback.jpg);
 	background-attachment: fixed;
-	background-size: 100%;
+	background-size: 100%;*/
 }
 
 /* Define the page itself, in preparation to configure the banner
@@ -434,6 +434,11 @@ article.normal {
     padding-left: 1%;
     padding-right: 1%;
 
+    /* Round the corners of the frame. */
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius:8px;
+
     background:rgba(177, 222, 255, 0.8);
 }
 
@@ -450,6 +455,11 @@ article.center {
     padding-left: 1%;
     padding-right: 1%;
 
+    /* Round the corners of the frame. */
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius:8px;
+
     background:rgba(177, 222, 255, 0.8);
 }
 
@@ -465,6 +475,11 @@ article.full {
 
     padding-left: 1%;
     padding-right: 1%;
+
+    /* Round the corners of the frame. */
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius:8px;
 
     background:rgba(177, 222, 255, 0.8);
 }
@@ -714,6 +729,14 @@ aside.sidebar {
     div.toggle {
         display: none;
     }
+
+    /* The sidebar ONLY has rounded corners in desktop mode. */
+    aside.sidebar {
+        /* Round the corners of the frame. */
+    	-webkit-border-radius: 8px;
+    	-moz-border-radius: 8px;
+    	border-radius:8px;
+    }
 }
 
 /**************** EXPANDERS **********************/
@@ -855,6 +878,11 @@ img.icon_social {
 
 img.icon_large {
     height: 100px;
+    margin: 5px;
+}
+
+img.icon_medium {
+    height: 70px;
     margin: 5px;
 }
 

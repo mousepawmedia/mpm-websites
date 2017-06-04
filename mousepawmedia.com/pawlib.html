@@ -6,14 +6,31 @@
     <!--Display information-->
     <title>PawLIB</title>
     <meta name='author' content='MousePaw Media'>
-    <meta name='description' content=''>
+    <meta name='description' content="">
+
+    <!--Open Graph data (http://ogp.me/)-->
+    <meta property='og:title' content="Libraries">
+    <meta property='og:description' content="">
+    <meta property='og:image' content='https://www.mousepawmedia.com/img/thumbnails/library.jpg'>
+
+    <!--Twitter Card data (https://dev.twitter.com/cards/getting-started)-->
+    <meta name='twitter:card' content='summary'>
+    <meta name='twitter:site' content='@mousepawmedia'>
+    <meta name='twitter:creator' content='@mousepawmedia'>
+    <!--Must be square, >=120px*120px, <1MB -->
+    <meta name='twitter:image' content='https://www.mousepawmedia.com/img/thumbnails/library.jpg'>
+    <meta name='twitter:image:alt' content='A library filled with books.'>
 </head>
 <body>
     <!--#include virtual='/common/header.html' -->
 
     <main>
-        <article class=center>
-            <h1>Pardon Our Dust!</h1>
+        <article class=banner>
+            <img class=banner src='/img/banners/projects/pawlib.jpg'/>
+        </article>
+
+        <article class=normal>
+            <h1>PawLIB</h1>
             <p>
                 This website is still under construction. Please check back
                 later. If you can't wait, you can still view our old website at
@@ -21,6 +38,49 @@
                 We apologize for the inconvenience.
             </p>
         </article>
+
+        <div class='toggle nav_buttonsquare'>
+            <p class=rotate><<</p>
+        </div>
+
+        <aside class=sidebar>
+            <section>
+                <p class=days><a href='/projects/libraries'>
+                    More Libraries
+                </a></p>
+            </section>
+
+            <section class=border-top>
+                <h2>Get PawLIB</h2>
+                <div class=flex>
+                    <div class='center_content flex_item'>
+                        <a href='https://github.com/mousepawmedia/pawlib' target=_blank>
+                            <img class=icon_medium src='/img/social/github_icon.png'>
+                            <p class='center days'>GitHub</p>
+                        </a>
+                    </div>
+                    <div class='center_content flex_item'>
+                        <a href='https://docs.mousepawmedia.com/pawlib'>
+                            <img class=icon_medium src='/img/icons/docs_icon.png'>
+                            <p class='center days'>Docs</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class=border-top>
+                <h2>You May Also Like...</h2>
+
+                <div class=flex>
+                    <div class='center_content flex_item'>
+                        <a href='/projects/libraries/trailcrest'>
+                            <img class='icon_large hoverable framed' src='/img/projects/trailcrest_icon.png'>
+                            <p class='center days'>Trailcrest</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </aside>
     </main>
 
     <!--#include virtual='/common/footer.html' -->
