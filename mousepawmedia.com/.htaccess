@@ -164,5 +164,8 @@ RewriteRule ^internships\/masscomm?$ "/intern_masscomm.html" [NC,L]
 # RESOURCES PAGES
 RewriteRule ^resources\/?$ "/resources.html" [NC,L]
 
+RewriteRule ^resources\/writing?$ "/writing.html" [NC,L]
+Redirect 301 /writing /resources/writing
+
 RewriteRule ^resources\/yellowsheets?$ "/yellowsheets.html" [NC,L]
 Redirect 301 /yellowsheets /resources/yellowsheets

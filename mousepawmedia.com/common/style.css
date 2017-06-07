@@ -905,6 +905,10 @@ img.large {
     width: 40%
 }
 
+img.x-large {
+    width: 80%
+}
+
 img.profile {
     width: 25%;
     /* Based on float_right */
