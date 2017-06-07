@@ -109,19 +109,13 @@ Redirect 301 /projects/slannan /software/slannan
 # LIBRARIES PAGES
 RewriteRule ^libraries\/?$ "/libraries.php" [NC,L]
 
-RewriteRule ^libraries\/anari\/?$ "/anari.php" [NC,L]
+RewriteRule ^libraries\/anari\/?$ "https\:\/\/mousepawmedia\.com\/projects\/libraries\/anari" [L]
 Redirect 301 /anari /libraries/anari
 Redirect 301 /projects/anari /libraries/anari
 
 RewriteRule ^libraries\/pawlib\/?$ "/pawlib.php" [NC,L]
 Redirect 301 /pawlib /libraries/pawlib
 Redirect 301 /projects/pawlib /libraries/pawlib
-
-# I'm not 100% certain these will work. Watch them!
-Redirect 301 /goldilocks /libraries/pawlib#goldilocks
-Redirect 301 /iochannel /libraries/pawlib#iochannel
-Redirect 301 /pawstring /libraries/pawlib#pawstring
-Redirect 301 /puppeteerxml /libraries/pawlib#puppeteerxml
 
 RewriteRule ^libraries\/punchline\/?$ "/punchline.php" [NC,L]
 Redirect 301 /punchline /libraries/punchline
@@ -168,13 +162,13 @@ Redirect 301 /opensource /participate/opensource
 # RESOURCES PAGES
 RewriteRule ^resources\/?$ "/resources.php" [NC,L]
 
-RewriteRule ^resources/standards\/?$ "/standards.php" [NC,L]
+RewriteRule ^resources/standards\/?$ "https\:\/\/mousepawmedia\.com\/projects\/standards" [L]
 Redirect 301 /standards /resources/standards
 
-RewriteRule ^resources/education\/?$ "/education.php" [NC,L]
+RewriteRule ^resources/education\/?$ "https\:\/\/mousepawmedia\.com\/resources" [L]
 Redirect 301 /education /resources/education
 
-RewriteRule ^resources/education/yellowsheets\/?$ "/yellowsheets.php" [NC,L]
+RewriteRule ^resources/education/yellowsheets\/?$ "https\:\/\/mousepawmedia\.com\/resources\/yellowsheets" [L]
 Redirect 301 /yellowsheets /resources/education/yellowsheets
 Redirect 301 /labs/yellowsheets /resources/education/yellowsheets
 
