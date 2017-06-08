@@ -6,7 +6,26 @@
     <!--Display information-->
     <title>SIMPLEXpress</title>
     <meta name='author' content='MousePaw Media'>
-    <meta name='description' content=''>
+    <meta name='description' content="SIMPLEXpress uses a visible and
+    predictable syntax to make writing expressions easier. The syntax design
+    trades some brevity for huge gains in readability. Nearly everything is
+    literal, except within a 'unit'.">
+
+    <!--Open Graph data (http://ogp.me/)-->
+    <meta property='og:title' content="SIMPLEXpress">
+    <meta property='og:description' content="SIMPLEXpress uses a visible and
+    predictable syntax to make writing expressions easier. The syntax design
+    trades some brevity for huge gains in readability. Nearly everything is
+    literal, except within a 'unit'.">
+    <meta property='og:image' content='https://www.mousepawmedia.com/img/thumbnails/projects/simplexpress.jpg'>
+
+    <!--Twitter Card data (https://dev.twitter.com/cards/getting-started)-->
+    <meta name='twitter:card' content='summary'>
+    <meta name='twitter:site' content='@mousepawmedia'>
+    <meta name='twitter:creator' content='@mousepawmedia'>
+    <!--Must be square, >=120px*120px, <1MB -->
+    <meta name='twitter:image' content='https://www.mousepawmedia.com/img/thumbnails/projects/simplexpress.jpg'>
+    <meta name='twitter:image:alt' content='SIMPLEXpress logo over marble cave.'>
 </head>
 <body>
     <!--#include virtual='/common/header.html' -->
@@ -17,13 +36,408 @@
         </article>
 
         <article class=normal>
-            <h1>SIMPLEXpress</h1>
-            <p>
-                This website is still under construction. Please check back
-                later. If you can't wait, you can still view our old website at
-                <a href='http://mousepawgames.com/' target=_blank>mousepawgames.com</a>.
-                We apologize for the inconvenience.
-            </p>
+            <section>
+                <h1>SIMPLEXpress</h1>
+                <h2>Regular expressions simplified.</h2>
+                <p>
+                    Regular expressions are an incredibly powerful tool, but
+                    let's face it: they're not the easiest to write or read, and
+                    sometimes they're too powerful for what we need.
+                </p>
+            </section>
+            <section>
+                <h2>Simple.</h2>
+                <p>
+                    SIMPLEXpress uses a visible and predictable syntax to make
+                    writing expressions easier. The syntax design trades some
+                    brevity for huge gains in readability. Nearly everything is
+                    literal, except within a "unit".
+                </p>
+                <p>
+                    Units always begin with a '^', and end with an '/'. Only two
+                    symbols are always reserved: '^' and '~'. This ability to
+                    easily "switch" between literal and symbolic modes means
+                    less escaping, less memorizing reserved symbols, and less
+                    referencing online documentation and tutorials.
+                </p>
+            </section>
+            <section>
+                <h2>Expanded.</h2>
+                <p>
+                    In regular expressions, you have to write your own
+                    complicated test cases for character sets, and Unicode
+                    support is only available through third-party libraries.
+                </p>
+                <p>
+                    On the other hand, SIMPLEXpress has dozens of character
+                    classes, called "specifiers". Most also have sub-classes for
+                    more fine-grained matching. All of these specifiers
+                    automatically kick in within a unit. For example, you could
+                    use 'm' to match all common math symbols, 'lu' to match all
+                    uppercase letters, and 'aU' to match any alphanumeric
+                    character that isn't uppercase. (Yup, you guessed it - any
+                    character class or subclass can be inverted by capitalizing
+                    its letter.)
+                </p>
+                <p>
+                    You can even match a range of Unicode characters with the
+                    specifier "<code>u123-456</code>"!
+                </p>
+            </section>
+            <section>
+                <h2>Express.</h2>
+                <p>
+                    SIMPLEXpress was designed specifically for lexing and
+                    parsing, a task that regular expressions are infamously
+                    ill-suited for. Because of this goal, SIMPLEXpress is fast
+                    and efficient.
+                </p>
+                <p>
+                    That second reserved symbol, '~', is used to "snag" units
+                    and arbitrary literal segments, which can then be returned
+                    on demand. This, paired with efficiency, makes SIMPLEXpress
+                    ideal for language parsing.
+                </p>
+            </section>
+            <section class=border-top>
+                <h2>Syntax</h2>
+                <p>
+                    Below is the basic syntax for SIMPLEXpress, according to
+                    the most recent specification draft. (Subject to change.)
+                </p>
+
+                <h3>Operators</h3>
+
+                <p>
+                    Only the '^' and '~' symbols are hard-reserved. All the
+                    rest only work as described within a unit ('^.../'),
+                    excepting the '\', which works outside units when preceding
+                    a hard-reserved character.
+                </p>
+
+                <table>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Usage</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>^</td>
+                        <td>Start unit</td>
+                        <td><code>^.../</code></td>
+                    </tr>
+                    <tr>
+                        <td>~</td>
+                        <td>Snag, aka capture group</td>
+                        <td><code>~.../</code></td>
+                    </tr>
+                    <tr>
+                        <td>[ ]</td>
+                        <td>
+                            Set: Match any one of the unit values within.
+                            Space delimited.
+                        </td>
+                        <td>
+                            `<code>^[(abc) (123))]/</code>` matches 'abc' or
+                            '123'.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt; &gt;</td>
+                        <td>
+                            Literal Set: Any literal character within.
+                        </td>
+                        <td>
+                            `<code>^&lt;abc&gt;/</code>` matches 'a', 'b',
+                            or 'c'.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>( )</td>
+                        <td>
+                            Group: Allows for literal characters, strings, and
+                            further nested units within a unit.
+                        </td>
+                        <td>
+                            `<code>^(a)(bc)?/</code>` matches either 'a'
+                            or 'abc'.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>\</td>
+                        <td>
+                            Escape following character (literal). Also works
+                            outside of units when preceding '^' or '~'.
+                        </td>
+                        <td>
+                            `<code>^<12>\*?/</code>` matches, '1', '2', '1*',
+                            or '2*'.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>{ }</td>
+                        <td>
+                            Exclusion: Anything within is checked but is not
+                            returned as part of the result. Parallels regex
+                            "lookahead" and "lookbehind".
+                        </td>
+                        <td>
+                            `<code>^{(abc)}/123</code>` matches 'abc123', but
+                            returns only '123'.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>.</td>
+                        <td>
+                            Matches any character.
+                        </td>
+                        <td>
+                            `<code>^./23</code>` matches 'z23' and anything
+                            else with a single character followed by '23'.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>+</td>
+                        <td>
+                            Multiple.
+                        </td>
+                        <td>
+                            `<code>^(abc)+/</code>` matches 'abc', 'abcabc',
+                            and so forth.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>?</td>
+                        <td>
+                            Optional.
+                        </td>
+                        <td>
+                            `<code>abc^(123)?/</code>` matches 'abc' and
+                            'abc123'.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>
+                            Optional multiple.
+                        </td>
+                        <td>
+                            `<code>abc^(123)*/</code>` matches 'abc', 'abc123',
+                            'abc123123', and so forth.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#1, #2-3 (etc)</td>
+                        <td>
+                            Exact number or range of matches.
+                        </td>
+                        <td>
+                            `<code>abc^(123)#2-3/</code>` only matches
+                            'abc123123', or 'abc123123123'.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>!</td>
+                        <td>
+                            NOT operator.
+                        </td>
+                        <td>
+                            `<code>^&lt;abc&gt;!/</code>` only matches a single
+                            character that is NOT 'a', 'b', or 'c'.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>$</td>
+                        <td>
+                            Line boundary (line beginning/end).
+                        </td>
+                        <td>
+                            `<code>^$/abc^$/</code>` only matches 'abc' if it is
+                            the entirety of the line.
+                        </td>
+                    </tr>
+                </table>
+
+                <h3>Operators</h3>
+
+                <p>
+                    All specifiers start with a single letter, and only function
+                    within a unit. Lowercase is a match, uppercase inverts the
+                    logic (A = NOT alphanumeric).
+                </p>
+
+                <table>
+                    <tr>
+                        <th>Specifier</th>
+                        <th>Usage</th>
+                    </tr>
+                    <tr>
+                        <td>a</td>
+                        <td>alphanumeric</td>
+                    </tr>
+                    <tr>
+                        <td>c</td>
+                        <td>
+                            classification (Reserved for later expanded character
+                            classes, such as 'c_hangal' for Hangal characters).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>d</td>
+                        <td>
+                            digit
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>e</td>
+                        <td>
+                            extended Latin
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>g</td>
+                        <td>
+                            Greek/Coptic
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>i</td>
+                        <td>
+                            IPA (International Phonetic Alphabet)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>l</td>
+                        <td>
+                            Latin letter
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>m</td>
+                        <td>
+                            math (digits, decimal, negative)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>n</td>
+                        <td>
+                            newline ('\n')
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>o</td>
+                        <td>
+                            math operator
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>p</td>
+                        <td>
+                            punctuation
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>r</td>
+                        <td>
+                            carriage return ('\r')
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>s</td>
+                        <td>
+                            literal space
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>t</td>
+                        <td>
+                            tab
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>u#</td>
+                        <td>
+                            unicode (accepts 'u78' or 'u57-78')
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>w</td>
+                        <td>
+                            whitespace
+                        </td>
+                    </tr>
+                </table>
+
+                <p>
+                    Most specifiers can also include 'u' or 'l' after the
+                    first character to indicate uppercase or lowercase. For
+                    example, '^au/' indicates alphanumeric uppercase, while
+                    '^gl/' indicates Greek/Coptic lowercase. This will be
+                    ignored if case doesn't apply (no error.)
+                </p>
+
+            </section>
+            <section class=border-top>
+                <h2>FAQs: SIMPLEXpress</h2>
+                <p class=center>(Click a question to view the answer.)</p>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        Why are you building SIMPLEXpress?
+                    </p>
+                    <div><p>
+                        SIMPLEXpress is being created primarily as the
+                        keystone for Ratscript's language parser, as well
+                        as to aid in controlling content loading in Trailcrest.
+                    </p></div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        Will SIMPLEXpress completely replace regular expressions?
+                    </p>
+                    <div><p>
+                        Definitely not. Each have their place, and while
+                        SIMPLEXpress is designed to be better suited to
+                        language parsing and most common cases, regular
+                        expressions can still be useful for some more
+                        complicated and advanced cases.
+                    </p></div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        What is SIMPLEXpress's license?
+                    </p>
+                    <div><p>
+                        SIMPLEXpress is licensed under the
+                        <a href=http://www.opensource.org/licenses/BSD-3-Clause target=_blank>BSD-3-Clause</a>
+                        license, allowing you to use it freely in any project.
+                    </p></div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        When will SIMPLEXpress be ready?
+                    </p>
+                    <div><p>
+                        SIMPLEXpress is in active development. It is presently
+                        a high priority task, as we will need it for both
+                        Ratscript and Trailcrest.
+                    </p></div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        Can I help with development?
+                    </p>
+                    <div><p>
+                        We'd love your help! Check out our
+                        <a href=/developers>Developers</a>
+                        page for details on how you can get involved.
+                    </p></div>
+                </div>
+            </section>
         </article>
 
         <div class='toggle nav_buttonsquare'>
@@ -35,6 +449,12 @@
                 <p class=days><a href='/projects/libraries'>
                     More Libraries
                 </a></p>
+            </section>
+
+            <section class=border-top>
+                <br/>
+                <img class=x-large src=/img/projects/simplexpress_weblogo.png alt="SIMPLEXpress logo">
+                <br/><br/>
             </section>
 
             <section class=border-top>
@@ -53,6 +473,12 @@
                 <h2>You May Also Like...</h2>
 
                 <div class=flex>
+                    <div class='center_content flex_item'>
+                        <a href='/projects/software/ratscript'>
+                            <img class='icon_large hoverable framed' src='/img/projects/ratscript_icon.png'>
+                            <p class='center days'>Ratscript</p>
+                        </a>
+                    </div>
                     <div class='center_content flex_item'>
                         <a href='/projects/libraries/trailcrest'>
                             <img class='icon_large hoverable framed' src='/img/projects/trailcrest_icon.png'>

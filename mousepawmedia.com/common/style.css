@@ -869,6 +869,26 @@ ul.days {
     font-family:'days', sans-serif;
 }
 
+main table {
+    margin-left: auto;
+    margin-right: auto;
+    font-family:'sourcesans', sans-serif;
+    font-size:18px;
+}
+
+main table th {
+    border: 3px double black;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+
+}
+
+main table td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
 /**************** IMAGES ****************/
 
 img.icon_social {
@@ -906,7 +926,7 @@ img.large {
 }
 
 img.x-large {
-    width: 80%
+    width: 60%
 }
 
 img.profile {
