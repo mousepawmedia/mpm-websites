@@ -6,7 +6,20 @@
     <!--Display information-->
     <title>Ratscript</title>
     <meta name='author' content='MousePaw Media'>
-    <meta name='description' content=''>
+    <meta name='description' content="">
+
+    <!--Open Graph data (http://ogp.me/)-->
+    <meta property='og:title' content="Ratscript">
+    <meta property='og:description' content="">
+    <meta property='og:image' content='https://www.mousepawmedia.com/img/thumbnails/projects/simplexpress.jpg'>
+
+    <!--Twitter Card data (https://dev.twitter.com/cards/getting-started)-->
+    <meta name='twitter:card' content='summary'>
+    <meta name='twitter:site' content='@mousepawmedia'>
+    <meta name='twitter:creator' content='@mousepawmedia'>
+    <!--Must be square, >=120px*120px, <1MB -->
+    <meta name='twitter:image' content='https://www.mousepawmedia.com/img/thumbnails/projects/ratscript.jpg'>
+    <meta name='twitter:image:alt' content='Ratscript logo over welding photo.'>
 </head>
 <body>
     <!--#include virtual='/common/header.html' -->
@@ -17,13 +30,209 @@
         </article>
 
         <article class=normal>
-            <h1>Ratscript</h1>
-            <p>
-                This website is still under construction. Please check back
-                later. If you can't wait, you can still view our old website at
-                <a href='http://mousepawgames.com/' target=_blank>mousepawgames.com</a>.
-                We apologize for the inconvenience.
-            </p>
+            <section>
+                <h1>Ratscript</h1>
+                <p>
+                    Ratscript is a brand new programming language with an
+                    original syntax designed to be visual and simple, without
+                    sacrificing functionality.
+                </p>
+                <p>
+                    Let's explore some of Ratscript's syntax and innovations.
+                    (Subject to change.)
+                </p>
+            </section>
+            <section>
+                <h2>Visual.</h2>
+
+                <p>
+                    Ratscript uses brief-yet-obvious keywords. For example,
+                    a new variable can be defined with <code>make</code>.
+                </p>
+                <code>
+                    make foo as int = 123<br/>
+                    make lang as string = "Ratscript"
+                </code>
+                <p>
+                    Meanwhile, all loops are defined with the <code>loop</code>
+                    keyword.
+                </p>
+                <code>
+                    make count as int = 100<br/>
+                    make sum as int = 0<br/>
+                    loop while count > 0<br/>
+                    : sum += count<br/>
+                    : count--<br/>
+                    end loop
+                </code>
+                <p>
+                    All lines are simply terminated by a newline.
+                    To continue on a new line, Ratscript takes a cue from
+                    standard English and employs the ellipses (<code>...</code>).
+                </p>
+                <code>
+                    make foo = 5 + 5 + 10 + ...<br/>
+                              10 + 10 + 2
+                </code>
+                <p>
+                    Ratscript always allows the programmer to decide if they
+                    want to pass it by reference ('<code>foo</code>') or
+                    value ('<code>@foo</code>').
+                </p>
+            </section>
+            <section>
+                <h2>Mathematical.</h2>
+
+                <p>
+                    Ratscript strives to follow as many conventions of written
+                    algebra as possible in its syntax. In addition to obvious
+                    and standard choices (like using parenthesis for function
+                    calls), it borrows conventions like using the caret
+                    (<code>^</code>) symbol for exponents. For example,
+                    <code>2^3</code> would yield 8.
+                </p>
+
+                <p>
+                    In addition to the <code>make</code> keyword used for
+                    declaring variables, Ratscript offers two other keywords.
+                </p>
+                <p>
+                    '<code>let</code>' is used to define a "throwaway" variable,
+                    such as a loop iterator. These are always named with one
+                    letter, and infer their type automatically.
+                </p>
+                <code>
+                    let i = 0<br/>
+                    loop for i++ from 0 to 100<br/>
+                    : doThing()<br/>
+                    end loop<br/>
+                </code>
+                <p>
+                    '<code>define</code>' defines a constant, in the same
+                    way that '<code>make</code>' defines a variable.
+                </p>
+                <code>
+                    define ANSWER as int = 42
+                </code>
+            </section>
+            <section>
+                <h2>Original</h2>
+
+                <p>
+                    Ratscript is our playground for exploring brand new
+                    innovations in programming paradigms and language features.
+                </p>
+                <p>
+                    One such innovation is in how code blocks are handled.
+                    Instead of using symbols to enclose a block, or relying
+                    on indentation to define them, Ratscript uses a
+                    "subordination operator", while ignoring all whitespace
+                    surrounding it (thereby allowing optional indentation).
+                </p>
+                <code>
+                    make missle as string = "whale"<br/>
+                    if missle == "whale"<br/>
+                    : print("Hello!")<br/>
+                    : print("Who am I?")<br/>
+                    : print("Why am I here?")<br/>
+                    else if missle == "petunias"<br/>
+                    : print("Oh no, not again.")<br/>
+                    else<br/>
+                    : print("Take evasive action!")<br/>
+                    : if missile == "heat-seeking nuclear warhead"<br/>
+                    :: infiniteImprobabilityDrive()<br/>
+                    : else<br/>
+                    :: driveErratically()<br/>
+                    : end if<br/>
+                    end if
+                </code>
+                <p>
+                    This convention allows one to immediately determine how
+                    deeply nested a single line is. We'll be exploring
+                    other possible implications of this new convention. For
+                    example, initializing muliple variables of the same type
+                    <em>might</em> look something like this:
+                </p>
+                <code>
+                    make foo as int = 123<br/>
+                    : bar = 456<br/>
+                </code>
+                <p>
+                    For anyone concerned about the annoyance of typing a
+                    "subordination operator", we believe a Ratscript-supported
+                    IDE should be able to alleviate any inconvenience. After
+                    all, brackets and spaces were inconvenient once too!
+                </p>
+            </section>
+            <section class=border-top>
+                <h2>FAQs: Ratscript</h2>
+                <p class=center>(Click a question to view the answer.)</p>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        Compiled or interpreted?
+                    </p>
+                    <div><p>
+                        Ratscript will most likely be interpreted.
+                    </p></div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        Statically or dynamically typed?
+                    </p>
+                    <div><p>
+                        We haven't decided for certain yet, but we're
+                        learning towards static typing.
+                    </p></div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        What paradigms will this language support?
+                    </p>
+                    <div><p>
+                        Initially, Ratscript will support procedural
+                        and object-oriented programming. In later versions,
+                        we plan to support generic and functional
+                        programming, as well as a brand new paradigm we'll
+                        be developing.
+                    </p></div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        What is Ratscript's license?
+                    </p>
+                    <div><p>
+                        Ratscript is licensed under the
+                        <a href=http://www.opensource.org/licenses/BSD-3-Clause target=_blank>BSD-3-Clause</a>
+                        license, allowing you to use it freely in any project.
+                    </p></div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        When will Ratscript be ready?
+                    </p>
+                    <div><p>
+                        Ratscript is in active development. It is presently
+                        a high priority task, as we will need it for
+                        Trailcrest and Anari.
+                    </p></div>
+                </div>
+
+                <div class=expander tabindex=1>
+                    <p class=days>
+                        Can I help with development?
+                    </p>
+                    <div><p>
+                        We'd love your help! Check out our
+                        <a href=/developers>Developers</a>
+                        page for details on how you can get involved.
+                    </p></div>
+                </div>
+            </section>
         </article>
 
         <div class='toggle nav_buttonsquare'>
@@ -35,6 +244,12 @@
                 <p class=days><a href='/projects/software'>
                     More Software
                 </a></p>
+            </section>
+
+            <section class=border-top>
+                <br/>
+                <img class=x-large src=/img/projects/ratscript_weblogo.png alt="Ratscript logo">
+                <br/><br/>
             </section>
 
             <section class=border-top>

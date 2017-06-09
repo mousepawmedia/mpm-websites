@@ -826,6 +826,7 @@ pre {
 code {
     font-family:'sourcecode', monospace;
     font-size: 16px;
+    background-color: #bcd3d8
 }
 
 p {
