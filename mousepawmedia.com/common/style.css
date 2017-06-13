@@ -985,6 +985,127 @@ img.float_right {
 	margin-left:10px;
 }
 
+/***************** CLICKABLE IMAGE ************************/
+/* Display an image thumbnail, and display the full image
+ * in a popup box by clicking the thumbnail. The popup
+ * box may be closed by clicking anywhere.
+ *
+ * Based On: http://cssdemos.tupence.co.uk/image-popup.htm
+ *
+ * Use the following to create a thumbnail/popup pair. Replace
+ * "thumb_left" with "thumb_right" to float the thumbnail
+ * to the right.
+	<div class="thumb thumb_left" tabindex=-1>
+		<img class="thumb" src="/img/image.png" alt="Caption."/>
+		<p class="small_caption">Click to Enlarge</p>
+		<span tabindex=-1>
+		    <p class="small_caption">Click Anywhere to Close</p>
+		    <img class="popup" src="/img/image.png"/>
+		    <p><br/>Caption.</p>
+	</span></div>
+*/
+
+/* The image thumbnail. */
+div.thumb{
+	display:inline-block;
+	position: relative;
+
+	z-index:0;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:10px;
+
+    width:30%;
+
+	/* Define our thumbnail frame and give it an accent color... */
+	padding: 1%;
+	background-color:#DEF2FF;
+
+	/* We'll also give the frame a drop shadow. */
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .75);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, .75);
+	box-shadow: 0 0 5px rgba(0, 0, 0, .75);
+
+	/* Round the corners of the frame. */
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+div.thumb p {
+    font-family:'days', sans-serif;
+    font-size: 18px;
+}
+
+div.thumb p.small_caption {
+    font-family:'days', sans-serif;
+    font-size: 14px;
+}
+
+/* This is a variant on the thumbnail that floats left. */
+div.thumb.thumb_left{
+	float:left;
+}
+
+/* This is necessary for the click effect. */
+div.thumb:focus{
+	z-index:1;
+}
+
+/* This is a variant on the thumbnail that floats right. */
+div.thumb.thumb_right{
+	float:right;
+}
+
+img.thumb
+{
+    display: block;
+	width:100%;
+}
+
+img.popup
+{
+    display: block;
+	width:100%;
+}
+
+/* The popup window displaying the full-size image when the
+ * thumbnail image is clicked. */
+div.thumb span{
+	/* The default position is completely off the screen. The
+	 * click behavior will move it into focus. */
+	position: fixed;
+	left:-9999px;
+
+	/* Define the frame and frame color for the popup. */
+	padding:10px;
+	background:#DEF2FF;
+
+    width:60vw;
+
+	/* Give the frame a drop shadow. */
+	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, .75);
+	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, .75);
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, .75);
+
+	/* Round the corners of the frame. */
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius:8px;
+}
+
+/* Position the popup relative to the left-floating thumbnail,
+ * thereby bringing it into view upon clicking the thumbnail. */
+div.thumb:focus span {
+	top: 10vh;
+    left: 20vw;
+}
+
+/* If we click the popup, return it to its offscreen position
+ * to hide it. */
+div.thumb span:focus {
+	left:-9999px;
+}
 
 /**************** EMBEDDED STUFF ****************/
 iframe.archiveaudio {

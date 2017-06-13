@@ -1,7 +1,16 @@
+# Do not allow browsing indexes. (-Indexes)
+# MultiViews MUST be off for this thing to work right! (-MultiViews)
+# Includes allows using the common header/footer (etc) files.
+Options +FollowSymLinks +Includes -Indexes -MultiViews
+
+# Allow rewriting URLs
 RewriteEngine on
 
-#suPHP_ConfigPath /home/dancin3/public_html
-AddHandler application/x-httpd-php53 .php .php5
+# This allows SSI conditionals
+SSILegacyExprParser on
+
+# Process SSI in .html files
+AddHandler server-parsed .html
 
 <FilesMatch "\.(ttf|otf|eot|woff)$">
   <IfModule mod_headers.c>
@@ -9,41 +18,65 @@ AddHandler application/x-httpd-php53 .php .php5
  </IfModule>
 </FilesMatch>
 
-# Do not allow browsing indexes. (-Indexes)
-# MultiViews MUST be off for this thing to work right! (-MultiViews)
-Options -Indexes -MultiViews
-
 # DOMAIN NAME UNIFICATION
 RewriteCond %{HTTP_HOST} ^mousepawgames\.com$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.mousepawgames\.com$
-RewriteCond %{HTTP_HOST} ^mousepawgames\.net$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.mousepawgames\.net$
 RewriteRule ^/?$ "http\:\/\/www\.mousepawgames\.com\/" [R=301,L]
 
-# SOCIAL REDIRECTS
-RewriteRule ^out\/enews$ "http\:\/\/mousepawgames\.com\/enews" [L]
-RewriteRule ^out\/enews\/pawnews$ "http\:\/\/mousepawgames\.com\/enews\/mail.cgi\/list\/pawnews\/" [L]
-RewriteRule ^out\/enews\/yellowsheets$ "http\:\/\/mousepawgames\.com\/enews\/mail.cgi\/list\/yellowsheets\/" [L]
-
-Redirect 301 /out/facebook /news/articles/leaving_facebook
-Redirect 301 /facebook /news/articles/leaving_facebook
-RewriteRule ^out\/twitter$ "https\:\/\/twitter\.com\/mousepawgames" [L]
-Redirect 301 /twitter /out/twitter
-RewriteRule ^out\/linkedin$ "http\:\/\/linkedin\.com\/company/mousepaw-games" [L]
-RewriteRule ^out\/github$ "http\:\/\/github\.com\/mousepawmedia" [L]
-RewriteRule ^out\/google\+$ "http\:\/\/plus\.google\.com\/\+Mousepawgames" [L]
-RewriteRule ^out\/youtube$ "http\:\/\/youtube\.com\/mousepawgames" [L]
-RewriteRule ^out\/youtube\/subscribe$ "http\:\/\/youtube\.com\/subscription_center\?add_user\=mousepawgames" [L]
-
 # ERROR PAGES
-ErrorDocument 403 /mousepawgames/403.php
-ErrorDocument 404 /mousepawgames/404.php
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
 
-RewriteRule ^header.php "/header.php [L,R=301]
+RewriteRule ^games\/?$ "/" [NC,L]
+RewriteRule ^games\/diamondquest\/?$ "/" [NC,L]
+RewriteRule ^games\/infiltrator\/?$ "/" [NC,L]
+RewriteRule ^games\/operationspyrat\/?$ "/" [NC,L]
 
-RewriteRule ^software\/slannan\/?$ "/slannan.php" [NC,L]
+RewriteRule ^sitemap\/?$ "/sitemap.html" [NC,L]
 
-# COMPANY PAGES
+# SOCIAL REDIRECTS
+RewriteRule ^out\/github$ "https\:\/\/github\.com\/mousepawmedia" [L]
+RewriteRule ^out\/google\+$ "http\:\/\/plus\.google\.com\/\+MousePawMedia" [L]
+RewriteRule ^out\/internetarchive$ "https\:\/\/archive\.org\/details\/@mousepaw_games" [L]
+RewriteRule ^out\/linkedin$ "http\:\/\/linkedin\.com\/company/mousepaw-media" [L]
+RewriteRule ^out\/sourceforge$ "https\:\/\/sourceforge\.net\/u\/mousepawmedia" [L]
+RewriteRule ^out\/twitter$ "https\:\/\/twitter\.com\/mousepawmedia" [L]
+RewriteRule ^out\/twitter_mpg$ "https\:\/\/twitter\.com\/mousepawgames" [L]
+RewriteRule ^out\/youtube$ "https\:\/\/youtube\.com\/mousepawgames" [L]
+RewriteRule ^out\/youtube\/subscribe$ "https\:\/\/youtube\.com\/subscription_center\?add_user\=mousepawgames" [L]
+
+RewriteRule ^out\/podcast\/android$ "https\:\/\/subscribeonandroid\.com\/mousepawmedia\.com\/rss\/mousepawdcast\.xml" [L]
+RewriteRule ^out\/podcast\/apple$ "https\:\/\/itunes\.apple\.com\/us\/podcast\/mousepawdcast\/id1242557040" [L]
+RewriteRule ^out\/podcast\/google$ "https\:\/\/playmusic\.app\.goo\.gl\/\?ibi\=com\.google\.PlayMusic\&isi\=691797987\&ius\=googleplaymusic\&link\=https\:\/\/play\.google\.com\/music\/m\/I24cnk4y2t7satyj5v7iu6pivvq?t\%3DMousePaw\'dCast\%26pcampaignid\%3DMKT\-na\-all\-co\-pr\-mu\-pod\-16" [L]
+RewriteRule ^out\/podcast\/overcast$ "https\:\/\/overcast\.fm\/itunes1242557040\/mousepawdcast" [L]
+RewriteRule ^out\/podcast\/tunein$ "https\:\/\/tunein\.com\/radio\/MousePawdCast\-p1002800" [L]
+RewriteRule ^out\/podcast\/iheartradio$ "https\:\/\/iheart\.com\/podcast\/428\-MousePawdCast\-28198080" [L]
+
+# LEGAL STUFF
+
+RewriteRule ^communityrules\/?$ "https\:\/\/mousepawmedia\.com\/communityrules" [L]
+RewriteRule ^termsofuse\/?$ "https\:\/\/mousepawmedia\.com\/termsofuse" [L]
+RewriteRule ^privacy\/?$ "https\:\/\/mousepawmedia\.com\/privacy" [L]
+RewriteRule ^legal\/?$ "https\:\/\/mousepawmedia\.com\/legal" [L]
+RewriteRule ^termsofdevelopment\/?$ "https\:\/\/mousepawmedia\.com\/termsofdevelopment" [L]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# REDIRECT TO NEW SITE
 RewriteRule ^company\/?$ "https\:\/\/mousepawmedia\.com\/company" [L]
 Redirect 301 /about /company
 
@@ -70,75 +103,48 @@ Redirect 301 /technologies /company/technologies
 Redirect 301 /technology /company/technologies
 Redirect 301 /tech /company/technologies
 
-# NEWS PAGES
-RewriteRule ^news\/?$ "/news.php" [NC,L]
-RewriteRule ^news\/articles\/(\w*)\/?$ "article-$1.php" [NC,L]
+RewriteRule ^news\/?$ "https\:\/\/mousepawmedia\.com\/news" [L]
 
-# SOFTWARE PAGES
-RewriteRule ^software\/?$ "/software.php" [NC,L]
+RewriteRule ^software\/?$ "https\:\/\/mousepawmedia\.com\/projects\/software" [L]
 Redirect 301 /labs /software
 Redirect 301 /labs/software /software
 Redirect 301 /projects /software
 
-RewriteRule ^software\/diamondquest\/?$ "/diamondquest.php" [NC,L]
-Redirect 301 /diamondquest /software/diamondquest
-Redirect 301 /projects/diamondquest /software/diamondquest
-
-RewriteRule ^software\/infiltrator\/?$ "/infiltrator.php" [NC,L]
-Redirect 301 /infiltrator /software/infiltrator
-Redirect 301 /projects/infiltrator /software/infiltrator
-
-RewriteRule ^software\/lightrift\/?$ "/lightrift.php" [NC,L]
+RewriteRule ^software\/lightrift\/?$ "https\:\/\/mousepawmedia\.com\/projects\/software\/lightrift" [L]
 Redirect 301 /lightrift /software/lightrift
 Redirect 301 /projects/lightrift /software/lightrift
 
-RewriteRule ^software\/osr\/?$ "/operationspyrat.php" [NC,L]
-Redirect 301 /osr /software/osr
-Redirect 301 /software/operationspyrat /projects/osr
-Redirect 301 /operationspyrat /projects/osr
-Redirect 301 /projects/osr /software/osr
-
-RewriteRule ^software\/redstring\/?$ "/redstring.php" [NC,L]
+RewriteRule ^software\/redstring\/?$ "https\:\/\/mousepawmedia\.com\/projects\/software\/redstring" [L]
 Redirect 301 /redstring /software/redstring
 Redirect 301 /projects/redstring /software/redstring
 
-RewriteRule ^software\/slannan\/?$ "/slannan.php" [NC,L]
-Redirect 301 /slannan /software/slannan
-Redirect 301 /projects/slannan /software/slannan
-
-# LIBRARIES PAGES
-RewriteRule ^libraries\/?$ "/libraries.php" [NC,L]
+RewriteRule ^libraries\/?$ "https\:\/\/mousepawmedia\.com\/libraries" [L]
 
 RewriteRule ^libraries\/anari\/?$ "https\:\/\/mousepawmedia\.com\/projects\/libraries\/anari" [L]
 Redirect 301 /anari /libraries/anari
 Redirect 301 /projects/anari /libraries/anari
 
-RewriteRule ^libraries\/pawlib\/?$ "/pawlib.php" [NC,L]
+RewriteRule ^libraries\/pawlib\/?$ "https\:\/\/mousepawmedia\.com\/projects\/libraries\/pawlib" [L]
 Redirect 301 /pawlib /libraries/pawlib
 Redirect 301 /projects/pawlib /libraries/pawlib
 
-RewriteRule ^libraries\/punchline\/?$ "/punchline.php" [NC,L]
-Redirect 301 /punchline /libraries/punchline
-Redirect 301 /projects/punchline /libraries/punchline
-
-RewriteRule ^libraries\/ratscript\/?$ "/ratscript.php" [NC,L]
+RewriteRule ^libraries\/ratscript\/?$ "https\:\/\/mousepawmedia\.com\/projects\/software\/ratscript" [L]
 Redirect 301 /ratscript /libraries/ratscript
 Redirect 301 /projects/ratscript /libraries/ratscript
 
-RewriteRule ^libraries\/simplexpress\/?$ "/simplexpress.php" [NC,L]
+RewriteRule ^libraries\/simplexpress\/?$ "https\:\/\/mousepawmedia\.com\/projects\/libraries\/simplexpress" [L]
 Redirect 301 /simplexpress /libraries/simplexpress
 Redirect 301 /projects/simplexpress /libraries/simplexpress
 
-RewriteRule ^libraries\/trailcrest\/?$ "/trailcrest.php" [NC,L]
+RewriteRule ^libraries\/trailcrest\/?$ "https\:\/\/mousepawmedia\.com\/projects\/libraries\/trailcrest" [L]
 Redirect 301 /trailcrest /libraries/trailcrest
 Redirect 301 /projects/trailcrest /libraries/trailcrest
 
-RewriteRule ^libraries\/stormsound\/?$ "/stormsound.php" [NC,L]
+RewriteRule ^libraries\/stormsound\/?$ "https\:\/\/mousepawmedia\.com\/projects\/libraries\/stormsound" [L]
 Redirect 301 /stormsound /libraries/stormsound
 Redirect 301 /projects/stormsound /libraries/stormsound
 
-# PARTICIPATE PAGES
-RewriteRule ^participate\/?$ "/participate.php" [NC,L]
+RewriteRule ^participate\/?$ "https\:\/\/mousepawmedia\.com\/projects\/developers" [L]
 Redirect 301 /getinvolved /participate
 
 RewriteRule ^participate\/internships$ "https\:\/\/mousepawmedia\.com\/internships" [L]
@@ -147,20 +153,11 @@ Redirect 301 /getinvolved/internships /participate/internships
 Redirect 301 /internships /participate/internships
 Redirect 301 /jobs /participate/internships
 
-RewriteRule ^participate\/testers$ "/testers.php" [NC,L]
-Redirect 301 /alpha /participate/testers
-Redirect 301 /beta /participate/testers
-Redirect 301 /getinvolved/alpha /participate/testers
-Redirect 301 /getinvolved/beta /participate/testers
-Redirect 301 /testers /participate/testers
-Redirect 301 /testing /participate/testers
-
 RewriteRule ^participate\/opensource\/?$ "https\:\/\/mousepawmedia\.com\/developers" [L]
 Redirect 301 /getinvolved/opensource /participate/opensource
 Redirect 301 /opensource /participate/opensource
 
-# RESOURCES PAGES
-RewriteRule ^resources\/?$ "/resources.php" [NC,L]
+RewriteRule ^resources\/?$ "https\:\/\/mousepawmedia\.com\/resources" [L]
 
 RewriteRule ^resources/standards\/?$ "https\:\/\/mousepawmedia\.com\/projects\/standards" [L]
 Redirect 301 /standards /resources/standards
@@ -171,9 +168,3 @@ Redirect 301 /education /resources/education
 RewriteRule ^resources/education/yellowsheets\/?$ "https\:\/\/mousepawmedia\.com\/resources\/yellowsheets" [L]
 Redirect 301 /yellowsheets /resources/education/yellowsheets
 Redirect 301 /labs/yellowsheets /resources/education/yellowsheets
-
-# LEGAL STUFF
-RewriteRule ^termsofuse\/?$ "https\:\/\/mousepawmedia\.com\/termsofuse" [L]
-RewriteRule ^privacy\/?$ "https\:\/\/mousepawmedia\.com\/privacy" [L]
-RewriteRule ^legal\/?$ "https\:\/\/mousepawmedia\.com\/legal" [L]
-RewriteRule ^termsofdevelopment\/?$ "https\:\/\/mousepawmedia\.com\/termsofdevelopment" [L]
