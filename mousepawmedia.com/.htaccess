@@ -18,11 +18,6 @@ AddHandler server-parsed .html
  </IfModule>
 </FilesMatch>
 
-# DOMAIN NAME UNIFICATION
-#RewriteCond %{HTTP_HOST} ^mousepawmedia\.com$ [OR]
-#RewriteCond %{HTTP_HOST} ^www\.mousepawmedia\.com$
-#RewriteRule ^/?$ "http\:\/\/www\.mousepawmedia\.com\/" [R=301,L]
-
 # SOCIAL REDIRECTS
 RewriteRule ^out\/github$ "https\:\/\/github\.com\/mousepawmedia" [L]
 RewriteRule ^out\/google\+$ "http\:\/\/plus\.google\.com\/\+MousePawMedia" [L]

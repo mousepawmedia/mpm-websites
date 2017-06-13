@@ -18,11 +18,6 @@ AddHandler server-parsed .html
  </IfModule>
 </FilesMatch>
 
-# DOMAIN NAME UNIFICATION
-RewriteCond %{HTTP_HOST} ^mousepawgames\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.mousepawgames\.com$
-RewriteRule ^/?$ "http\:\/\/www\.mousepawgames\.com\/" [R=301,L]
-
 # ERROR PAGES
 ErrorDocument 403 /403.html
 ErrorDocument 404 /404.html
