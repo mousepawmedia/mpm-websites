@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html lang='en-US'>
+<head>
+    <!--#include virtual='/common/commonhead.html' -->
+
+    <!--Display information-->
+    <title>News</title>
+    <meta name='author' content='MousePaw Media'>
+    <meta name='description' content="Get the latest updates from MousePaw Media.">
+
+    <!--Open Graph data (http://ogp.me/)-->
+    <meta property='og:title' content="News">
+    <meta property='og:description' content="Get the latest updates from MousePaw Media.">
+    <meta property='og:image' content='https://www.mousepawmedia.com/img/thumbnails/newspaper.jpg'>
+
+    <!--Twitter Card data (https://dev.twitter.com/cards/getting-started)-->
+    <meta name='twitter:card' content='summary'>
+    <meta name='twitter:site' content='@mousepawmedia'>
+    <meta name='twitter:creator' content='@mousepawmedia'>
+    <!--Must be square, >=120px*120px, <1MB -->
+    <meta name='twitter:image' content='https://www.mousepawmedia.com/img/thumbnails/newspaper.jpg'>
+    <meta name='twitter:image:alt' content='Newspaper and glasses.'>
+</head>
+<body>
+    <!--#include virtual='/common/header.html' -->
+
+    <main>
+        <article class=normal>
+            <section class='visible-mobile border-bottom'>
+                <p class='days center'>
+                    <a href='/news'>Back to News</a>
+                </p>
+            </section>
+
+            <section>
+                <h1>PawLIB 1.0 Released</h1>
+
+                <p>
+                    <strong>14 June 2017</strong>
+                </p>
+
+                <img class='float_right med framed' src=/img/news/pawlib_1.0.jpg>
+                <p>
+                    After two years of development effort, MousePaw Media is
+                    proud to announce the first official release of PawLIB!
+                </p>
+                <p>
+                    The release, codenamed "Willow Sapling," brings many
+                    exciting features to C++, including the Flex data structures
+                    the release name alludes to. FlexArray, FlexQueue, and
+                    FlexStack provide high-performance alternatives to the
+                    familiar standard-library vector, queue, and stack
+                    classes.
+                </p>
+                <p>
+                    "This is an exciting moment for us," said Lead Developer
+                    Jason C. McDonald about the release. "PawLIB has been in
+                    the works for a long time, but we wanted to make sure
+                    this first version was polished."
+                </p>
+                <p>
+                    "I'm excited. We're taking an honestly really big step in
+                    code, in experimentation in the company," said Nathan
+                    Groggett, who led the taskforce responsible for final review
+                    and documentation tasks. "We're moving forward, and that
+                    feels great."
+                </p>
+                <p>
+                    When asked about the release, Assistant Lead Developer
+                    Jarek Thomas reported, "It's a relief to finally get it out.
+                    I'm excited that our data structures are actually faster
+                    than the standard library."
+                </p>
+                <p>
+                    Aside from the Flex data structures, PawLIB sports a number
+                    of new innovations. Goldilocks, the built-in testing
+                    and benchmarking framework, is one such example. In
+                    addition to allowing tests to be compiled into production
+                    code, it includes a comparative benchmarker with extensive
+                    stastistical data for performance analysis.
+                </p>
+                <p>
+                    PawLIB is obviously an unusual project, as it attempts to
+                    outperform implementations which have been in use for
+                    years. "Some people may ask, 'why was this done?'" said
+                    Jarek Thomas, "but others will say 'this is awesome' and
+                    use it."
+                </p>
+                <p>
+                    This first verison also includes a feature-rich message
+                    output system (IOChannel), an atomic true/false/maybe
+                    data stype (Trilean), and a general-use implementation
+                    of the Pool design pattern.
+                </p>
+                <p>
+                    Bowen Volwiler, who helped write the documentation for
+                    the release, observed, "Its really interesting to look
+                    at how we can take something that already exists and
+                    make improvements no one would think to make,
+                    challenging the status quo."
+                </p>
+                <p>
+                    The team is already making plans for the next release,
+                    PawLIB 1.1, which will see the addition of the long-awaited
+                    Unicode string class, OneString.
+                </p>
+                <p>
+                    PawLIB 1.0.0 "Willow Sapling" can be downloaded from
+                    <a href=https://github.com/mousepawmedia/pawlib/tree/v1.0.0 target=_blank>GitHub</a>.
+                    Complete documentation is available at
+                    <a href=https://docs.mousepawmedia.com/pawlib target=_blank>docs.mousepawmedia.com/pawlib</a>.
+                </p>
+                <p class='right small'><a href=#>Top</a></p>
+            </section>
+        </article>
+
+        <div class='toggle nav_buttonsquare'>
+            <p class=rotate><<</p>
+        </div>
+
+        <aside class=sidebar>
+            <section>
+                <p class=days><a href='/news'>
+                    News
+                </a></p>
+                <p class=days><a href='/news/podcast'>
+                    Podcast
+                </a></p>
+                <p class=days><a href='/news/press'>
+                    Press
+                </a></p>
+            </section>
+            <!--#include virtual='/common/articles_sidebar.html' -->
+        </aside>
+    </main>
+
+    <!--#include virtual='/common/footer.html' -->
+</body>
+
+<!--Javascript Modernizer, for backwards compatability.-->
+<script src='/common/js/vendor/modernizr-2.8.3.min.js'></script>
+
+</html>

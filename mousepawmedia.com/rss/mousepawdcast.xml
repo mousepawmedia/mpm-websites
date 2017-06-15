@@ -44,6 +44,59 @@
         </image>
 
         <item>
+            <title>Episode 3: Heroes and Methods</title>
+            <link>https://archive.org/details/mousepawdcast_ep3</link>
+            <description>
+                We're back! Learn where the crew of MousePaw Media has been
+                for two months. Annie, Allie, and Jason will discuss character
+                development in fiction writing. Nate, Jarek, and Jason talk about
+                methodologies in team and project management. Along the way,
+                you'll hear about chicken hysteria, time zones, conspiracies,
+                and whether a TARDIS could have a role in test-driven
+                development.
+            </description>
+            <pubDate>Wed, 22 Mar 2017 02:00:00 GMT</pubDate>
+            <guid isPermaLink="true">https://archive.org/details/MousePawdCastEp3</guid>
+
+            <media:content
+                medium="audio"
+                url="https://archive.org/download/MousePawdCastEp3/MousePawdCast_Ep3.mp3"
+                type="audio/mpeg"
+                isDefault="true"
+                expression="full"
+                duration="4054">
+
+                <media:title type="plain">Episode 3: Heroes and Methods</media:title>
+
+                <media:description>
+                    We're back! Learn where the crew of MousePaw Media has been
+                    for two months. Annie, Allie, and Jason will discuss character
+                    development in fiction writing. Nate, Jarek, and Jason talk about
+                    methodologies in team and project management. Along the way,
+                    you'll hear about chicken hysteria, time zones, conspiracies,
+                    and whether a TARDIS could have a role in test-driven
+                    development.
+                </media:description>
+
+                <media:rating scheme="urn:simple">nonadult</media:rating>
+
+                <media:thumbnail url="https://mousepawmedia.com/img/ours/mousepawdcast_cover.jpg"/>
+
+                <media:keywords>
+                    programming, writing, creative writing, software, APIs, mousepaw media, methodologies, management, project management
+                </media:keywords>
+
+            </media:content>
+
+            <enclosure url="https://archive.org/download/MousePawdCastEp3/MousePawdCast_Ep3.mp3" length="176514638" type="audio/mpeg"/>
+
+            <itunes:image href="http://mousepawmedia.com/img/ours/mousepawdcast_cover.jpg"/>
+            <itunes:explicit>clean</itunes:explicit>
+            <itunes:duration>1:07:34</itunes:duration>
+
+        </item>
+
+        <item>
             <title>Episode 2: Accents and APIs</title>
             <link>https://archive.org/details/mousepawdcast_ep2</link>
             <description>

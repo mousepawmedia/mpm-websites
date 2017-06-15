@@ -61,9 +61,6 @@ Redirect 301 /anari /libraries/anari
 RewriteRule ^projects\/libraries\/pawlib\/?$ "/pawlib.html" [NC,L]
 Redirect 301 /pawlib /libraries/pawlib
 
-RewriteRule ^projects\/libraries\/puppeteerxml\/?$ "/puppeteerxml.html" [NC,L]
-Redirect 301 /puppeteerxml /libraries/puppeteerxml
-
 RewriteRule ^projects\/libraries\/simplexpress\/?$ "/simplexpress.html" [NC,L]
 Redirect 301 /simplexpress /libraries/simplexpress
 
@@ -112,7 +109,7 @@ Redirect 301 /company/contact /company/connect
 
 # NEWS PAGES
 RewriteRule ^news\/?$ "/news.html" [NC,L]
-RewriteRule ^news\/articles\/(\w*)\/?$ "article-$1.html" [NC,L]
+RewriteRule ^news\/articles\/(\w*)\/?$ "articles/$1.html" [NC,L]
 
 RewriteRule ^news\/podcast?$ "/podcast.html" [NC,L]
 Redirect 301 /mousepawdcast /news/podcast
