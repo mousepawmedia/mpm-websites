@@ -18,6 +18,9 @@ AddHandler server-parsed .html
  </IfModule>
 </FilesMatch>
 
+# LOCK OUT BROWSING LINKED PAGES (pages designed for soft-linking)
+#RewriteRule ^linked/ - [NC,F,L]
+
 # SOCIAL REDIRECTS
 RewriteRule ^out\/github$ "https\:\/\/github\.com\/mousepawmedia" [L]
 RewriteRule ^out\/google\+$ "http\:\/\/plus\.google\.com\/\+MousePawMedia" [L]
