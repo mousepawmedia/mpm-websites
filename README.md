@@ -20,10 +20,10 @@ and debugging help. This website literally would not exist without you.
 
 We do NOT accept pull requests through GitHub.
 If you would like to contribute code, please read our
-[Contribution Guide][3].
+[Contribution Guide][2].
 
 All contributions are licensed to us under the
-[MousePaw Media Terms of Development][4].
+[MousePaw Media Terms of Development][3].
 
 ## License
 
@@ -32,9 +32,9 @@ Our source code is licensed under the BSD-3 License. (See LICENSE.md)
 Actual website content is Copyright (c) 2017 MousePaw Media. All Rights
 Reserved.
 
-The project is owned and maintained by [MousePaw Media][2].
+The project is owned and maintained by [MousePaw Media][1].
 
-[2]: http://www.mousepawmedia.com/developers
-[3]: https://www.mousepawmedia.com/developers/contributing
-[4]: http://www.mousepawmedia.com/termsofdevelopment
-[5]: http://github.com/mousepawmedia/website
+[1]: https://www.mousepawmedia.com/
+[2]: https://www.mousepawmedia.com/developers/contributing
+[3]: http://www.mousepawmedia.com/termsofdevelopment
+[4]: http://github.com/mousepawmedia/website
