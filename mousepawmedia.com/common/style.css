@@ -1163,6 +1163,18 @@ a.anchor {
 	visibility:hidden;
 }
 
+/* EMAIL OBFUSCATOR
+ * This is shown to block email address scraping.
+ * Based on http://techblog.tilllate.com/2008/07/20/ten-methods-to-obfuscate-e-mail-addresses-compared/
+ *
+ * Use the following to list an email address:
+    <span class=email>info@<span>null</span>mousepawmedia.com</span>
+ */
+
+span.email span {
+    display:none;
+}
+
 /**************** FOOTER ****************/
 
 footer {
