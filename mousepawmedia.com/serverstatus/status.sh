@@ -5,6 +5,8 @@ if [[ -z $1 ]]; then
     exit 1
 fi
 
+ABSLOC=/opt/html/mousepawmedia.com/serverstatus
+
 while getopts ":hs:" opt; do
     case $opt in
         h)
@@ -19,19 +21,19 @@ while getopts ":hs:" opt; do
             case $OPTARG in
                 0)
                     echo "Reporting NORMAL status."
-                    ln -sf serverstatus_normal.html serverstatus.html
+                    ln -sf ${ABSLOC}/serverstatus_normal.html ${ABSLOC}/serverstatus.html
                     ;;
                 1)
                     echo "Reporting MAINTAINANCE status."
-                    ln -sf serverstatus_maintain.html serverstatus.html
+                    ln -sf ${ABSLOC}/serverstatus_maintain.html ${ABSLOC}/serverstatus.html
                     ;;
                 2)
                     echo "Reporting WEATHER status."
-                    ln -sf serverstatus_weather.html serverstatus.html
+                    ln -sf ${ABSLOC}/serverstatus_weather.html ${ABSLOC}/serverstatus.html
                     ;;
                 3)
                     echo "Reporting ERROR status."
-                    ln -sf serverstatus_error.html serverstatus.html
+                    ln -sf ${ABSLOC}/serverstatus_error.html ${ABSLOC}/serverstatus.html
                     ;;
                 *)
                     echo "Invalid status $OPTARG. See -h for help."

@@ -34,6 +34,7 @@ RewriteRule ^out\/youtube\/subscribe$ "https\:\/\/youtube\.com\/subscription_cen
 
 RewriteRule ^out\/podcast\/android$ "https\:\/\/subscribeonandroid\.com\/mousepawmedia\.com\/rss\/mousepawdcast\.xml" [L]
 RewriteRule ^out\/podcast\/apple$ "https\:\/\/itunes\.apple\.com\/us\/podcast\/mousepawdcast\/id1242557040" [L]
+RewriteRule ^out\/podcast\/devto$ "https\:\/\/dev\.to\/mousepaw" [L]
 RewriteRule ^out\/podcast\/google$ "https\:\/\/playmusic\.app\.goo\.gl\/\?ibi\=com\.google\.PlayMusic\&isi\=691797987\&ius\=googleplaymusic\&link\=https\:\/\/play\.google\.com\/music\/m\/I24cnk4y2t7satyj5v7iu6pivvq?t\%3DMousePaw\'dCast\%26pcampaignid\%3DMKT\-na\-all\-co\-pr\-mu\-pod\-16" [L]
 RewriteRule ^out\/podcast\/overcast$ "https\:\/\/overcast\.fm\/itunes1242557040\/mousepawdcast" [L]
 RewriteRule ^out\/podcast\/tunein$ "https\:\/\/tunein\.com\/radio\/MousePawdCast\-p1002800" [L]
