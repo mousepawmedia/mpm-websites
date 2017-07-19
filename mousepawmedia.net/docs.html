@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html lang='en-US'>
+<head>
+    <!--#include virtual='/common/commonhead.html' -->
+
+    <!--Display information-->
+    <title>In-Dev Documentation</title>
+    <meta name='author' content='MousePaw Media'>
+    <meta name='description' content='Scamper Into Adventure!'>
+
+    <!--Open Graph data (http://ogp.me/)-->
+    <meta property='og:title' content='In-Dev Documentation'>
+    <meta property='og:description' content='The development documentation
+    for MousePaw Media projects.'>
+    <meta property='og:image' content='https://www.mousepawmedia.com/img/ours/devnet.png'>
+
+    <!--Twitter Card data (https://dev.twitter.com/cards/getting-started)-->
+    <meta name='twitter:card' content='summary'>
+    <meta name='twitter:site' content='@mousepawmedia'>
+    <meta name='twitter:creator' content='@mousepawmedia'>
+    <!--Must be square, >=120px*120px, <1MB -->
+    <meta name='twitter:image' content='https://www.mousepawmedia.com/img/ours/devnet.png'>
+    <meta name='twitter:image:alt' content='MousePaw Media DevNet logo'>
+    <!--See: https://moz.com/blog/meta-data-templates-123-->
+</head>
+<body>
+    <!--#include virtual='/common/header.html' -->
+
+    <main>
+        <article class=center>
+            <section>
+                <p class=center>
+                    This is the official documentation for in-development
+                    MousePaw Media projects. It is automatically build and
+                    published from <code>master</code> branch of each
+                    repository.
+                </p>
+                <p class=center>
+                    For more information, FAQs, and to learn where you can find
+                    the latest released copies of our documentation, visit the
+                    <a href=https://mousepawmedia.com/docs target=_blank>
+                        Documentation page
+                    </a>
+                    on mousepawmedia.com.
+                </p>
+                <p class='small center'>
+                    *Staff-only.
+                </p>
+            </section>
+            <section class=border-top>
+                <div class=flex>
+                    <div class='center_content flex_item_equal'>
+                        <a href='/docs/anari'>
+                            <img class=icon_large src='/img/projects/anari_stars_weblogo.png'>
+                            <p class='center days'>Anari</p>
+                        </a>
+                        <h3>Docs Build</h3>
+                        <a href='https://jenkins.mousepawmedia.net/job/anari_docs/'>
+                            <img src='https://jenkins.mousepawmedia.net/job/anari_docs/badge/icon'>
+                        </a>
+                    </div>
+                    <div class='center_content flex_item_equal'>
+                        <a href='/docs/pawlib'>
+                            <img class=icon_large src='/img/projects/pawlib_icon.png'>
+                            <p class='center days'>PawLIB</p>
+                        </a>
+                        <h3>Docs Build</h3>
+                        <a href='https://jenkins.mousepawmedia.net/job/pawlib_docs/'>
+                            <img src='https://jenkins.mousepawmedia.net/job/pawlib_docs/badge/icon'>
+                        </a>
+                    </div>
+                    <div class='center_content flex_item_equal'>
+                        <a href='/docs/ratscript'>
+                            <img class=icon_large src='/img/projects/ratscript_icon.png'>
+                            <p class='center days'>Ratscript</p>
+                        </a>
+                        <h3>Docs Build</h3>
+                        <a href='https://jenkins.mousepawmedia.net/job/ratscript_docs/'>
+                            <img src='https://jenkins.mousepawmedia.net/job/ratscript_docs/badge/icon'>
+                        </a>
+                    </div>
+                    <div class='center_content flex_item_equal'>
+                        <a href='/docs/simplexpress'>
+                            <img class=icon_large src='/img/projects/simplexpress_icon.png'>
+                            <p class='center days'>SIMPLEXpress</p>
+                        </a>
+                        <h3>Docs Build</h3>
+                        <a href='https://jenkins.mousepawmedia.net/job/simplexpress_docs/'>
+                            <img src='https://jenkins.mousepawmedia.net/job/simplexpress_docs/badge/icon'>
+                        </a>
+                    </div>
+                    <div class='center_content flex_item_equal'>
+                        <a href='/docs/stormsound'>
+                            <img class=icon_large src='/img/projects/stormsound_icon.png'>
+                            <p class='center days'>Stormsound</p>
+                        </a>
+                        <h3>Docs Build</h3>
+                        <a href='https://jenkins.mousepawmedia.net/job/stormsound_docs/'>
+                            <img src='https://jenkins.mousepawmedia.net/job/stormsound_docs/badge/icon'>
+                        </a>
+                    </div>
+                    <div class='center_content flex_item_equal'>
+                        <a href='/docs/trailcrest'>
+                            <img class=icon_large src='/img/projects/trailcrest_icon.png'>
+                            <p class='center days'>Trailcrest</p>
+                        </a>
+                        <h3>Docs Build</h3>
+                        <a href='https://jenkins.mousepawmedia.net/job/trailcrest_docs/'>
+                            <img src='https://jenkins.mousepawmedia.net/job/trailcrest_docs/badge/icon'>
+                        </a>
+                    </div>
+                    <div class='center_content flex_item_equal'>
+                        <a href='https://secure.mousepawmedia.net/w4w-docs'>
+                            <img class=icon_large src='/img/projects/osr_icon.png'>
+                            <p class='center days'>Word4Word*</p>
+                        </a>
+                        <h3>Docs Build</h3>
+                        <a href='https://jenkins.mousepawmedia.net/job/w4w_docs/'>
+                            <img src='https://jenkins.mousepawmedia.net/job/w4w_docs/badge/icon'>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class=border-top>
+                <h2>Information</h2>
+                <p class=center>
+                    Documentation is automatically built by Jenkins from the
+                    Hawksnest repositories using the <code>master</code> branch.
+                    Jenkins rebuilds documentation each time the documentation
+                    files are changed. If documentation is broken, please file a
+                    bug report on Phabricator.
+                </p>
+            </section>
+        </article>
+    </main>
+
+    <!--#include virtual='/common/footer.html' -->
+</body>
+
+<!--Javascript Modernizer, for backwards compatibility.-->
+<script src='/common/js/vendor/modernizr-2.8.3.min.js'></script>
+
+</html>
