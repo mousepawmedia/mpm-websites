@@ -22,10 +22,14 @@ AddHandler server-parsed .html
 ErrorDocument 403 /403.html
 ErrorDocument 404 /404.html
 
-RewriteRule ^games\/?$ "/" [NC,L]
-RewriteRule ^games\/diamondquest\/?$ "/" [NC,L]
-RewriteRule ^games\/infiltrator\/?$ "/" [NC,L]
-RewriteRule ^games\/operationspyrat\/?$ "/" [NC,L]
+RewriteRule ^games\/?$ "/games.html" [NC,L]
+
+RewriteRule ^games\/omission\/?$ "/omission.html" [NC,L]
+Redirect 301 /omission /games/omission
+
+RewriteRule ^games\/operationspyrat\/?$ "/comingsoon.html" [NC,L]
+Redirect 301 /operationspyrat /games/operationspyrat
+Redirect 301 /osr /games/operationspyrat
 
 RewriteRule ^sitemap\/?$ "/sitemap.html" [NC,L]
 
