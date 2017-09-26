@@ -35,6 +35,9 @@ while getopts ":hs:" opt; do
                     echo "Reporting ERROR status."
                     ln -sf ${ABSLOC}/serverstatus_error.html ${ABSLOC}/serverstatus.html
                     ;;
+                4)
+                    echo "Reporting CUSTOM status."
+                    ln -sf ${ABSLOC}/serverstatus_custom.html ${ABSLOC}/serverstatus.html
                 *)
                     echo "Invalid status $OPTARG. See -h for help."
                     ;;
