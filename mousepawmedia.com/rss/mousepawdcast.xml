@@ -81,7 +81,7 @@
 
             </media:content>
 
-            <enclosure url="https://archive.org/download/MousePawdCastEp5/MousePawdCast_Ep5.mp3" length="73312022" type="audio/mpeg"/>
+            <enclosure url="http://archive.org/download/MousePawdCastEp5/MousePawdCast_Ep5.mp3" length="73312022" type="audio/mpeg"/>
 
             <itunes:image href="http://mousepawmedia.com/img/ours/mousepawdcast_cover.jpg"/>
             <itunes:explicit>clean</itunes:explicit>
@@ -126,7 +126,7 @@
 
             </media:content>
 
-            <enclosure url="https://archive.org/download/MousePawdCastEp4/MousePawdCast_November2017.mp3" length="148356702" type="audio/mpeg"/>
+            <enclosure url="http://archive.org/download/MousePawdCastEp4/MousePawdCast_November2017.mp3" length="148356702" type="audio/mpeg"/>
 
             <itunes:image href="http://mousepawmedia.com/img/ours/mousepawdcast_cover.jpg"/>
             <itunes:explicit>clean</itunes:explicit>
@@ -173,7 +173,7 @@
 
             </media:content>
 
-            <enclosure url="https://archive.org/download/MousePawdCastEp3/MousePawdCast_Ep3.mp3" length="176514638" type="audio/mpeg"/>
+            <enclosure url="http://archive.org/download/MousePawdCastEp3/MousePawdCast_Ep3.mp3" length="176514638" type="audio/mpeg"/>
 
             <itunes:image href="http://mousepawmedia.com/img/ours/mousepawdcast_cover.jpg"/>
             <itunes:explicit>clean</itunes:explicit>
