@@ -44,6 +44,50 @@
         </image>
 
         <item>
+            <title>Episode 6: New Worlds and Forgotten Times</title>
+            <link>https://archive.org/details/MousePawdCastEp6</link>
+            <description>
+                In this episode, Annie, Allie, and Jason discuss world building
+                in storytelling. Chris and Jason talk about design and debugging
+                lessons for modern coders from the era of punchcard programming.
+                Break out the card punch confetti and tune in!
+            </description>
+            <pubDate>Fri, 26 Feb 2018 04:00:00 GMT</pubDate>
+            <guid isPermaLink="true">https://archive.org/details/MousePawdCastEp6</guid>
+
+            <media:content
+                medium="audio"
+                url="https://archive.org/download/MousePawdCastEp6/MousePawdCast_Ep6.mp3"
+                type="audio/mpeg"
+                isDefault="true"
+                expression="full"
+                duration="3834">
+
+                <media:title type="plain">Episode 6: New Worlds and Forgotten Times</media:title>
+
+                <media:description>
+                    In this episode, Annie, Allie, and Jason discuss world building in storytelling. Chris and Jason talk about design and debugging lessons for modern coders from the era of punchcard programming. Break out the card punch confetti and tune in!
+                </media:description>
+
+                <media:rating scheme="urn:simple">nonadult</media:rating>
+
+                <media:thumbnail url="https://mousepawmedia.com/img/ours/mousepawdcast_cover.jpg"/>
+
+                <media:keywords>
+                    programming, writing, creative writing, software, development, mousepaw media
+                </media:keywords>
+
+            </media:content>
+
+            <enclosure url="http://archive.org/download/MousePawdCastEp6/MousePawdCast_Ep6.mp3" length="71170216" type="audio/mpeg"/>
+
+            <itunes:image href="http://mousepawmedia.com/img/ours/mousepawdcast_cover.jpg"/>
+            <itunes:explicit>clean</itunes:explicit>
+            <itunes:duration>1:03:54</itunes:duration>
+
+        </item>
+
+        <item>
             <title>Episode 5: Villains and Time Flux</title>
             <link>https://archive.org/details/MousePawdCastEp5</link>
             <description>
