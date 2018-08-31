@@ -16,6 +16,8 @@ while getopts ":hs:" opt; do
             echo "   1: Maintainence"
             echo "   2: Weather"
             echo "   3: Error"
+            echo "   4: Limited Hours"
+            echo "   5: Custom"
             ;;
         s)
             case $OPTARG in
@@ -36,6 +38,10 @@ while getopts ":hs:" opt; do
                     ln -sf ${ABSLOC}/serverstatus_error.html ${ABSLOC}/serverstatus.html
                     ;;
                 4)
+                    echo "Reporting LIMITED HOURS status."
+                    ln -sf ${ABSLOC}/serverstatus_limitedhours.html ${ABSLOC}/serverstatus.html
+                    ;;
+                5)
                     echo "Reporting CUSTOM status."
                     ln -sf ${ABSLOC}/serverstatus_custom.html ${ABSLOC}/serverstatus.html
                     ;;
