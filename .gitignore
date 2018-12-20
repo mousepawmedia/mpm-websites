@@ -1,1 +1,7 @@
 codealike.json
+
+# Ignore secrets
+.env
+.pk
+.pem
+.pub
