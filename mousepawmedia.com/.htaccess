@@ -115,36 +115,36 @@ Redirect 301 /company/contact /company/connect
 RewriteRule ^news\/?$ "/news.html" [NC,L]
 RewriteRule ^news\/articles\/(\w*)\/?$ "articles/$1.html" [NC,L]
 
-RewriteRule ^news\/podcast?$ "/podcast.html" [NC,L]
+RewriteRule ^news\/podcast\/?$ "/podcast.html" [NC,L]
 Redirect 301 /mousepawdcast /news/podcast
 Redirect 301 /podcast /news/podcast
 
-RewriteRule ^news\/press$ "/press.html" [NC,L]
+RewriteRule ^news\/press\/$ "/press.html" [NC,L]
 Redirect 301 /press /news/press
 
 # DEVELOPER PAGES
 RewriteRule ^developers\/?$ "/developers.html" [NC,L]
 Redirect 301 /opensource /developers
 
-RewriteRule ^developers\/contributing?$ "/contributing.html" [NC,L]
+RewriteRule ^developers\/contributing\/?$ "/contributing.html" [NC,L]
 Redirect 301 /contributing /developers/contributing
 Redirect 301 /contributors /developers/contributing
 Redirect 301 /contribution /developers/contributing
 Redirect 301 /developers/contribution /developers/contributing
 Redirect 301 /developers/contributors /developers/contributing
 
-RewriteRule ^developers\/technology?$ "/technology.html" [NC,L]
+RewriteRule ^developers\/technology\/?$ "/technology.html" [NC,L]
 Redirect 301 /technology /developers/technology
 Redirect 301 /tech /developers/technology
 Redirect 301 /developers/tech /developers/technology
 
-RewriteRule ^developers\/documentation?$ "/documentation.html" [NC,L]
+RewriteRule ^developers\/documentation\/?$ "/documentation.html" [NC,L]
 Redirect 301 /documentation /developers/documentation
 
-RewriteRule ^developers\/irc?$ "/irc.html" [NC,L]
+RewriteRule ^developers\/irc\/?$ "/irc.html" [NC,L]
 Redirect 301 /irc /developers/irc
 
-RewriteRule ^developers\/devnet?$ "/devnet.html" [NC,L]
+RewriteRule ^developers\/devnet\/?$ "/devnet.html" [NC,L]
 Redirect 301 /devnet /developers/devnet
 
 RewriteRule ^out\/devnet$ "https\:\/\/mousepawmedia\.net" [L]
@@ -152,16 +152,20 @@ RewriteRule ^out\/devnet$ "https\:\/\/mousepawmedia\.net" [L]
 # INTERNSHIPS PAGES
 RewriteRule ^internships\/?$ "/internships.html" [NC,L]
 
-RewriteRule ^internships\/programming?$ "/intern_programming.html" [NC,L]
-RewriteRule ^internships\/designproduction?$ "/intern_designprod.html" [NC,L]
-RewriteRule ^internships\/contentdev?$ "/intern_contentdev.html" [NC,L]
-RewriteRule ^internships\/masscomm?$ "/intern_masscomm.html" [NC,L]
+RewriteRule ^internships\/programming\/?$ "/intern_programming.html" [NC,L]
+RewriteRule ^internships\/designproduction\/?$ "/intern_designprod.html" [NC,L]
+RewriteRule ^internships\/contentdev\/?$ "/intern_contentdev.html" [NC,L]
+RewriteRule ^internships\/masscomm\/?$ "/intern_masscomm.html" [NC,L]
 
 # RESOURCES PAGES
 RewriteRule ^resources\/?$ "/resources.html" [NC,L]
 
-RewriteRule ^resources\/writing?$ "/writing.html" [NC,L]
+RewriteRule ^resources\/writing\/?$ "/writing.html" [NC,L]
 Redirect 301 /writing /resources/writing
 
-RewriteRule ^resources\/yellowsheets?$ "/yellowsheets.html" [NC,L]
+RewriteRule ^resources\/yellowsheets\/?$ "/yellowsheets.html" [NC,L]
 Redirect 301 /yellowsheets /resources/yellowsheets
+
+# HIDDEN PAGES
+
+RewriteRule ^staffportal\/?$ "/staffportal.html" [NC,L]
