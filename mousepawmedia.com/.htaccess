@@ -158,6 +158,8 @@ RewriteRule ^internships\/contentdev\/?$ "/intern_contentdev.html" [NC,L]
 RewriteRule ^internships\/masscomm\/?$ "/intern_masscomm.html" [NC,L]
 RewriteRule ^internships\/community\/?$ "/intern_community.html" [NC,L]
 
+RewriteRule ^internships\/apply\/?$ "https\:\/\/survey\.mousepawmedia\.com\/index\.php\/267615" [L]
+
 # RESOURCES PAGES
 RewriteRule ^resources\/?$ "/resources.html" [NC,L]
 
