@@ -4,7 +4,7 @@ The MousePaw Games and MousePaw Media websites are made with HTML5 and CSS3.
 Our goal is to keep the amount of Javascript to a minimum.
 
 The `stable` branch contains the versions currently live on `mousepawmedia.com`
-and `mousepawgames.com`. The `master` branch is the current work-in-progress
+and `mousepawgames.com`. The `devel` branch is the current work-in-progress
 versions of the sites.
 
 ## Authors
