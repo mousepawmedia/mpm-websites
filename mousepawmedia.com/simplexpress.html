@@ -54,10 +54,12 @@
                     literal, except within a "unit".
                 </p>
                 <p>
-                    Units always begin with a '^', and end with an '/'. Only two
-                    symbols are always reserved: '^' and '~'. This ability to
-                    easily "switch" between literal and symbolic modes means
-                    less escaping, less memorizing reserved symbols, and less
+                    Units always begin with one of two characters, '^' for a
+                    match-only unit or '~' for a snag unit, and end with a '/'.
+                    Only three symbols are always reserved: '^' and '~' to start
+                    units, and '%' to escape them. This ability to easily
+                    "switch" between literal and symbolic modes means less
+                    escaping, less memorizing reserved symbols, and less
                     referencing online documentation and tutorials.
                 </p>
             </section>
@@ -73,11 +75,9 @@
                     classes, called "specifiers". Most also have sub-classes for
                     more fine-grained matching. All of these specifiers
                     automatically kick in within a unit. For example, you could
-                    use 'm' to match all common math symbols, 'lu' to match all
-                    uppercase letters, and 'aU' to match any alphanumeric
-                    character that isn't uppercase. (Yup, you guessed it - any
-                    character class or subclass can be inverted by capitalizing
-                    its letter.)
+                    use 'o' to match all common math operators, 'lu' to match all
+                    uppercase letters, and 'al' to match any alphanumeric
+                    character that isn't uppercase.
                 </p>
                 <p>
                     You can even match a range of Unicode characters with the
@@ -111,7 +111,7 @@
                 <p>
                     Only the '^' and '~' symbols are hard-reserved. All the
                     rest only work as described within a unit ('^.../'),
-                    excepting the '\', which works outside units when preceding
+                    excepting the '%', which works outside units when preceding
                     a hard-reserved character.
                 </p>
 
@@ -138,7 +138,7 @@
                             Space delimited.
                         </td>
                         <td>
-                            `<code>^[(abc) (123))]/</code>` matches 'abc' or
+                            <code>^[(abc) (123))]/</code> matches 'abc' or
                             '123'.
                         </td>
                     </tr>
@@ -148,7 +148,7 @@
                             Literal Set: Any literal character within.
                         </td>
                         <td>
-                            `<code>^&lt;abc&gt;/</code>` matches 'a', 'b',
+                            <code>^&lt;abc&gt;/</code> matches 'a', 'b',
                             or 'c'.
                         </td>
                     </tr>
@@ -159,18 +159,18 @@
                             further nested units within a unit.
                         </td>
                         <td>
-                            `<code>^(a)(bc)?/</code>` matches either 'a'
+                            <code>^(a)(bc)?/</code> matches either 'a'
                             or 'abc'.
                         </td>
                     </tr>
                     <tr>
-                        <td>\</td>
+                        <td>%</td>
                         <td>
                             Escape following character (literal). Also works
                             outside of units when preceding '^' or '~'.
                         </td>
                         <td>
-                            `<code>^<12>\*?/</code>` matches, '1', '2', '1*',
+                            <code>^<12>/^%*?/</code> matches, '1', '2', '1*',
                             or '2*'.
                         </td>
                     </tr>
@@ -182,7 +182,7 @@
                             "lookahead" and "lookbehind".
                         </td>
                         <td>
-                            `<code>^{(abc)}/123</code>` matches 'abc123', but
+                            <code>~{(abc)}/123</code> matches 'abc123', but
                             returns only '123'.
                         </td>
                     </tr>
@@ -192,7 +192,7 @@
                             Matches any character.
                         </td>
                         <td>
-                            `<code>^./23</code>` matches 'z23' and anything
+                            <code>^./23</code> matches 'z23' and anything
                             else with a single character followed by '23'.
                         </td>
                     </tr>
@@ -202,7 +202,7 @@
                             Multiple.
                         </td>
                         <td>
-                            `<code>^(abc)+/</code>` matches 'abc', 'abcabc',
+                            <code>^(abc)+/</code> matches 'abc', 'abcabc',
                             and so forth.
                         </td>
                     </tr>
@@ -212,7 +212,7 @@
                             Optional.
                         </td>
                         <td>
-                            `<code>abc^(123)?/</code>` matches 'abc' and
+                            <code>abc^(123)?/</code> matches 'abc' and
                             'abc123'.
                         </td>
                     </tr>
@@ -222,7 +222,7 @@
                             Optional multiple.
                         </td>
                         <td>
-                            `<code>abc^(123)*/</code>` matches 'abc', 'abc123',
+                            <code>abc^(123)*/</code> matches 'abc', 'abc123',
                             'abc123123', and so forth.
                         </td>
                     </tr>
@@ -232,7 +232,7 @@
                             Exact number or range of matches.
                         </td>
                         <td>
-                            `<code>abc^(123)#2-3/</code>` only matches
+                            <code>abc^(123)#2-3/</code> only matches
                             'abc123123', or 'abc123123123'.
                         </td>
                     </tr>
@@ -242,7 +242,7 @@
                             NOT operator.
                         </td>
                         <td>
-                            `<code>^&lt;abc&gt;!/</code>` only matches a single
+                            <code>^!&lt;abc&gt;/</code> only matches a single
                             character that is NOT 'a', 'b', or 'c'.
                         </td>
                     </tr>
@@ -252,7 +252,7 @@
                             Line boundary (line beginning/end).
                         </td>
                         <td>
-                            `<code>^$/abc^$/</code>` only matches 'abc' if it is
+                            <code>^$/abc^$/</code> only matches 'abc' if it is
                             the entirety of the line.
                         </td>
                     </tr>
@@ -310,12 +310,6 @@
                         <td>l</td>
                         <td>
                             Latin letter
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>m</td>
-                        <td>
-                            math (digits, decimal, negative)
                         </td>
                     </tr>
                     <tr>
