@@ -35,7 +35,6 @@ RewriteRule ^sitemap\/?$ "/sitemap.html" [NC,L]
 
 # SOCIAL REDIRECTS
 RewriteRule ^out\/github$ "https\:\/\/github\.com\/mousepawmedia" [L]
-RewriteRule ^out\/google\+$ "http\:\/\/plus\.google\.com\/\+MousePawMedia" [L]
 RewriteRule ^out\/internetarchive$ "https\:\/\/archive\.org\/details\/@mousepaw_games" [L]
 RewriteRule ^out\/linkedin$ "http\:\/\/linkedin\.com\/company/mousepaw-media" [L]
 RewriteRule ^out\/sourceforge$ "https\:\/\/sourceforge\.net\/u\/mousepawmedia" [L]
