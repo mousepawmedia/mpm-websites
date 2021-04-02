@@ -30,11 +30,10 @@ RewriteRule ^termsofdevelopment$ "https\:\/\/mousepawmedia\.com\/termsofdevelopm
 RewriteRule ^termsofuse$ "https\:\/\/mousepawmedia\.com\/termsofuse" [L]
 
 # NETWORK SUBSITES
-RewriteRule ^ehour$ "https\:\/\/ehour\.mousepawmedia\.net\/" [L]
+RewriteRule ^ehour$ "https\:\/\/time\.mousepawmedia\.net\/" [L]
+RewriteRule ^time$ "https\:\/\/time\.mousepawmedia\.net\/" [L]
 RewriteRule ^pad$ "https\:\/\/pad\.mousepawmedia\.net\/" [L]
 Redirect 301 /etherpad /pad
-RewriteRule ^quiz$ "https\:\/\/quiz\.mousepawmedia\.net\/" [L]
-Redirect 301 /tao /quiz
 RewriteRule ^jenkins$ "https\:\/\/jenkins\.mousepawmedia\.net\/" [L]
 RewriteRule ^nextcloud$ "https\:\/\/nextcloud\.mousepawmedia\.net\/" [L]
 RewriteRule ^phabricator$ "https\:\/\/phabricator\.mousepawmedia\.net\/" [L]
