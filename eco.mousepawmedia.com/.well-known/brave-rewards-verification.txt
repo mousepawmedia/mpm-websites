@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: mousepawmedia.net
+Token: 95b1805cf9db92df8c2df741ae1ca106349ed1c12b3d1198e162a2991f9999f4

@@ -17,36 +17,89 @@
             <img class=banner src='/img/banners/working.jpg'/>
         </article>
 
-        <article class=normal>
-            <section class='visible-mobile border-bottom'>
-                <p class='days center'>
-                    <a href='/staffportal'>Staff Portal</a>
-                </p>
-            </section>
+        <article class=center>
 
             <section>
                 <h1>Staff Portal</h1>
-                <p>
-
-                </p>
             </section>
 
             <section class=border-top>
-                <h2>Directory</h2>
+                <h2>Public Tools</h2>
+
+                <p>
+                    The sectors below are all publicly accessible. If you are
+                    non-staff, you will need to log into Phabricator with your
+                    GitHub account. The other sectors do not require a login.
+                </p>
+                <p>
+                    Staff can log into any part of the network using their
+                    company-issued credentials.
+                </p>
 
                 <div class=flex>
                     <div class='center_content flex_item_equal'>
-                        <a href='/out/devnet'>
-                            <img class='icon_large framed' src='/img/ours/devnet_icon.png'>
-                            <p class='center days'>DevNet</p>
+                        <a href='https://phab.mousepawmedia.com/'>
+                            <img class='icon_large framed' src='/img/foss/phabricator_icon.png'>
+                            <p class='center days'>Phabricator</p>
+                        </a>
+                        <p class='center'>Bug/Task Tracker</p>
+                        <p class='center'>Code Review</p>
+                        <p class='center'>Project Management</p>
+                        <p class='center'>Q&nbsp;A</p>
+                        <p class='center'>Repositories</p>
+                        <p class='center'>Wiki</p>
+                    </div>
+
+                    <div class='center_content flex_item_equal'>
+                        <a href='https://pad.mousepawmedia.com/'>
+                            <img class='icon_large framed' src='/img/foss/etherpad_icon.png'>
+                            <p class='center days'>Etherpad</p>
+                        </a>
+                        <p class='center'>Collaborative Text Editing</p>
+                    </div>
+
+                    <div class='center_content flex_item_equal'>
+                        <a href='https://ci.mousepawmedia.com/'>
+                            <img class='icon_large framed' src='/img/foss/jenkins_icon.png'>
+                            <p class='center days'>Jenkins</p>
+                        </a>
+                        <p class='center'>Build Reports</p>
+                        <p class='center'>Build Administration</p>
+                        <p class='center'>Test Reports</p>
+                    </a></div>
+
+                    <div class='center_content flex_item_equal'>
+                        <a href='https://papers.mousepawmedia.com/'>
+                            <img class='icon_large framed' src='/img/foss/limesurvey_icon.png'>
+                            <p class='center days'>LimeSurvey</p>
                         </a>
                         <p class='center'>
-                            Collaboration and ECO
+                            Online Forms
                         </p>
                         <p class='center'>
-                            Server: Hawksnest
+                            Quizzes
+                        </p>
+                        <p class='center'>
+                            Surveys
                         </p>
                     </div>
+
+                    <div class='center_content flex_item_equal'>
+                        <a href='https://devdocs.mousepawmedia.com/' target=_blank>
+                            <img class='icon_large framed' src='/img/icons/help_icon.png'>
+                            <p class='center days'>Dev Docs</p>
+                        </a>
+                        <p class='center'>Guides</p>
+                        <p class='center'>Setup Instructions</p>
+                        <p class='center'>Tutorials</p>
+                    </div>
+                </div>
+
+            </section>
+            <section class=border-top>
+                <h2>Staff-Only Tools</h2>
+
+                <div class=flex>
 
                     <div class='center_content flex_item_equal'>
                         <a href='https://webmail.mousepawmedia.com/'>
@@ -56,43 +109,37 @@
                         <p class='center'>
                             Webmail
                         </p>
-                        <p class='center'>
-                            Server: Webster
-                        </p>
                     </div>
 
                     <div class='center_content flex_item_equal'>
-                        <a href='https://survey.mousepawmedia.com/'>
-                            <img class='icon_large framed' src='/img/foss/limesurvey_icon.png'>
-                            <p class='center days'>LimeSurvey</p>
+                        <a href='https://time.mousepawmedia.com/'>
+                            <img class='icon_large framed' src='/img/foss/kimai_icon.png'>
+                            <p class='center days'>Kimai</p>
                         </a>
-                        <p class='center'>
-                            Assessments and Surveys
-                        </p>
-                        <p class='center'>
-                            Server: Webster
-                        </p>
+                        <p class='center'>Time Reporting</p>
+                    </div>
+
+                    <div class='center_content flex_item_equal'>
+                        <a href='https://cloud.mousepawmedia.com/'>
+                            <img class='icon_large framed' src='/img/foss/nextcloud_icon.png'>
+                            <p class='center days'>Nextcloud</p>
+                        </a>
+                        <p class='center'>File Sharing</p>
+                        <p class='center'>Collaborative Editing</p>
+                    </a></div>
+
+                    <div class='center_content flex_item_equal'>
+                        <a href='https://eco.mousepawmedia.com'>
+                            <img class='icon_large framed' src='/img/icons/eco_icon.png'>
+                            <p class='center days'>ECO</p>
+                        </a>
+                        <p class='center'>ECO Forms</p>
                     </div>
                 </div>
-
-                <!--#include virtual='/serverstatus/serverstatus.html' -->
-                <p class=center>
-                    Please report problems to
-                    <span class=email>hawksnest@<span>null</span>mousepawmedia.com</span>.
-                </p>
 
             </section>
         </article>
 
-        <div class='toggle nav_buttonsquare'>
-            <p class=rotate><<</p>
-        </div>
-
-        <aside class=sidebar>
-            <section>
-                <p class=days><a href='/staffportal'>Staff Portal</a></p>
-            </section>
-        </aside>
     </main>
 
     <!--#include virtual='/common/footer.html' -->

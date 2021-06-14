@@ -5,7 +5,7 @@
  *
  * == LICENSE ==
  *
- * Copyright 2017 MousePaw Media.
+ * Copyright (c) 2021 MousePaw Media.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
@@ -1114,12 +1114,6 @@ iframe.archiveaudio {
     margin-right: auto;
     height: 30px;
     width: 50%;
-}
-
-iframe.freenodechat {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* This locks the aspect ratio of the contained iframe.

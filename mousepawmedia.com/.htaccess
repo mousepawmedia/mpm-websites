@@ -144,10 +144,9 @@ Redirect 301 /documentation /developers/documentation
 RewriteRule ^developers\/irc\/?$ "/irc.html" [NC,L]
 Redirect 301 /irc /developers/irc
 
-RewriteRule ^developers\/devnet\/?$ "/devnet.html" [NC,L]
-Redirect 301 /devnet /developers/devnet
-
-RewriteRule ^out\/devnet$ "https\:\/\/mousepawmedia\.net" [L]
+RewriteRule ^developers\/devnet\/?$ "/developers.html" [NC,L]
+Redirect 301 /devnet /developers
+Redirect 301 /out/devnet /developers
 
 # INTERNSHIPS PAGES
 RewriteRule ^internships\/?$ "/internships.html" [NC,L]

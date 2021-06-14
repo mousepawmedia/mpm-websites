@@ -1,0 +1,33 @@
+# Do not allow browsing indexes. (-Indexes)
+# MultiViews MUST be off for this thing to work right! (-MultiViews)
+# Includes allows using the common header/footer (etc) files.
+Options +FollowSymLinks +Includes -Indexes -MultiViews
+
+# Allow rewriting URLs
+RewriteEngine on
+
+# This allows SSI conditionals
+SSILegacyExprParser on
+
+# Process SSI in .html files
+AddHandler server-parsed .html
+
+<FilesMatch "\.(ttf|otf|eot|woff)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+ </IfModule>
+</FilesMatch>
+
+# ERROR PAGES
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+
+# CORE PAGES
+RewriteRule ^communityrules$ "https\:\/\/mousepawmedia\.com\/communityrules" [L]
+RewriteRule ^legal$ "https\:\/\/mousepawmedia\.com\/legal" [L]
+RewriteRule ^privacy$ "https\:\/\/mousepawmedia\.com\/privacy" [L]
+RewriteRule ^termsofdevelopment$ "https\:\/\/mousepawmedia\.com\/termsofdevelopment" [L]
+RewriteRule ^termsofuse$ "https\:\/\/mousepawmedia\.com\/termsofuse" [L]
+
+# PAGES
+RewriteRule ^sitemap\/?$ "/sitemap.html" [NC,L]
