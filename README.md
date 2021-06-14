@@ -29,7 +29,7 @@ All contributions are licensed to us under the
 
 Our source code is licensed under the BSD-3 License. (See LICENSE.md)
 
-Actual website content is Copyright (c) 2017 MousePaw Media. All Rights
+Actual website content is Copyright (c) 2021 MousePaw Media. All Rights
 Reserved.
 
 The project is owned and maintained by [MousePaw Media][1].

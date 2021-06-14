@@ -1,0 +1,52 @@
+    <script language='JavaScript' type='text/javascript'>
+        window.onscroll = scroll;
+
+        function scroll()
+        {
+            if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100)
+            {
+                headerbox.style.display='none';
+            }
+            else
+            {
+                headerbox.style.display='inherit';
+            }
+        }
+    </script>
+    <header>
+        <div class='headerbox' id='headerbox'>
+            <a href='/'><img src=/img/ours/mousepawmedia_wordmark_shadowed.png height=80vw></a>
+        </div>
+        <nav class='visible-desktop'>
+            <ul>
+                <li>
+                    <span class='nav_bevelleft'></span>
+                <!--</li>-->
+                <li class='nav_btn'>
+                    <span class='nav_buttonsquare'>
+                        <a href='/'><img src='/img/ours/mousepaw_logo.png' alt='ECO Home' title='ECO Home' /></a>
+                    </span>
+                <!--</li>-->
+                <li>
+                    <span class='nav_bevelright'></span>
+                <!--</li>-->
+            </ul>
+        </nav>
+        <nav class='visible-mobile'>
+            <!--<span class='spanHeader'><img src='/img/ours/mousepaw_logo.svg' width=40px></span>
+            <span class='spanHeader'><object data='/img/icons/menu.svg' type='image/svg+xml' width=40px></object></span>-->
+            <ul>
+                <li>
+                    <span class='nav_bevelleft'></span>
+                </li>
+                <li class='nav_btn'>
+                    <span class='nav_buttonsquare'>
+                        <a href='/'><img src='/img/ours/mousepaw_logo.svg' alt='Mouse Paw Media Home' title='MousePaw Media Home' /></a>
+                    </span>
+                </li>
+                <li>
+                    <span class='nav_bevelright'></span>
+                </li>
+            </ul>
+        </nav>
+    </header>

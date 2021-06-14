@@ -29,21 +29,5 @@ RewriteRule ^privacy$ "https\:\/\/mousepawmedia\.com\/privacy" [L]
 RewriteRule ^termsofdevelopment$ "https\:\/\/mousepawmedia\.com\/termsofdevelopment" [L]
 RewriteRule ^termsofuse$ "https\:\/\/mousepawmedia\.com\/termsofuse" [L]
 
-# NETWORK SUBSITES
-RewriteRule ^ehour$ "https\:\/\/time\.mousepawmedia\.net\/" [L]
-RewriteRule ^time$ "https\:\/\/time\.mousepawmedia\.net\/" [L]
-RewriteRule ^pad$ "https\:\/\/pad\.mousepawmedia\.net\/" [L]
-Redirect 301 /etherpad /pad
-RewriteRule ^jenkins$ "https\:\/\/jenkins\.mousepawmedia\.net\/" [L]
-RewriteRule ^nextcloud$ "https\:\/\/nextcloud\.mousepawmedia\.net\/" [L]
-RewriteRule ^phabricator$ "https\:\/\/phabricator\.mousepawmedia\.net\/" [L]
-Redirect 301 /phab /phabricator
-
 # PAGES
-RewriteRule ^docs\/?$ "/docs.html" [NC,L]
-Redirect 301 /documentation /docs
-
-RewriteRule ^eco\/?$ "/eco.html" [NC,L]
-Redirect 301 /hr /eco
-
 RewriteRule ^sitemap\/?$ "/sitemap.html" [NC,L]
