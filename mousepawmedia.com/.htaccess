@@ -155,7 +155,7 @@ RewriteRule ^internships\/programming\/?$ "/intern_programming.html" [NC,L]
 RewriteRule ^internships\/designproduction\/?$ "/intern_designprod.html" [NC,L]
 RewriteRule ^internships\/contentdev\/?$ "/intern_contentdev.html" [NC,L]
 RewriteRule ^internships\/masscomm\/?$ "/intern_masscomm.html" [NC,L]
-Redirect 301 /internships/community /internships" [NC,L]
+Redirect 301 /internships/community /internships"
 
 RewriteRule ^internships\/apply\/?$ "https\:\/\/survey\.mousepawmedia\.com\/index\.php\/999838" [L]
 
