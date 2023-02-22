@@ -1,0 +1,13 @@
+.menu {
+  display: none;
+}
+.menu.open {
+  display: flex;
+  flex-direction: column;
+}
+.menu a,
+.menu button {
+  width: 100%;
+  font-size: var(--18px);
+  text-align: center;
+}

@@ -1,0 +1,7 @@
+/* body font will be source sans pro */
+
+p,
+a,
+button {
+  font-size: var(--17px);
+}
