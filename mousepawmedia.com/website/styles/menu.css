@@ -1,7 +1,8 @@
 .menu {
   display: none;
 }
-.menu.open {
+.menu.open,
+.submenu.open {
   display: flex;
   flex-direction: column;
 }

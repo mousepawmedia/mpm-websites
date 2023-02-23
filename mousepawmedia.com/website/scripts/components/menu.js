@@ -7,7 +7,12 @@ class MenuComponent extends HTMLElement {
             <a href="./company.html">Company</a>
             <a href="./projects.html">Projects</a>
             <a href="./developers.html">Developers</a>
-            <button>Internship</button>
+            <button id="toggle-submenu-button">Internships +</button>
+            <nav class="submenu" id="submenu">
+              <a href="./internship.html">Internship</a>
+              <a href="./mentorship.html">Mentorship</a>
+              <a href="./recruiting.html">Recruiting</a>
+            </nav>
         </nav>
 `;
   }
