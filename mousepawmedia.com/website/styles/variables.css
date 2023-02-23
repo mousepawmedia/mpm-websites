@@ -2,14 +2,22 @@ html {
   /* colors */
   --color-white: #ffffff;
   --color-black: #000000;
-  --color-text: #ffffff;
-  --color-background: #ffffff;
+  --color-yellow: #ffcb05;
+  /* --color-yellow: #ffc700; (color in penpot)*/
+  --color-pink: #ffad95;
+  /* --color-pink: #ffb39b; (color in penpot)*/
+  --color-text: #000000;
+
+  /* --color-background: #ffffff;
   --color-blurred-background: #ffffff;
   --color-primary: #ffffff;
   --color-secondary: #ffffff;
   --color-tertiary: #ffffff;
   --color-decorative: #ffffff;
-  --color-muted: #ffffff;
+  --color-muted: #ffffff; */
+
+  /* fonts */
+  --body-font: "Source Sans Pro";
 
   /* accessible font sizing */
   --10px: 0.625rem;
