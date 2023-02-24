@@ -1,3 +1,4 @@
+/* Source Sans Pro */
 @font-face {
   font-family: "SourceSansPro";
   src: url("../fonts/SourceSansPro/SourceSansPro-Black.ttf");
@@ -28,6 +29,12 @@
   src: url("../fonts/SourceSansPro/SourceSansPro-ExtraLight.ttf");
   font-weight: 200;
 }
+/* Day One */
+@font-face {
+  font-family: "DaysOne";
+  src: url("../fonts/DaysOne/DaysOne.ttf");
+  font-weight: 400;
+}
 
 p,
 a,
@@ -41,5 +48,6 @@ body {
 }
 header nav,
 nav.menu {
+  font-family: var(--heading-font);
   font-weight: 600;
 }

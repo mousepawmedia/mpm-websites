@@ -17,7 +17,8 @@ html {
   --color-muted: #ffffff; */
 
   /* fonts */
-  --body-font: "Source Sans Pro";
+  --body-font: "Source Sans Pro", sans-serif;
+  --heading-font: "DaysOne", sans-serif;
 
   /* accessible font sizing */
   --10px: 0.625rem;
