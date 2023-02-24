@@ -12,6 +12,7 @@ const closeIcon = document.getElementById("close-icon");
 
 //submenu toggle button and icon
 const toggleSubmenuButton = document.getElementById("toggle-submenu-button");
+const submenuCaretIcon = document.getElementById("submenu-caret-icon");
 
 //class toggle functions
 const handleHamburgerClick = () => {
@@ -20,7 +21,7 @@ const handleHamburgerClick = () => {
   menu.classList.toggle("open");
 };
 const handleSubmenuClick = () => {
-  // will add toggle classlist of caret icon
+  submenuCaretIcon.classList.toggle("open");
   submenu.classList.toggle("open");
 };
 

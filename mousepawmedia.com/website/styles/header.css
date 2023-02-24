@@ -4,6 +4,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: var(--header-height);
   padding: var(--side-padding);
 }
 .logo {
@@ -43,11 +44,46 @@ nav {
   .logo.mobile {
     display: none;
   }
-  header nav {
+  header nav.menu {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    padding: 0 var(--side-padding) 0 0;
   }
-  header nav a {
+  header nav.menu a {
     margin-right: 1rem;
+  }
+  /* internship hover dropdown element */
+  header nav div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  /* caret svg rotate on hover */
+  header nav img {
+    height: 1.25rem;
+    margin-top: 3px;
+  }
+  header nav div:hover img {
+    transform: rotate(180deg);
+  }
+  header nav.submenu {
+    display: none;
+  }
+  header nav.submenu a {
+    padding: 0.5rem;
+    margin-right: 0;
+    font-size: var(--16px);
+  }
+  /* show submenu on hover */
+  header nav div:hover nav.submenu {
+    position: absolute;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid;
+    border-color: var(--color-black);
   }
 }

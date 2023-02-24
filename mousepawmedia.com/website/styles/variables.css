@@ -35,5 +35,6 @@ html {
   --21px: 1.3125rem;
 
   /* spacing */
+  --header-height: 6rem;
   --side-padding: 1.5rem;
 }

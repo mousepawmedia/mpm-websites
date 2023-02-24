@@ -21,11 +21,20 @@ class HeaderComponent extends HTMLElement {
           <img id="close-icon" src="../img/icons/svg/close.svg" />
         </button>
         <!-- standard nav -->
-        <nav>
+        <nav class="menu">
             <a href="./company.html">Company</a>
             <a href="./projects.html">Projects</a>
             <a href="./developers.html">Developers</a>
-            <button>Internship</button>
+            <div>
+              <p>Internship</p>
+              <img src="../../img/icons/svg/caret-down.svg"/>
+              <!-- standard submenu -->
+              <nav class="submenu">
+                <a href="./internship.html">Internship</a>
+                <a href="./mentorship.html">Mentorship</a>
+                <a href="./recruiting.html">Recruiting</a>
+            </nav>
+            </div>
         </nav>
     </header>`;
   }

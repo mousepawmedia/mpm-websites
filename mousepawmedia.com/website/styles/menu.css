@@ -1,3 +1,5 @@
+/* mobile menu component outside of header */
+
 .menu {
   display: none;
 }
@@ -8,11 +10,21 @@
 }
 .menu a,
 .menu button {
-  width: 100%;
   font-size: var(--18px);
   text-align: center;
 }
-
+.menu button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu button img {
+  height: 1.25rem;
+  margin-top: 3px;
+}
+.menu button img.open {
+  transform: rotate(180deg);
+}
 /* tablet size */
 @media only screen and (min-width: 769px) {
   .menu,
