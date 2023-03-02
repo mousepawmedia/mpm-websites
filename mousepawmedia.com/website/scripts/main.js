@@ -33,3 +33,22 @@ toggleMenuButton.addEventListener("click", () => {
 toggleSubmenuButton.addEventListener("click", () => {
   handleSubmenuClick();
 });
+
+// MOBILE MENU ELEMENTS AND EVENT HANDLING
+// **will change depending on desired functionality and final build**
+//get current path from window
+const path = window.location.pathname;
+//select all menu items
+const menuItems = Array.from(menu.getElementsByTagName("a"));
+//loop through to check if href matches path
+menuItems.forEach((item) => {
+  // console.log(path);
+  // console.log(item.href.split("/")[4]);
+  if (path.includes(item.href.split("/")[4])) {
+    item.classList.add("active");
+  } else {
+    item.classList.remove("active");
+  }
+});
+console.log(menuItems);
+console.log("path is: ", path);

@@ -10,8 +10,13 @@
 }
 .menu a,
 .menu button {
+  padding: 1rem 0;
   font-size: var(--18px);
   text-align: center;
+}
+.menu a.active,
+.menu button.active {
+  background-color: var(--color-pink);
 }
 .menu button {
   display: flex;
@@ -24,7 +29,9 @@
 }
 .menu button img.open {
   transform: rotate(180deg);
+  margin-top: 2px;
 }
+
 /* tablet size */
 @media only screen and (min-width: 769px) {
   .menu,

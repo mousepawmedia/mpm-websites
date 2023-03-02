@@ -8,7 +8,7 @@ class MenuComponent extends HTMLElement {
             <a href="./projects.html">Projects</a>
             <a href="./developers.html">Developers</a>
             <button id="toggle-submenu-button">
-              <p>Internship</p>
+              <p>Internships</p>
               <img id="submenu-caret-icon" src="../../img/icons/svg/caret-down.svg"/>
             </button>
             <nav class="submenu" id="submenu">

@@ -67,6 +67,7 @@ nav {
   }
   header nav div:hover img {
     transform: rotate(180deg);
+    margin-top: 2px;
   }
   header nav.submenu {
     display: none;
