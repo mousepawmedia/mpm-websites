@@ -73,9 +73,12 @@ nav {
     display: none;
   }
   header nav.submenu a {
-    padding: 0.5rem;
+    padding: 1rem;
     margin-right: 0;
     font-size: var(--16px);
+  }
+  header nav.submenu a:hover {
+    background-color: var(--color-pink);
   }
   /* show submenu on hover */
   header nav div:hover nav.submenu {
