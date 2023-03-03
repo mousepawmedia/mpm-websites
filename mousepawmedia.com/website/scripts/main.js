@@ -34,21 +34,17 @@ toggleSubmenuButton.addEventListener("click", () => {
   handleSubmenuClick();
 });
 
-// MOBILE MENU ELEMENTS AND EVENT HANDLING
-// **will change depending on desired functionality and final build**
+// MOBILE MENU ACTIVE NAV ITEM
 //get current path from window
-const path = window.location.pathname;
+const path = window.location.pathname.split("/")[1];
 //select all menu items
 const menuItems = Array.from(menu.getElementsByTagName("a"));
 //loop through to check if href matches path
 menuItems.forEach((item) => {
-  // console.log(path);
-  // console.log(item.href.split("/")[4]);
-  if (path.includes(item.href.split("/")[4])) {
+  const href = item.href.split("/")[3];
+  if (path === href) {
     item.classList.add("active");
   } else {
     item.classList.remove("active");
   }
 });
-console.log(menuItems);
-console.log("path is: ", path);
