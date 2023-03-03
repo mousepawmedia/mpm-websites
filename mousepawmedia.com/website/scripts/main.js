@@ -43,6 +43,11 @@ const menuItems = Array.from(menu.getElementsByTagName("a"));
 menuItems.forEach((item) => {
   const href = item.href.split("/")[3];
   if (path === href) {
+    //if page is in submenu, open submenu to view active page
+    const parent = item.parentElement;
+    if (parent.id === "submenu") {
+      parent.classList.add("open");
+    }
     item.classList.add("active");
   } else {
     item.classList.remove("active");

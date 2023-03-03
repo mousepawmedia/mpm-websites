@@ -3,3 +3,6 @@
 @import url("./typography.css");
 @import url("./header.css");
 @import url("./menu.css");
+
+/* pages */
+@import url("./home/home.css");
