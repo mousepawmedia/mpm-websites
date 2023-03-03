@@ -71,6 +71,8 @@ nav {
   }
   header nav.submenu {
     display: none;
+    z-index: 1;
+    background-color: var(--color-white);
   }
   header nav.submenu a {
     padding: 1rem;
