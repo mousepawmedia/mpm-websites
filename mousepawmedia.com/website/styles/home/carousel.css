@@ -3,7 +3,7 @@
   position: relative;
   width: 100%;
   height: 60vw;
-  max-height: 300px;
+  max-height: 250px;
   margin: 0rem auto;
   padding: 2rem 0;
   background-color: var(--color-yellow-75);
@@ -40,7 +40,7 @@
   display: none;
   padding: 1rem 2.5rem;
   animation: fade 1.5s;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 .carousel-item img {
   position: absolute;
@@ -52,33 +52,40 @@
   z-index: -1;
 }
 .carousel-content {
-  padding: 1rem 0;
+  padding: clamp(0.5rem, 4vw, 1.5rem) 0.5rem;
 }
 .carousel-text {
-  font-size: var(--16px);
+  font-size: clamp(var(--16px), 5vw, var(--28px));
   font-weight: 600;
 }
-.item2 .carousel-text {
-  font-size: var(--14px);
-}
 .carousel-subtext {
-  font-size: var(--10px);
+  font-size: clamp(var(--10px), 3vw, var(--18px));
   font-weight: 600;
   border-bottom: 2px solid var(--color-white);
   padding-right: 5px;
   padding-bottom: 1px;
 }
-
+/* fine-tune each carousel item content*/
+.item1 span,
+.item1 a,
+.item2 span,
+.item2 a,
+.item3 span,
+.item3 a {
+  margin-top: 1rem;
+}
+.item2 .carousel-text {
+  font-size: clamp(var(--12px), 4vw, var(--24px));
+}
 .carousel-button {
   display: block;
   align-self: flex-end;
   max-width: fit-content;
   padding: 0.5rem 1rem;
   background-color: var(--color-white);
-  font-size: var(--10px);
+  font-size: clamp(var(--10px), 3vw, var(--18px));
   font-weight: 600;
   border-radius: 4px;
-  margin: 0.5rem 0;
 }
 .prev,
 .next {
