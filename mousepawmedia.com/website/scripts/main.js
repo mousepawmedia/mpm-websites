@@ -26,7 +26,6 @@ const handleSubmenuClick = () => {
 };
 
 //event listeners
-console.log("add listener");
 toggleMenuButton.addEventListener("click", () => {
   handleHamburgerClick();
 });
@@ -54,37 +53,65 @@ menuItems.forEach((item) => {
   }
 });
 
-//home carousel
-var currentSlide = 1;
+//HOME CAROUSEL
+//set carousel to first item
+let currentItem = 1;
 
-function showSlide(slideIndex) {
-  const slides = document.getElementsByClassName("carousel-item");
-  if (slideIndex > slides.length) {
-    currentSlide = 1;
-  }
-  if (slideIndex < 1) {
-    currentSlide = slides.length;
-  }
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[currentSlide - 1].style.display = "flex";
+//select all carousel items
+const items = document.getElementsByClassName("carousel-item");
+//select dots and arrows for navigation
+const dots = Array.from(document.getElementsByClassName("carousel-dot"));
+const prevButton = document.getElementById("prev-item");
+const nextButton = document.getElementById("next-item");
+//add event listeners for navigation
+prevButton.addEventListener("click", function () {
+  previousItem();
+});
+nextButton.addEventListener("click", function () {
+  nextItem();
+});
+dots.forEach((dot, i) => {
+  dot.addEventListener("click", () => handleDotClick(i + 1));
+});
+
+//navigation functions
+function nextItem() {
+  handleArrowClick((currentItem += 1));
+}
+function previousItem() {
+  handleArrowClick((currentItem -= 1));
 }
 
-function nextSlide() {
-  showSlide((currentSlide += 1));
+function handleArrowClick(itemIndex) {
+  if (itemIndex > items.length) {
+    currentItem = 1;
+  }
+  if (itemIndex < 1) {
+    currentItem = items.length;
+  }
+  showCurrentItem(currentItem);
+  setActiveDot(currentItem);
 }
 
-function previousSlide() {
-  showSlide((currentSlide -= 1));
+function handleDotClick(i) {
+  currentItem = i;
+  showCurrentItem(i);
+  setActiveDot(currentItem);
 }
 
-window.onload = function () {
-  showSlide(currentSlide);
-  document.getElementById("prev-item").addEventListener("click", function () {
-    previousSlide();
-  });
-  document.getElementById("next-item").addEventListener("click", function () {
-    nextSlide();
-  });
-};
+function setActiveDot(currentItem) {
+  for (var i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active");
+  }
+  dots[currentItem - 1].classList.add("active");
+}
+
+function showCurrentItem(currentItem) {
+  for (var i = 0; i < items.length; i++) {
+    items[i].style.display = "none";
+  }
+  items[currentItem - 1].style.display = "flex";
+  dots[currentItem - 1].classList.add("active");
+}
+
+showCurrentItem(currentItem);
