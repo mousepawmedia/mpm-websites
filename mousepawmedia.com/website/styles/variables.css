@@ -1,8 +1,10 @@
 html {
   /* colors */
   --color-white: #ffffff;
+  --color-white-75: #ffffffbf;
   --color-black: #000000;
   --color-yellow: #ffcb05;
+  --color-yellow-75: #ffcd05bf;
   /* --color-yellow: #ffc700; (color in penpot)*/
   --color-pink: #ffad95;
   /* --color-pink: #ffb39b; (color in penpot)*/
