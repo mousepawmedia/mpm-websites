@@ -1,11 +1,11 @@
 /* MOBILE FIRST */
 header {
-  border: 1px solid blue;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: var(--header-height);
-  padding: var(--side-padding);
+  padding: 0 var(--side-padding);
+  margin: 0 auto;
 }
 .logo {
   display: none;
@@ -32,7 +32,7 @@ nav {
   display: block;
 }
 
-/* tablet size */
+/* small screen size */
 @media only screen and (min-width: 769px) {
   .toggle-menu-button {
     display: none;
@@ -48,7 +48,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 0 var(--side-padding) 0 0;
+    padding: 0 1rem 0 0;
   }
   header nav.menu a {
     margin-right: 1rem;
@@ -91,5 +91,11 @@ nav {
     justify-content: center;
     border: 1px solid;
     border-color: var(--color-black);
+  }
+}
+/* extra large screen size */
+@media only screen and (min-width: 1201px) {
+  header {
+    max-width: calc(var(--container-max-width) + (var(--side-padding) * 2));
   }
 }

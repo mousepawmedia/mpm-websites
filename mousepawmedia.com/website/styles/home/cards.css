@@ -1,0 +1,37 @@
+.home .cards {
+  padding: 2rem var(--side-padding);
+  width: 100%;
+  margin-top: 2rem;
+}
+.home .card {
+  position: relative;
+  height: 250px;
+  padding: 1rem 0;
+  margin: 0 1.5rem;
+  margin-bottom: 3rem;
+  border-radius: 16px 16px 0 0;
+  box-shadow: #00000026 5px 5px 7px;
+  text-align: center;
+}
+.home .card .icon {
+  height: 80px;
+  width: 80px;
+  border: 5px solid black;
+  border-radius: 100%;
+  margin: 2rem auto 0 auto;
+}
+.home .card .title {
+  font-weight: 800;
+  font-size: 18px;
+  margin: 1rem 0;
+}
+.home .card .tab {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-top: 5px solid var(--color-black);
+  background-color: var(--color-yellow);
+  font-weight: 600;
+  padding: 3px 0;
+}

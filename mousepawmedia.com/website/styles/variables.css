@@ -1,3 +1,12 @@
+/* define breakpoints (can't assign as variables) */
+/*
+mobile m 320-375
+mobile l 376 - 425
+tablet 425 - 768
+small screen 769 - 1024
+large screen 1025 - 1200 
+*/
+
 html {
   /* colors */
   --color-white: #ffffff;
@@ -42,14 +51,26 @@ html {
   --32px: 2rem;
 
   /* spacing */
-  --header-height: 4rem;
-  --side-padding: 1.5rem;
+  --header-height: 6rem;
+  --side-padding: 2rem;
+  --container-max-width: 1200px;
 }
 
 /* reassign variables based on media size */
 /* tablet size */
 @media only screen and (min-width: 769px) {
   html {
-    --header-height: 6rem;
+    --header-height: 8rem;
+    --side-padding: 3rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  html {
+    --side-padding: 6rem;
+  }
+  @media only screen and (min-width: 1200px) {
+    html {
+      --side-padding: 10vw;
+    }
   }
 }

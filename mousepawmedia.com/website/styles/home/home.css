@@ -1,4 +1,57 @@
 @import url("./carousel.css");
+@import url("./carousel-items.css");
+@import url("./cards.css");
 
 .home {
+}
+.home .tagline {
+  font-size: var(--18px);
+  text-align: center;
+  margin: 2rem 0;
+}
+.home .iframe__wrapper {
+  position: relative;
+  width: calc(100vw - (var(--side-padding)) * 2);
+  height: 100%;
+  padding-top: 56.25%;
+  border: solid;
+  margin: 0 auto;
+  max-width: calc(var(--container-max-width));
+}
+
+.home iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home .intro {
+  margin: 2rem auto;
+  padding: 0 var(--side-padding);
+}
+.home .intro p {
+  padding-bottom: 1rem;
+}
+.home .cta {
+  width: 100%;
+  text-align: center;
+}
+.home .cta a {
+  border-radius: 25px;
+  background-color: var(--color-yellow);
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  font-weight: 600;
+}
+@media screen and (min-width: 425px) {
+  .home .tagline {
+    font-size: var(--24px);
+  }
+}
+@media screen and (min-width: 769px) {
+  .home .tagline {
+    font-size: var(--32px);
+  }
 }
