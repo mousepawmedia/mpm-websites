@@ -3,16 +3,24 @@
 .menu {
   display: none;
 }
+.menu.open {
+  box-shadow: #00000026 5px 5px 7px;
+  margin-bottom: 1rem;
+}
 .menu.open,
 .submenu.open {
   display: flex;
   flex-direction: column;
 }
+.menu a:not(:first-child),
+.menu button {
+  padding-top: 1rem;
+}
 .menu a,
 .menu button {
-  padding: 1rem 0;
   font-size: var(--18px);
   text-align: center;
+  padding-bottom: 1rem;
 }
 .menu a.active,
 .menu button.active {
@@ -43,5 +51,9 @@
   .menu,
   .menu.open {
     display: none;
+  }
+  .menu a,
+  .menu button {
+    padding-top: 1rem;
   }
 }

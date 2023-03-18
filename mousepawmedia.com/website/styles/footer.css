@@ -19,13 +19,23 @@ footer .social-links p {
 }
 footer .icons {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+footer .icons .row {
+  display: flex;
 }
 footer .icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: var(--color-white);
+  border-radius: 100%;
+  margin: 0.5rem;
+}
+footer .icon img {
+  padding: 12px;
 }
 footer .legal {
   text-align: center;
@@ -61,8 +71,14 @@ footer .links a {
     margin: 0rem;
     margin-right: 1rem;
   }
+  footer .icons {
+    flex-direction: row;
+  }
   footer .icon {
-    flex-basis: 25%;
+    margin: 5px;
+  }
+  footer .icon img {
+    padding: 12px;
   }
   footer .legal {
     padding: 0 var(--sidepadding);

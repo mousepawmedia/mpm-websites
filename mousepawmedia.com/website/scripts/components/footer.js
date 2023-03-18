@@ -6,18 +6,20 @@ class FooterComponent extends HTMLElement {
         <div class="social-links">
             <p>Follow us!</p>
             <div class="icons">
-                <div class="icon">
-                    <img id="close-icon" src="/img/icons/svg/close.svg" />
-                </div>
-                <div class="icon">
-                    <img id="close-icon" src="/img/icons/svg/close.svg" />
-                </div>
-                <div class="icon">
-                    <img id="close-icon" src="/img/icons/svg/close.svg" />
-                </div>
-                <div class="icon">
-                    <img id="close-icon" src="/img/icons/svg/close.svg" />
-                </div>
+               <div class="row">
+                <a href="https://www.twitter.com" class="icon">
+                    <img  src="/img/icons/svg/twitter.svg" />
+                </a>
+                <a href="https://www.dev.to" class="icon">
+                    <img  src="/img/icons/svg/dev.svg" />
+                </a></div>
+            <div class="row">
+                <a href="https://www.linkedin.com" class="icon">
+                    <img  src="/img/icons/svg/linkedin.svg" />
+                </a>
+                <a href="https://www.github.com" class="icon">
+                    <img  src="/img/icons/svg/github.svg" />
+                </a></div>
             </div>
         </div>
         <div class="content">

@@ -38,7 +38,7 @@
 p,
 a,
 button {
-  font-size: var(--17px);
+  font-size: var(--16px);
 }
 body {
   font-family: var(--body-font);
