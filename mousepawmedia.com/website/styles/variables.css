@@ -12,8 +12,9 @@ html {
   --color-white: #ffffff;
   --color-white-75: #ffffffbf;
   --color-black: #000000;
-  --color-yellow: #ffcb05;
+  --color-yellow: hsl(48, 100%, 51%);
   --color-yellow-75: #ffcd05bf;
+  --color-yellow-desat: #ffde69;
   /* --color-yellow: #ffc700; (color in penpot)*/
   --color-pink: #ffad95;
   /* --color-pink: #ffb39b; (color in penpot)*/
@@ -51,7 +52,7 @@ html {
   --32px: 2rem;
 
   /* spacing */
-  --header-height: 6rem;
+  --header-height: 5rem;
   --side-padding: 2rem;
   --container-max-width: 1200px;
 }

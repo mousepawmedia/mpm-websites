@@ -6,19 +6,25 @@
   width: 100%;
   margin: 2rem auto;
 }
-
+.cards a {
+  margin: 0 1.5rem;
+  margin-bottom: 3rem;
+}
 .home .card {
   position: relative;
   height: 300px;
   padding: 1rem 0;
-  margin: 0 1.5rem;
-  margin-bottom: 3rem;
+  margin: 0;
+
   border-radius: 16px 16px 0 0;
   box-shadow: #00000026 5px 5px 7px;
   text-align: center;
   min-width: 280px;
   width: 80vw;
   max-width: 400px;
+}
+.home .card:hover .tab {
+  background-color: var(--color-pink);
 }
 .home .card .icon {
   display: flex;

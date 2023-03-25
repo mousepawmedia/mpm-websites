@@ -1,3 +1,0 @@
-# Allow Twitterbot to browse anywhere
-User-agent: Twitterbot
-Disallow:

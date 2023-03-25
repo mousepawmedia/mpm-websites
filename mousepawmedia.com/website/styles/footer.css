@@ -10,7 +10,7 @@ footer .social-links {
   max-width: var(--container-max-width);
   margin: 0rem auto 2rem auto;
   padding: 2rem 0;
-  background-color: var(--color-yellow-75);
+  background-color: var(--color-yellow);
 }
 footer .social-links p {
   font-size: 18px;
@@ -33,10 +33,15 @@ footer .icon {
   background-color: var(--color-white);
   border-radius: 100%;
   margin: 0.5rem;
+  transition: all 0.1s ease-in-out;
+}
+footer .icon:hover {
+  background-color: var(--color-yellow-desat);
 }
 footer .icon img {
   padding: 12px;
 }
+
 footer .legal {
   text-align: center;
 }

@@ -12,15 +12,12 @@
   display: flex;
   flex-direction: column;
 }
-.menu a:not(:first-child),
-.menu button {
-  padding-top: 1rem;
-}
+
 .menu a,
 .menu button {
   font-size: var(--18px);
   text-align: center;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
 }
 .menu div p {
   font-size: 18px;
